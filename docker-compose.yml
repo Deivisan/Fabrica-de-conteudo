@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  mcp-platform:
+    build: .
+    container_name: mcp-platform
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      # Variáveis de ambiente para APIs
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - GOOGLE_AI_API_KEY=${GOOGLE_AI_API_KEY:-}
+      - GROK_API_KEY=${GROK_API_KEY:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      # Credenciais para redes sociais
+      - INSTAGRAM_USERNAME=${INSTAGRAM_USERNAME:-}
+      - INSTAGRAM_PASSWORD=${INSTAGRAM_PASSWORD:-}
+      - GOOGLE_EMAIL=${GOOGLE_EMAIL:-}
+      - GOOGLE_PASSWORD=${GOOGLE_PASSWORD:-}
+      - TWITTER_USERNAME=${TWITTER_USERNAME:-}
+      - TWITTER_PASSWORD=${TWITTER_PASSWORD:-}
+    volumes:
+      # Montar diretórios para estratégias, assets e logs
+      - ./strategies:/app/strategies
+      - ./assets:/app/assets
+      - ./output:/app/output
+      - ./logs:/app/logs
+      # Opcional: Para desenvolvimento, pode montar o código-fonte
+      # - .:/app
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    # Configuração para recursos adicionais se necessário
+    shm_size: 2gb  # Necessário para o Playwright
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - mcp-network
+
+networks:
+  mcp-network:
+    driver: bridge

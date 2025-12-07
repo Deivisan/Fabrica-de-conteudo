@@ -1,0 +1,33 @@
+{
+  "aiProvider": null,
+  "imageProvider": null,
+  "videoProvider": null,
+  "strategiesDir": "./strategies",
+  "assetsDir": "./assets",
+  "outputDir": "./output",
+  "headless": true,
+  "instagram_username": "",
+  "instagram_password": "",
+  "google_email": "",
+  "google_password": "",
+  "twitter_username": "",
+  "twitter_password": "",
+  "playwright": {
+    "slowMo": 50,
+    "timeout": 30000
+  },
+  "openai_api_key": "",
+  "google_ai_api_key": "",
+  "grok_api_key": "",
+  "local_model_endpoint": "",
+  "local_model_api_key": "",
+  "default_text_provider": "openai",
+  "default_image_provider": "openai",
+  "api_port": 3001,
+  "web_port": 3000,
+  "web_scraping": {
+    "timeout": 10000,
+    "max_pages": 10,
+    "user_agent": "MCP-Bot/1.0"
+  }
+}
