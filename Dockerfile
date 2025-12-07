@@ -29,10 +29,12 @@ WORKDIR /app
 COPY package*.json ./
 
 # Instalar dependências do Node.js
-RUN npm ci
+# Usamos `npm install` aqui porque o projeto não possui package-lock.json no repositório
+RUN npm install --no-audit --no-fund
 
-# Instalar Playwright para o Chromium e outras dependências
-RUN npx playwright install chromium --with-deps
+# Instalar Playwright para o Chromium
+# Não usamos --with-deps em Alpine (depende do apt-get). Chromium já foi instalado via apk
+RUN npx playwright install chromium
 
 # Copiar o restante do código da aplicação
 COPY . .

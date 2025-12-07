@@ -21,11 +21,11 @@ class OwnAPIManager {
    * Inicia o servidor para gerenciamento de APIs
    */
   async startServer() {
-    this.server = express();
-    this.server.use(express.json());
+    this.app = express();
+    this.app.use(express.json());
     
     // Rota para criação de nova API
-    this.server.post('/create-api', async (req, res) => {
+    this.app.post('/create-api', async (req, res) => {
       try {
         const { name, type, config } = req.body;
         const apiKey = await this.createAPI(name, type, config);
@@ -36,7 +36,7 @@ class OwnAPIManager {
     });
     
     // Rota para geração de conteúdo
-    this.server.post('/generate/:apiType', async (req, res) => {
+    this.app.post('/generate/:apiType', async (req, res) => {
       try {
         const { apiType } = req.params;
         const { prompt, options = {} } = req.body;
@@ -49,7 +49,7 @@ class OwnAPIManager {
     });
     
     // Rota para teste de API
-    this.server.get('/test/:apiKey', async (req, res) => {
+    this.app.get('/test/:apiKey', async (req, res) => {
       try {
         const { apiKey } = req.params;
         const isValid = this.validateAPIKey(apiKey);
@@ -61,7 +61,7 @@ class OwnAPIManager {
     
     // Inicia o servidor
     await new Promise((resolve) => {
-      this.server.listen(this.port, () => {
+      this.server = this.app.listen(this.port, () => {
         console.log(`Servidor de APIs próprias iniciado na porta ${this.port}`);
         resolve();
       });
@@ -327,8 +327,13 @@ class OwnAPIManager {
    */
   async stopServer() {
     if (this.server) {
-      this.server.close();
-      console.log('Servidor de APIs próprias encerrado');
+      await new Promise((resolve, reject) => {
+        this.server.close((err) => {
+          if (err) return reject(err);
+          console.log('Servidor de APIs próprias encerrado');
+          resolve();
+        });
+      });
     }
   }
 }

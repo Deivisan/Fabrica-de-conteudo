@@ -7,18 +7,18 @@ require('dotenv').config();
 
 const fs = require('fs').promises;
 const path = require('path');
-const { chromium } = require('playwright');
-const ContentAgent = require('./src/agents/content-agent');
-const InstagramPlatform = require('./src/platforms/instagram');
-const YouTubePlatform = require('./src/platforms/youtube');
-const TwitterPlatform = require('./src/platforms/twitter');
-const Utils = require('./src/utils');
-const OwnAPIManager = require('./src/utils/own-api-manager');
-const WebScrapingAnalyzer = require('./src/utils/web-scraping-analyzer');
+const playwright = require('playwright');
+const ContentAgent = require('./agents/content-agent');
+const InstagramPlatform = require('./platforms/instagram');
+const YouTubePlatform = require('./platforms/youtube');
+const TwitterPlatform = require('./platforms/twitter');
+const Utils = require('./utils');
+const OwnAPIManager = require('./utils/own-api-manager');
+const WebScrapingAnalyzer = require('./utils/web-scraping-analyzer');
 const express = require('express');
 
 class ContentFactory {
-  constructor(configPath = './config/default.json') {
+  constructor(configPath = '../config/default.json') {
     this.config = require(configPath);
     this.agent = new ContentAgent(this.config);
     this.playwright = null;
@@ -34,7 +34,7 @@ class ContentFactory {
     console.log('Inicializando MCP - Marketing Content Platform...');
 
     // Inicializa Playwright
-    this.playwright = chromium;
+    this.playwright = playwright;
 
     // Cria diretórios necessários
     await Utils.ensureDir(this.config.assetsDir);
