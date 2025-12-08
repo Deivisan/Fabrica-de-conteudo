@@ -97,6 +97,14 @@ temp/
 # Assets gerados
 assets/generated/
 assets/temp/
+assets/downloads/
+
+# Dados do navegador (sessões - SENSÍVEL)
+browser-data/*
+!browser-data/.gitkeep
+
+# Output de campanhas
+output/campaigns/
 
 # Arquivos de configuração sensíveis
 config/local.json

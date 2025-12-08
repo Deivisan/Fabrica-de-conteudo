@@ -1,0 +1,3 @@
+# Este diretório armazena dados de sessão do navegador
+# Os arquivos aqui são gerados automaticamente pelo Playwright
+# NÃO commite dados sensíveis de sessão no git

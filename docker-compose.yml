@@ -7,7 +7,12 @@ services:
     restart: unless-stopped
     environment:
       - NODE_ENV=production
-      # Variáveis de ambiente para APIs
+      # Configurações do Playwright para automação gratuita
+      - PLAYWRIGHT_HEADLESS=true
+      - PLAYWRIGHT_USER_DATA_DIR=/app/browser-data
+      - PLAYWRIGHT_SLOW_MO=50
+      - PLAYWRIGHT_TIMEOUT=60000
+      # Variáveis de ambiente para APIs (opcional)
       - OPENAI_API_KEY=${OPENAI_API_KEY:-}
       - GOOGLE_AI_API_KEY=${GOOGLE_AI_API_KEY:-}
       - GROK_API_KEY=${GROK_API_KEY:-}
@@ -25,15 +30,43 @@ services:
       - ./assets:/app/assets
       - ./output:/app/output
       - ./logs:/app/logs
-      # Opcional: Para desenvolvimento, pode montar o código-fonte
+      # IMPORTANTE: Persistir dados do navegador para manter sessões
+      - ./browser-data:/app/browser-data
+      # Opcional: Para desenvolvimento
       # - .:/app
     ports:
       - "3000:3000"
       - "3001:3001"
-    # Configuração para recursos adicionais se necessário
+    # Configuração para Playwright
     shm_size: 2gb  # Necessário para o Playwright
     security_opt:
       - no-new-privileges:true
+    # Capacidades necessárias para Playwright
+    cap_add:
+      - SYS_ADMIN
+    networks:
+      - mcp-network
+
+  # Serviço opcional para configuração de sessões (modo interativo)
+  mcp-setup:
+    build: .
+    container_name: mcp-setup
+    profiles:
+      - setup
+    environment:
+      - PLAYWRIGHT_HEADLESS=false
+      - PLAYWRIGHT_USER_DATA_DIR=/app/browser-data
+    volumes:
+      - ./browser-data:/app/browser-data
+      - ./assets:/app/assets
+    # Para modo interativo com display
+    # Descomente as linhas abaixo se estiver em Linux com X11
+    # environment:
+    #   - DISPLAY=${DISPLAY}
+    # volumes:
+    #   - /tmp/.X11-unix:/tmp/.X11-unix
+    shm_size: 2gb
+    command: node treinamento/index.js --setup
     networks:
       - mcp-network
 

@@ -1,10 +1,24 @@
 # MCP - Marketing Content Platform 🚀
 
-Bem-vindo à **MCP (Marketing Content Platform)** - uma plataforma avançada para geração e automação inteligente de conteúdo multimídia para todas as redes sociais, usando múltiplas fontes de IA (ChatGPT, Google AI, Grok e mais) e automação via Playwright.
+Bem-vindo à **MCP (Marketing Content Platform)** - uma plataforma avançada para geração e automação inteligente de conteúdo multimídia para todas as redes sociais, usando **IAs GRATUITAS via automação de navegador** (Google AI Studio, Bing Image Creator, Leonardo.ai e mais).
 
 ## 🎯 Objetivo
 
-Criar uma plataforma inteligente que leia estratégias de marketing descritas em arquivos Markdown, realize scraping de tendências da web e gere automaticamente conteúdo em diversos formatos (textos, imagens, vídeos, sites) para qualquer rede social, usando múltiplas fontes de IA e automação via Playwright. A plataforma também permite a criação e gerenciamento de APIs próprias para geração de conteúdo.
+Criar uma plataforma inteligente que:
+- Leia estratégias de marketing descritas em arquivos Markdown
+- Gere automaticamente conteúdo (textos, imagens, vídeos) usando **IAs gratuitas**
+- Use **Playwright para automação de navegador** - sem necessidade de APIs pagas
+- Mantenha sessões persistentes para evitar login repetido
+- Funcione em containers Docker para fácil deploy
+
+## 🆓 100% Gratuito
+
+Esta plataforma usa **automação de navegador** para acessar serviços de IA gratuitos:
+- **Google AI Studio (Gemini)** - Texto e imagens
+- **Bing Image Creator (DALL-E 3)** - Imagens de alta qualidade
+- **Leonardo.ai** - Imagens com múltiplos modelos
+- **Runway ML** - Vídeos curtos
+- E mais...
 
 ## 🧠 Arquitetura Geral
 
@@ -49,41 +63,67 @@ O sistema é estruturamente modular com os seguintes componentes principais:
 ## 📁 Estrutura de Pastas
 
 ```
-fabrica-conteudo/
-├── docker/
-│   ├── Dockerfile          # Dockerfile base com Alpine e Node.js 25
-│   └── docker-compose.yml  # Compose para ambientes de desenvolvimento
-├── src/
-│   ├── parser/
-│   │   └── md-parser.js    # Parser de arquivos Markdown
-│   ├── generators/
-│   │   ├── text/
-│   │   ├── image/
-│   │   ├── video/
-│   │   └── website/
-│   ├── agents/
-│   │   └── content-agent.js # Agente principal de geração de conteúdo
-│   ├── platforms/
-│   │   ├── instagram.js
-│   │   ├── facebook.js
-│   │   ├── youtube.js
-│   │   └── linkedin.js
-│   └── utils/
-├── strategies/             # Pasta para arquivos .md com estratégias
-├── assets/                 # Arquivos temporários e gerados
+mcp-platform/
+├── src/                    # Código fonte principal
+│   ├── parser/             # Parser de estratégias Markdown
+│   ├── generators/         # Geradores (texto, imagem, vídeo, website)
+│   ├── agents/             # Agente de conteúdo
+│   ├── platforms/          # Integrações com redes sociais
+│   └── utils/              # Utilitários
+├── treinamento/            # 🆕 MÓDULO DE AUTOMAÇÃO GRATUITA
+│   ├── automation/         # Automações de navegador
+│   │   ├── browser-session-manager.js
+│   │   ├── google-ai-studio.js
+│   │   ├── image-generators/
+│   │   ├── text-generators/
+│   │   └── video-generators/
+│   ├── config/             # Configurações do Playwright
+│   ├── docs/               # Documentação completa
+│   └── examples/           # Exemplos práticos
+├── strategies/             # Arquivos .md com estratégias
+├── assets/                 # Arquivos gerados
+├── browser-data/           # Sessões do navegador (persistente)
 ├── config/
-│   └── config.json
-├── package.json
-└── README.md
+├── Dockerfile
+├── docker-compose.yml
+└── package.json
 ```
 
 ## 🚀 Como Começar
 
-1. Clone o repositório
-2. Configure suas chaves de API no arquivo de configuração
-3. Inicie o container Docker
-4. Adicione seus arquivos de estratégia em `./strategies`
-5. Execute o sistema para processar as estratégias
+### Opção 1: Usando IAs Gratuitas (Recomendado)
+
+```bash
+# 1. Instalar dependências
+npm install
+npx playwright install chromium --with-deps
+
+# 2. Configurar sessões (login manual uma vez)
+node treinamento/index.js --setup
+
+# 3. Gerar conteúdo!
+node treinamento/examples/generate-image.js "Um café aconchegante"
+node treinamento/examples/generate-text.js post instagram "Lançamento de produto"
+node treinamento/examples/full-campaign.js "Black Friday 2025"
+```
+
+### Opção 2: Com Docker
+
+```bash
+# Build e execução
+docker-compose up -d
+
+# Configurar sessões (primeira vez)
+docker exec -it mcp-platform node treinamento/index.js --setup
+```
+
+### Opção 3: Com APIs Pagas (Opcional)
+
+Se você tiver chaves de API, configure no `.env`:
+```bash
+cp .env.example .env
+# Edite .env com suas chaves
+```
 
 ## 📝 Exemplo de Estratégia (Markdown)
 
@@ -113,15 +153,21 @@ Promover o novo Produto X para público jovem (18-30) interessado em tecnologia.
 
 ## 🤖 Funcionalidades do Sistema
 
+### Automação Gratuita (Módulo Treinamento)
+- **Sessões Persistentes**: Login uma vez, use sempre
+- **Google AI Studio**: Texto e imagens via Gemini
+- **Bing Image Creator**: Imagens DALL-E 3 gratuitas
+- **Leonardo.ai**: Múltiplos modelos de imagem
+- **Runway ML**: Geração de vídeos curtos
+
+### Funcionalidades Principais
 - **Análise de Estratégia**: Extrai automaticamente objetivos, públicos-alvo, plataformas e estilos
 - **Geração Multimodal**: Cria conteúdo em texto, imagem e vídeo
 - **Publicação Automática**: Agenda e publica automaticamente nas redes
-- **Aprendizado Contínuo**: Adapta-se com base em métricas e feedback
-- **Template Personalizado**: Cria templates reutilizáveis
-- **Multi-IA**: Suporte a ChatGPT, Google AI, Grok e outras IAs
+- **Multi-IA**: Suporte a múltiplos provedores de IA
 - **Web Scraping**: Monitoramento de tendências e análise de conteúdo
 - **APIs Próprias**: Criação e gerenciamento de APIs personalizadas
-- **Geração Automática de Estratégias**: Criação de estratégias baseadas em tendências
+- **Campanhas Completas**: Geração de campanhas inteiras com um comando
 
 ## 🔄 Processo de Iteração
 

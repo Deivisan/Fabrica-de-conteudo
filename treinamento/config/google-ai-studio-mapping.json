@@ -1,0 +1,739 @@
+{
+  "timestamp": "2025-12-08T01:03:25.758Z",
+  "url": "https://aistudio.google.com",
+  "loginStatus": false,
+  "selectors": {
+    "promptInput": "textarea[aria-label*=\"prompt\" i]",
+    "runButton": "button[aria-label*=\"Run\" i]"
+  },
+  "pageStructure": {
+    "textareas": [
+      {
+        "index": 0,
+        "id": "",
+        "class": "textarea ng-untouched ng-pristine ng-valid",
+        "placeholder": "",
+        "ariaLabel": "Type something or tab to choose an example prompt",
+        "name": "",
+        "visible": true,
+        "rect": {
+          "x": 475,
+          "y": 1028,
+          "width": 860,
+          "height": 20,
+          "top": 1028,
+          "right": 1335,
+          "bottom": 1048,
+          "left": 475
+        }
+      }
+    ],
+    "buttons": [
+      {
+        "index": 0,
+        "text": "Skip to main content",
+        "ariaLabel": null,
+        "class": "skip-content ng-tns-c1788264983-0",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 1,
+        "text": "chevron_right",
+        "ariaLabel": "expandCollapseIconTooltipText()",
+        "class": "mat-mdc-tooltip-trigger history-button ng-tns-c3177882913-3 expanded ng-trigger ng-trigger-fadeInOut",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 7,
+        "text": "key Get API key",
+        "ariaLabel": null,
+        "class": "ms-button-borderless",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 8,
+        "text": "settings Settings",
+        "ariaLabel": null,
+        "class": "mat-mdc-menu-trigger trigger-button ms-button-borderless",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 9,
+        "text": "deivitechfsa@gmail.com",
+        "ariaLabel": null,
+        "class": "account-switcher-button ng-tns-c416798157-1 ms-button-borderless",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 10,
+        "text": "menu_open",
+        "ariaLabel": "Toggle navigation menu",
+        "class": "mat-mdc-tooltip-trigger navbar-toggle-button ng-tns-c1481758678-5 ms-button-icon ms-button-primary",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 11,
+        "text": "incognito",
+        "ariaLabel": "Temporary chat toggle",
+        "class": "mat-mdc-tooltip-trigger ms-button-borderless ms-button-icon",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 12,
+        "text": "share",
+        "ariaLabel": "Share prompt",
+        "class": "mat-mdc-tooltip-trigger ms-button-borderless ms-button-icon ng-star-inserted",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 13,
+        "text": "compare_arrows",
+        "ariaLabel": null,
+        "class": "mat-mdc-tooltip-trigger compare-button ng-tns-c1481758678-5 ng-trigger ng-trigger-slidingInOut ms-bu",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 14,
+        "text": "add",
+        "ariaLabel": "New chat",
+        "class": "mat-mdc-tooltip-trigger ng-tns-c1481758678-5 ng-trigger ng-trigger-slidingInOut ms-button-borderless",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 15,
+        "text": "more_vert",
+        "ariaLabel": "View more actions",
+        "class": "mat-mdc-menu-trigger mat-mdc-tooltip-trigger ng-tns-c1481758678-5 ng-trigger ng-trigger-slidingInOut",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 16,
+        "text": "chevron_left",
+        "ariaLabel": "Scroll left",
+        "class": "chevron-btn left ms-button-borderless ms-button-icon",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 17,
+        "text": "Featured",
+        "ariaLabel": null,
+        "class": "ms-button-filter-chip ng-star-inserted",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 18,
+        "text": "Gemini",
+        "ariaLabel": null,
+        "class": "ms-button-filter-chip ng-star-inserted",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 19,
+        "text": "Live",
+        "ariaLabel": null,
+        "class": "ms-button-filter-chip ng-star-inserted",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 20,
+        "text": "Images",
+        "ariaLabel": null,
+        "class": "ms-button-active ms-button-filter-chip ng-star-inserted",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 21,
+        "text": "Video",
+        "ariaLabel": null,
+        "class": "ms-button-filter-chip ng-star-inserted",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 22,
+        "text": "Audio",
+        "ariaLabel": null,
+        "class": "ms-button-filter-chip ng-star-inserted",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 23,
+        "text": "chevron_right",
+        "ariaLabel": "Scroll right",
+        "class": "chevron-btn right ms-button-borderless ms-button-icon",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 24,
+        "text": "Nano Banana Pro NewState-of-the-art image generation and editing model.",
+        "ariaLabel": null,
+        "class": "content-button",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 25,
+        "text": "content_copy",
+        "ariaLabel": "Copy to clipboard",
+        "class": "mat-mdc-tooltip-trigger ms-button-borderless ms-button-icon ms-button-small",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 26,
+        "text": "Nano Banana State-of-the-art image generation and editing model.",
+        "ariaLabel": null,
+        "class": "content-button",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 27,
+        "text": "content_copy",
+        "ariaLabel": "Copy to clipboard",
+        "class": "mat-mdc-tooltip-trigger ms-button-borderless ms-button-icon ms-button-small",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 28,
+        "text": "image_edit_auto  Imagen 4 Our latest image generation model, with significantly better text renderin",
+        "ariaLabel": null,
+        "class": "content-button",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 29,
+        "text": "content_copy",
+        "ariaLabel": "Copy to clipboard",
+        "class": "mat-mdc-tooltip-trigger ms-button-borderless ms-button-icon ms-button-small",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 30,
+        "text": "key_off",
+        "ariaLabel": "No API key selected",
+        "class": "xap-inline-dialog paid-api-key-button ms-button-primary",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 31,
+        "text": "add_circle",
+        "ariaLabel": "Insert assets such as images, videos, files, or audio",
+        "class": "mat-mdc-menu-trigger mat-mdc-tooltip-trigger ms-button-borderless ms-button-icon",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 32,
+        "text": "arrow_upward_alt",
+        "ariaLabel": "Run",
+        "class": "mat-mdc-tooltip-trigger run-button ng-trigger ng-trigger-submit ng-tns-c257757381-8 small disabled n",
+        "type": "submit",
+        "disabled": true
+      },
+      {
+        "index": 33,
+        "text": "code Get code",
+        "ariaLabel": "Get code",
+        "class": "mat-mdc-tooltip-trigger ms-button-borderless ms-button-small",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 34,
+        "text": "reset_settings",
+        "ariaLabel": "Reset default settings",
+        "class": "mat-mdc-tooltip-trigger ms-button-borderless ms-button-icon ms-button-small",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 35,
+        "text": "close",
+        "ariaLabel": "Close run settings panel",
+        "class": "ms-button-borderless ms-button-icon ms-button-small",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 36,
+        "text": "Nano Bananagemini-2.5-flash-imageState-of-the-art image generation and editing model.",
+        "ariaLabel": null,
+        "class": "mat-mdc-tooltip-trigger model-selector-card",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 37,
+        "text": "System instructionsOptional tone and style instructions for the model",
+        "ariaLabel": "System instructions",
+        "class": "mat-mdc-tooltip-trigger system-instructions-card",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 38,
+        "text": "No API Key Switch to a paid API key to unlock higher quota and more features.",
+        "ariaLabel": "No API Key",
+        "class": "paid-api-key-card",
+        "type": "submit",
+        "disabled": false
+      },
+      {
+        "index": 39,
+        "text": "expand_more",
+        "ariaLabel": "Expand or collapse advanced settings",
+        "class": "expand-icon ms-button-borderless ms-button-icon",
+        "type": "submit",
+        "disabled": false
+      }
+    ],
+    "inputs": [
+      {
+        "index": 0,
+        "id": "chip-input",
+        "class": "mat-mdc-chip-input mat-input-element small",
+        "placeholder": "Add stop...",
+        "ariaLabel": "Add stop token",
+        "visible": true
+      }
+    ],
+    "contentEditables": [],
+    "iframes": [
+      {
+        "index": 0,
+        "src": "https://aistudio.google.com/app/_/bscframe",
+        "id": ""
+      }
+    ],
+    "customElements": [
+      "app-root",
+      "router-outlet",
+      "ms-app",
+      "ms-banner",
+      "ms-navbar",
+      "ms-logo-icon",
+      "ms-nav-items-v3",
+      "ms-nav-items-v3-main",
+      "ms-nav-items-v3-playground",
+      "ms-prompt-history-v3",
+      "mat-expansion-panel",
+      "ms-prompt-options-menu",
+      "mat-menu",
+      "ms-navbar-disclaimer",
+      "ms-api-key-button",
+      "ms-settings-menu",
+      "alkali-accountswitcher",
+      "connect-avatar",
+      "ms-prompt-renderer",
+      "ms-chunk-editor",
+      "ms-toolbar",
+      "ms-token-count",
+      "ms-incognito-mode-toggle",
+      "ms-share-prompt",
+      "ms-paid-api-key-callout",
+      "ms-zero-state",
+      "ms-model-carousel",
+      "ms-horizontal-scroll",
+      "ms-model-carousel-row",
+      "mat-divider",
+      "ms-prompt-input-wrapper",
+      "ms-paid-api-key-button",
+      "ms-chunk-input",
+      "ms-text-chunk",
+      "ms-autosize-textarea",
+      "ms-input-rolling-placeholder",
+      "ms-add-chunk-menu",
+      "ms-run-button",
+      "mat-icon",
+      "ms-right-side-panel",
+      "ms-run-settings",
+      "ms-get-code-button",
+      "ms-prompt-run-settings-switcher",
+      "ms-prompt-run-settings",
+      "ms-model-selector-v3",
+      "ms-sliding-right-panel",
+      "ms-system-instructions-panel",
+      "ms-paid-api-key",
+      "ms-slider",
+      "mat-slider",
+      "mat-slider-visual-thumb",
+      "mat-form-field",
+      "mat-select",
+      "ms-stop-sequence-input",
+      "mat-chip-grid"
+    ]
+  },
+  "screenshots": [
+    "C:\\Projetos\\Fabrica-de-conteudo\\treinamento\\assets\\screenshots\\01_pagina_inicial_1765155809436.png",
+    "C:\\Projetos\\Fabrica-de-conteudo\\treinamento\\assets\\screenshots\\02_elementos_destacados_1765155817583.png"
+  ],
+  "logs": [
+    {
+      "time": "2025-12-08T01:03:25.758Z",
+      "message": "\n📍 Navegando para Google AI Studio..."
+    },
+    {
+      "time": "2025-12-08T01:03:29.435Z",
+      "message": "✅ Página carregada!"
+    },
+    {
+      "time": "2025-12-08T01:03:29.533Z",
+      "message": "   📸 Screenshot: 01_pagina_inicial"
+    },
+    {
+      "time": "2025-12-08T01:03:29.533Z",
+      "message": "\n🔐 Verificando login..."
+    },
+    {
+      "time": "2025-12-08T01:03:34.536Z",
+      "message": "❌ Usuário NÃO está logado"
+    },
+    {
+      "time": "2025-12-08T01:03:37.539Z",
+      "message": "\n🔍 ANALISANDO ESTRUTURA DA PÁGINA..."
+    },
+    {
+      "time": "2025-12-08T01:03:37.539Z",
+      "message": "============================================================"
+    },
+    {
+      "time": "2025-12-08T01:03:37.549Z",
+      "message": "\n📋 TEXTAREAS ENCONTRADOS:"
+    },
+    {
+      "time": "2025-12-08T01:03:37.549Z",
+      "message": "   [0] id=\"\" placeholder=\"\" aria-label=\"Type something or tab to choose an example prompt\" visible=true"
+    },
+    {
+      "time": "2025-12-08T01:03:37.549Z",
+      "message": "\n📋 BOTÕES VISÍVEIS (primeiros 15):"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "   [0] \"Skip to main content\" aria-label=\"null\" disabled=false"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "   [1] \"chevron_right\" aria-label=\"expandCollapseIconTooltipText()\" disabled=false"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "   [7] \"key Get API key\" aria-label=\"null\" disabled=false"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "   [8] \"settings Settings\" aria-label=\"null\" disabled=false"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "   [9] \"deivitechfsa@gmail.com\" aria-label=\"null\" disabled=false"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "   [10] \"menu_open\" aria-label=\"Toggle navigation menu\" disabled=false"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "   [11] \"incognito\" aria-label=\"Temporary chat toggle\" disabled=false"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "   [12] \"share\" aria-label=\"Share prompt\" disabled=false"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "   [13] \"compare_arrows\" aria-label=\"null\" disabled=false"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "   [14] \"add\" aria-label=\"New chat\" disabled=false"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "   [15] \"more_vert\" aria-label=\"View more actions\" disabled=false"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "   [16] \"chevron_left\" aria-label=\"Scroll left\" disabled=false"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "   [17] \"Featured\" aria-label=\"null\" disabled=false"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "   [18] \"Gemini\" aria-label=\"null\" disabled=false"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "   [19] \"Live\" aria-label=\"null\" disabled=false"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "\n📋 CONTENT EDITABLES:"
+    },
+    {
+      "time": "2025-12-08T01:03:37.550Z",
+      "message": "\n📋 CUSTOM ELEMENTS (Web Components):"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <app-root>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <router-outlet>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <ms-app>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <ms-banner>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <ms-navbar>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <ms-logo-icon>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <ms-nav-items-v3>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <ms-nav-items-v3-main>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <ms-nav-items-v3-playground>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <ms-prompt-history-v3>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <mat-expansion-panel>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <ms-prompt-options-menu>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <mat-menu>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <ms-navbar-disclaimer>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <ms-api-key-button>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <ms-settings-menu>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <alkali-accountswitcher>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <connect-avatar>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <ms-prompt-renderer>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.551Z",
+      "message": "   <ms-chunk-editor>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-toolbar>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-token-count>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-incognito-mode-toggle>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-share-prompt>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-paid-api-key-callout>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-zero-state>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-model-carousel>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-horizontal-scroll>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-model-carousel-row>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <mat-divider>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-prompt-input-wrapper>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-paid-api-key-button>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-chunk-input>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-text-chunk>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-autosize-textarea>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-input-rolling-placeholder>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-add-chunk-menu>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-run-button>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <mat-icon>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-right-side-panel>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-run-settings>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.552Z",
+      "message": "   <ms-get-code-button>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.553Z",
+      "message": "   <ms-prompt-run-settings-switcher>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.553Z",
+      "message": "   <ms-prompt-run-settings>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.553Z",
+      "message": "   <ms-model-selector-v3>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.553Z",
+      "message": "   <ms-sliding-right-panel>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.553Z",
+      "message": "   <ms-system-instructions-panel>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.553Z",
+      "message": "   <ms-paid-api-key>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.553Z",
+      "message": "   <ms-slider>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.553Z",
+      "message": "   <mat-slider>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.553Z",
+      "message": "   <mat-slider-visual-thumb>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.553Z",
+      "message": "   <mat-form-field>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.553Z",
+      "message": "   <mat-select>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.553Z",
+      "message": "   <ms-stop-sequence-input>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.553Z",
+      "message": "   <mat-chip-grid>"
+    },
+    {
+      "time": "2025-12-08T01:03:37.553Z",
+      "message": "\n🎯 IDENTIFICANDO SELETORES..."
+    },
+    {
+      "time": "2025-12-08T01:03:37.571Z",
+      "message": "   ✅ PROMPT INPUT: textarea[aria-label*=\"prompt\" i]"
+    },
+    {
+      "time": "2025-12-08T01:03:37.582Z",
+      "message": "   ✅ RUN BUTTON: button[aria-label*=\"Run\" i]"
+    },
+    {
+      "time": "2025-12-08T01:03:37.690Z",
+      "message": "   📸 Screenshot: 02_elementos_destacados"
+    }
+  ]
+}

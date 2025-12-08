@@ -1,0 +1,187 @@
+{
+  "services": {
+    "text": [
+      {
+        "name": "Google AI Studio (Gemini)",
+        "id": "google-ai-studio",
+        "url": "https://aistudio.google.com",
+        "type": "text",
+        "priority": 1,
+        "limits": {
+          "daily": 1500,
+          "perMinute": 60
+        },
+        "features": ["text", "code", "analysis", "image-understanding"],
+        "quality": 5,
+        "reliability": 5
+      },
+      {
+        "name": "ChatGPT Free",
+        "id": "chatgpt-free",
+        "url": "https://chat.openai.com",
+        "type": "text",
+        "priority": 2,
+        "limits": {
+          "daily": 50,
+          "perMinute": 5
+        },
+        "features": ["text", "code"],
+        "quality": 5,
+        "reliability": 3
+      },
+      {
+        "name": "Perplexity AI",
+        "id": "perplexity",
+        "url": "https://perplexity.ai",
+        "type": "text",
+        "priority": 3,
+        "limits": {
+          "daily": 100,
+          "perMinute": 10
+        },
+        "features": ["text", "search", "sources"],
+        "quality": 4,
+        "reliability": 4
+      }
+    ],
+    "image": [
+      {
+        "name": "Google AI Studio (Imagen)",
+        "id": "google-imagen",
+        "url": "https://aistudio.google.com",
+        "type": "image",
+        "priority": 1,
+        "limits": {
+          "daily": 100,
+          "perMinute": 10
+        },
+        "features": ["image-generation", "high-quality"],
+        "quality": 5,
+        "reliability": 5,
+        "maxResolution": "1024x1024"
+      },
+      {
+        "name": "Bing Image Creator",
+        "id": "bing-image-creator",
+        "url": "https://www.bing.com/images/create",
+        "type": "image",
+        "priority": 2,
+        "limits": {
+          "daily": 15,
+          "boosts": 15
+        },
+        "features": ["dalle-3", "high-quality"],
+        "quality": 5,
+        "reliability": 4,
+        "maxResolution": "1024x1024"
+      },
+      {
+        "name": "Leonardo.ai",
+        "id": "leonardo-ai",
+        "url": "https://app.leonardo.ai",
+        "type": "image",
+        "priority": 3,
+        "limits": {
+          "daily": 150,
+          "tokens": 150
+        },
+        "features": ["multiple-models", "styles"],
+        "quality": 4,
+        "reliability": 4,
+        "maxResolution": "1024x1024"
+      },
+      {
+        "name": "Ideogram",
+        "id": "ideogram",
+        "url": "https://ideogram.ai",
+        "type": "image",
+        "priority": 4,
+        "limits": {
+          "daily": 25
+        },
+        "features": ["text-in-images", "high-quality"],
+        "quality": 5,
+        "reliability": 4,
+        "maxResolution": "1024x1024"
+      },
+      {
+        "name": "Playground AI",
+        "id": "playground-ai",
+        "url": "https://playground.com",
+        "type": "image",
+        "priority": 5,
+        "limits": {
+          "daily": 500
+        },
+        "features": ["multiple-models", "high-volume"],
+        "quality": 3,
+        "reliability": 4,
+        "maxResolution": "1024x1024"
+      }
+    ],
+    "video": [
+      {
+        "name": "Runway ML",
+        "id": "runway-ml",
+        "url": "https://runwayml.com",
+        "type": "video",
+        "priority": 1,
+        "limits": {
+          "credits": 125
+        },
+        "features": ["gen-2", "image-to-video", "text-to-video"],
+        "quality": 5,
+        "reliability": 4,
+        "maxDuration": 4
+      },
+      {
+        "name": "Pika Labs",
+        "id": "pika-labs",
+        "url": "https://pika.art",
+        "type": "video",
+        "priority": 2,
+        "limits": {
+          "daily": 10
+        },
+        "features": ["text-to-video", "image-to-video"],
+        "quality": 4,
+        "reliability": 3,
+        "maxDuration": 3
+      }
+    ],
+    "audio": [
+      {
+        "name": "Suno AI",
+        "id": "suno-ai",
+        "url": "https://suno.ai",
+        "type": "audio",
+        "priority": 1,
+        "limits": {
+          "daily": 50
+        },
+        "features": ["music-generation", "lyrics"],
+        "quality": 5,
+        "reliability": 4
+      },
+      {
+        "name": "ElevenLabs",
+        "id": "elevenlabs",
+        "url": "https://elevenlabs.io",
+        "type": "audio",
+        "priority": 2,
+        "limits": {
+          "monthly": 10000
+        },
+        "features": ["text-to-speech", "voice-cloning"],
+        "quality": 5,
+        "reliability": 5
+      }
+    ]
+  },
+  "defaultPriority": {
+    "text": "google-ai-studio",
+    "image": "google-imagen",
+    "video": "runway-ml",
+    "audio": "suno-ai"
+  }
+}
