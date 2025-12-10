@@ -19,6 +19,8 @@
   "openai_api_key": "",
   "google_ai_api_key": "",
   "grok_api_key": "",
+  "grok_endpoint": "https://api.x.ai/v1",
+  "grok_model": "xai/grok-code-fast-1",
   "local_model_endpoint": "",
   "local_model_api_key": "",
   "default_text_provider": "openai",

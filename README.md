@@ -205,7 +205,23 @@ Promover o novo Produto X para público jovem (18-30) interessado em tecnologia.
    - `OPENAI_API_KEY`: Chave da API OpenAI
    - `GOOGLE_AI_API_KEY`: Chave da API Google AI Studio
    - `GROK_API_KEY`: Chave da API Grok (xAI)
+      - `GROK_ENDPOINT`: Endpoint da API Grok (opcional, padrão: https://api.x.ai/v1)
+      - `GROK_MODEL`: Modelo Grok a ser usado (opcional, padrão: xai/grok-code-fast-1)
+
+      Nota: O modelo Grok (xai/grok-code-fast-1) é focado em tarefas de texto/código; não fornece suporte para visão (image/vision). Para geração de imagens, continue usando `GOOGLE_AI_STUDIO`, `BING_IMAGE_CREATOR` ou outros provedores de imagem. Se você utiliza Grok via GitHub Copilot, lembre-se que a integração do editor usa o modelo do Copilot — esta configuração se aplica somente quando você chama a API diretamente (via chave/API).
    - Credenciais das redes sociais
+
+### Testando a integração com Grok
+
+- Se você quiser testar localmente a conexão com Grok, copie `.env.example` para `.env` e preencha `GROK_API_KEY`.
+- Em seguida rode:
+```bash
+npm run test:grok
+```
+
+Isso fará uma chamada rápida ao endpoint de chat/completions com o modelo configurado e informará se a chave, o endpoint e o modelo estão corretos.
+
+Observação sobre Copilot: Se você utiliza o Grok como modelo embutido no GitHub Copilot, as requisições do Copilot não usam necessariamente `GROK_API_KEY` do projeto — a integração do editor usa fluxos próprios. Essas configurações valem quando você chama a API diretamente (por este projeto).
 
 ### Uso da MCP
 

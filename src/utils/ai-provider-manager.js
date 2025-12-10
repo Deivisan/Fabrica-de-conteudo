@@ -5,7 +5,7 @@
 
 const OpenAI = require('openai');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
-const Groq = require('groq-sdk');
+// Grok (xAI) provider will be implemented via HTTP using axios
 const axios = require('axios');
 
 class AIProviderManager {
@@ -13,6 +13,14 @@ class AIProviderManager {
     this.config = config;
     this.providers = {};
     this.initializeProviders();
+  }
+
+  // Normaliza nomes de modelos Grok: aceita 'grok-code-fast-1' e converte para 'xai/grok-code-fast-1'
+  normalizeModel(model) {
+    if (!model) return 'xai/grok-code-fast-1';
+    if (typeof model !== 'string') return model;
+    if (model.includes('/') || model.includes('.')) return model;
+    return `xai/${model}`;
   }
 
   /**
@@ -31,11 +39,13 @@ class AIProviderManager {
       this.providers.google = new GoogleGenerativeAI(this.config.google_ai_api_key);
     }
 
-    // Inicializa Grok
+    // Inicializa Grok (xAI) - usa endpoint configurável via HTTP
     if (this.config.grok_api_key) {
-      this.providers.grok = new Groq({
-        apiKey: this.config.grok_api_key
-      });
+      this.providers.grok = {
+        apiKey: this.config.grok_api_key,
+        endpoint: this.config.grok_endpoint || 'https://api.x.ai/v1',
+        model: this.normalizeModel(this.config.grok_model || 'xai/grok-code-fast-1')
+      };
     }
 
     // Inicializa provedor local/modelos próprios
@@ -160,16 +170,53 @@ class AIProviderManager {
       throw new Error('API Grok não está configurada');
     }
 
-    const params = {
-      model: options.model || this.config.grok_model || 'mixtral-8x7b-32768',
+    // Grok Code Fast is a text model; do not allow image/vision requests
+    if (options.type && options.type === 'image') {
+      throw new Error('Grok (text model) não suporta geração de imagens/vision');
+    }
+
+    const model = this.normalizeModel(options.model || this.providers.grok.model || this.config.grok_model || 'xai/grok-code-fast-1');
+    // Limpa/normaliza campos para a API Grok
+    const allowed = ['temperature','max_tokens','top_p','presence_penalty','frequency_penalty','stream','stop','n','logit_bias','functions','function_call'];
+    const safeOptions = {};
+    for (const k of allowed) {
+      if (options[k] !== undefined) safeOptions[k] = options[k];
+    }
+
+    const body = {
+      model,
       messages: [{ role: 'user', content: prompt }],
-      temperature: options.temperature || 0.7,
-      max_tokens: options.max_tokens || 2000,
-      ...options
+      ...safeOptions
     };
 
-    const response = await this.providers.grok.chat.completions.create(params);
-    return response.choices[0].message.content;
+    const headers = {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${this.providers.grok.apiKey}`
+    };
+
+    const url = `${this.providers.grok.endpoint.replace(/\/$/, '')}/chat/completions`;
+    let response;
+    try {
+      response = await axios.post(url, body, { headers });
+    } catch (err) {
+      // Mapeia erros comuns para mensagens mais úteis
+      const resp = err?.response?.data;
+      if (err?.response?.status === 400 && resp && resp.error && resp.error.code === 'invalid_request_body') {
+        throw new Error(`Grok retornou 400 invalid_request_body — verifique se o modelo está correto (ex.: 'xai/grok-code-fast-1') e se o corpo da solicitação está conforme o esperado. Mensagem: ${resp.error.message}`);
+      }
+      throw err;
+    }
+
+    // Compatibilidade: retorna dependendo da forma que a API responde
+    if (response?.data?.choices?.[0]?.message?.content) {
+      return response.data.choices[0].message.content;
+    }
+    if (response?.data?.choices?.[0]?.text) {
+      return response.data.choices[0].text;
+    }
+
+    // Caso não encontre, retorne o body bruto para inspeção
+    return response.data;
   }
 
   /**
@@ -329,7 +376,10 @@ class AIProviderManager {
         const model = this.providers.google.getGenerativeModel({ model: 'gemini-pro' });
         await model.generateContent({ contents: [{ role: 'user', parts: [{ text: 'test' }] }] });
       } else if (providerName === 'grok') {
-        await this.providers.grok.models.list();
+        // Teste simples: faça uma chamada curta ao endpoint de chat/completions para verificar credenciais
+        const body = { model: this.normalizeModel(this.providers.grok.model || this.config.grok_model || 'xai/grok-code-fast-1'), messages: [{ role: 'user', content: 'Teste de conexão' }], max_tokens: 10 };
+        const headers = { 'Content-Type': 'application/json', Authorization: `Bearer ${this.providers.grok.apiKey}` };
+        await axios.post(`${this.providers.grok.endpoint.replace(/\/$/, '')}/chat/completions`, body, { headers });
       }
 
       console.log(`Conexão com ${providerName} bem-sucedida`);

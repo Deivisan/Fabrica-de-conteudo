@@ -17,6 +17,13 @@ class OwnAPIManager {
     this.port = config.api_port || 3001;
   }
 
+  normalizeModel(model) {
+    if (!model) return 'xai/grok-code-fast-1';
+    if (typeof model !== 'string') return model;
+    if (model.includes('/') || model.includes('.')) return model;
+    return `xai/${model}`;
+  }
+
   /**
    * Inicia o servidor para gerenciamento de APIs
    */
@@ -241,11 +248,47 @@ class OwnAPIManager {
    * Chama API externa (OpenAI, Google, Grok, etc.)
    */
   async callExternalAPI(provider, prompt, options) {
-    // Esta função seria implementada para cada provedor
-    // Por enquanto, retornaremos um mock
+    // Implementação simples para Grok via HTTP e placeholders para outros provedores
     console.log(`Chamando ${provider} com prompt: ${prompt.substring(0, 50)}...`);
-    
-    // Em implementação real, chamaria as APIs reais
+
+    if (provider === 'grok') {
+      // Não suportar modo imagem/vision para o Grok (texto apenas)
+      if (options.type && options.type === 'image') {
+        throw new Error('Grok não suporta geração de imagens/vision');
+      }
+
+      const endpoint = (this.config.grok_endpoint || 'https://api.x.ai/v1').replace(/\/$/, '');
+      const model = this.normalizeModel(options.model || this.config.grok_model || 'xai/grok-code-fast-1');
+      const headers = { 'Content-Type': 'application/json' };
+      if (this.config.grok_api_key) headers['Authorization'] = `Bearer ${this.config.grok_api_key}`;
+
+      const allowed = ['temperature','max_tokens','top_p','presence_penalty','frequency_penalty','stream','stop','n','logit_bias','functions','function_call'];
+      const safeOptions = {};
+      for (const k of allowed) {
+        if (options[k] !== undefined) safeOptions[k] = options[k];
+      }
+
+      const body = {
+        model,
+        messages: [{ role: 'user', content: prompt }],
+        ...safeOptions
+      };
+
+      try {
+        const res = await require('axios').post(`${endpoint}/chat/completions`, body, { headers });
+        if (res?.data?.choices?.[0]?.message?.content) return res.data.choices[0].message.content;
+        if (res?.data?.choices?.[0]?.text) return res.data.choices[0].text;
+        return res.data;
+      } catch (err) {
+        const resp = err?.response?.data;
+        if (err?.response?.status === 400 && resp && resp.error && resp.error.code === 'invalid_request_body') {
+          throw new Error(`Grok retornou 400 invalid_request_body — verifique se o modelo está correto (ex.: 'xai/grok-code-fast-1') e se o corpo da solicitação está conforme o esperado. Mensagem: ${resp.error.message}`);
+        }
+        throw new Error(`Erro ao chamar Grok: ${err.message}`);
+      }
+    }
+
+    // Por enquanto, retornamos um mock para OpenAI/Google/local se não implementado
     return `Resposta simulada do provedor ${provider} para: ${prompt.substring(0, 100)}...`;
   }
 

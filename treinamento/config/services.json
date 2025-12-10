@@ -43,6 +43,21 @@
         "quality": 4,
         "reliability": 4
       }
+      ,
+      {
+        "name": "Grok (xAI)",
+        "id": "grok",
+        "url": "https://x.com/grok",
+        "type": "text",
+        "priority": 4,
+        "limits": {
+          "daily": 1000,
+          "perMinute": 60
+        },
+        "features": ["text", "code", "analysis"],
+        "quality": 4,
+        "reliability": 4
+      }
     ],
     "image": [
       {
