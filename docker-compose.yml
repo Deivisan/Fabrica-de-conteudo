@@ -70,6 +70,17 @@ services:
     networks:
       - mcp-network
 
+  markitdown:
+    image: mcp/markitdown:latest
+    container_name: markitdown-mcp
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./workdir:/workdir
+    networks:
+      - mcp-network
+
 networks:
   mcp-network:
     driver: bridge

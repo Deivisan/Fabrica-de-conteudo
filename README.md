@@ -251,3 +251,17 @@ const resultado = await contentFactory.generateContentWithCustomAPI('text', 'Com
 ---
 
 **Vamos criar, automatizar e iterar!** 💡
+
+## MarkItDown (Conversão de Markdown/Documentos)
+
+Este projeto integra o conversor MarkItDown (MCP) para transformar PDF/Word/Imagens em Markdown. Se estiver experimentando problemas com o MarkItDown:
+
+- Recomendado: usar o wrapper NPX `markitdown-mcp-npx`.
+- Scripts úteis:
+   - `npm run markitdown:stdio` — inicia o servidor MarkItDown via STDIO
+   - `npm run markitdown:http` — inicia o servidor MarkItDown no modo HTTP (porta 3001)
+   - `npm run markitdown:check` — checa dependências (node/npx/python)
+
+   Nota: Há um serviço `markitdown` definido no `docker-compose.yml` para rodar o conversor via Docker (útil em Windows). Use `docker-compose up -d markitdown` para subir o servidor MarkItDown.
+
+Veja `docs/MARKITDOWN.md` para passos detalhados e correções comuns (por exemplo, substituir `uvx` em configurações globais por `npx -y markitdown-mcp-npx`).
