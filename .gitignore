@@ -44,8 +44,8 @@ node-gyp
 *.min.js
 *.min.css
 
-# Typescript v1, please use `.tsbuildinfo` for TypeScript v2
-tsconfig.json
+# TypeScript build info (keep tsconfig.json)
+# tsconfig.json # REMOVED - needed for Bun TypeScript
 
 # TypeScript cache
 *.tsbuildinfo
