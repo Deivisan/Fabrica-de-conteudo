@@ -471,34 +471,48 @@ const BING_IMAGE_CREATOR = {
 
 ## 10. PRÓXIMOS PASSOS IMEDIATOS
 
-### Hoje (21 Jan 2026)
+### Hoje (21 Jan 2026) - ✅ FEITO!
 
 1. [x] ~~Ler e analisar código existente~~
 2. [x] ~~Criar ROADMAP consolidado~~
-3. [ ] Atualizar seletores do Google AI Studio
-4. [ ] Testar geração de imagem end-to-end
-5. [ ] Commit e push
+3. [x] Criar core/browser-engine.ts (Engine Playwright persistente)
+4. [x] Criar core/ai-interaction.ts (Interação com IAs)
+5. [x] Criar core/selectors.ts (Seletores Google AI Studio, Bing, Leonardo)
+6. [x] Criar generators/image-generator.ts
+7. [x] Criar generators/text-generator.ts
+8. [x] Criar generators/campaign-generator.ts
+9. [x] Commit e push (fa43a05, 5e7cbe2)
 
-### Esta Semana
+### Esta Semana - 🏃 EM ANDAMENTO
 
-1. [ ] Completar FASE 1 (Estabilização)
-2. [ ] Gerar 1 imagem de teste para MeuCão
-3. [ ] Documentar processo
+1. [ ] FASE 1.5: Testar geração end-to-end
+   - [ ] Rodar `bun run test:quick` para verificar automação
+   - [ ] Fazer login se necessário: `bun run browser:setup`
+   - [ ] Gerar 1 imagem de teste para MeuCão
+2. [ ] FASE 2: Integração com Clientes (70% concluída)
+   - [x] Generators prontos para ler prompts de clientes
+   - [ ] Testar com cliente MeuCão
+   - [ ] Gerar primeira semana de posts
 
 ### Próxima Semana
 
-1. [ ] FASE 2 (Integração com Clientes)
-2. [ ] Gerar primeira semana de posts MeuCão
-3. [ ] Feedback de Thamires
+1. [ ] FASE 3: Expansão de Serviços
+   - [ ] Testar Bing Image Creator
+   - [ ] Testar Leonardo.ai
+   - [ ] Implementar fallback automático
+2. [ ] FASE 4: CLI Unificada
+   - [ ] Criar CLI `fab` global
+   - [ ] Documentar uso
 
 ---
 
 ## CHANGELOG
 
-| Data | Versão | Mudanças |
-|------|--------|----------|
-| 21/01/2026 | 2.0.0 | Criação do roadmap consolidado |
-| - | 1.0.0 | Versão inicial do projeto (Dez 2025) |
+| Data | Versão | Mudanças | Commit |
+|------|--------|----------|--------|
+| 21/01/2026 | 2.1.0 | Core migration Bun TypeScript + Generators | 5e7cbe2 |
+| 21/01/2026 | 2.0.0 | Criação do roadmap consolidado | 171361d |
+| - | 1.0.0 | Versão inicial do projeto (Dez 2025) | - |
 
 ---
 
