@@ -1,251 +1,132 @@
-# 📚 MeuCão - Índice Mestre de Documentação
+# 📚 ÍNDICE - Thamires Revendas MeuCão
 
-## 🎯 Navegação Rápida
-
-### 🏢 Identidade de Marca
-- [**MeuCão Brand Identity**](brand/meucao-brand-identity.md) - Identidade completa da marca, posicionamento, produtos
-- [**Yorkshire Terrier Guide**](brand/yorkshire-terrier-guide.md) - Guia técnico completo sobre a raça
-
-### 📱 Conteúdo Instagram
-- [**Post Templates**](content/instagram/meucao-post-templates.md) - 6 templates prontos para posts
-- [**Instagram Strategy**](strategy/meucao-instagram-strategy.md) - Estratégia completa (calendário, personas, métricas)
-
-### 🎨 Prompts para Ferramentas AI
-- [**Nano Banana Pro Prompts**](prompts/nano-banana-meucao-prompts.md) - 7 prompts otimizados para geração de imagens
-
-### 📊 Estratégia e Planejamento
-- [**Estratégia Prioritária**](estrategia-prioritaria-2026-01-21.md) - Resumo executivo (Psicopedagogia + MeuCão)
-- [**Estratégia Principal**](strategy/estrategia-principal.md) - Documento completo original
+> **Versão:** 2.1 Consolidada B2B  
+> **Data:** 2026-01-21  
+> **Modelo:** B2B (Pet Shops e Clínicas)  
+> **Documento Principal:** `STRATEGY_B2B.md`
 
 ---
 
-## 🗂️ Estrutura de Arquivos
+## 🎯 DOCUMENTAÇÃO ATIVA (B2B)
+
+### 📄 Estratégia Principal
+- **[STRATEGY_B2B.md](STRATEGY_B2B.md)** - ✅ **LEIA ISTO PRIMEIRO!**
+  - Estratégia B2B completa e consolidada
+
+### 📋 Tarefas e Análise
+- **[TAREFAS_B2B_PENDENTES.md](TAREFAS_B2B_PENDENTES.md)** - Checklist operacional
+- **[ANALISE_CRITICA_2026-01-21.md](ANALISE_CRITICA_2026-01-21.md)** - Análise contexto
+- **[QUESTIONARIO_B2B.md](QUESTIONARIO_B2B.md)** - Questionário para análise
+
+### 🎨 Prompts para Ferramentas AI
+- **[PROMPTS_B2B_NANOBANANA.md](PROMPTS_B2B_NANOBANANA.md)** - 15 prompts para imagens
+- **[PROMPTS_B2B_NOTEBOOKLM.md](PROMPTS_B2B_NOTEBOOKLM.md)** - 12 prompts para áudio/podcast
+
+---
+
+## 📁 ESTRUTURA DO PROJETO
 
 ```
 clients/Thamires/
-├── 📄 MASTER_INDEX.md (este arquivo)
-├── 📄 estrategia-prioritaria-2026-01-21.md
+├── 📄 STRATEGY_B2B.md              ← PRINCIPAL (estratégia)
+├── 📄 STRATEGY_B2B.md              ← Estratégia completa
+├── 📄 MASTER_INDEX.md              ← (este arquivo)
+├── 📄 TAREFAS_B2B_PENDENTES.md     ← Checklist operacional
+├── 📄 ANALISE_CRITICA_2026-01-21.md
+├── 📄 QUESTIONARIO_B2B.md          ← Questionário B2B
+├── 📄 PROMPTS_B2B_NANOBANANA.md    ← 15 prompts (imagens)
+├── 📄 PROMPTS_B2B_NOTEBOOKLM.md    ← 12 prompts (áudio)
 │
 ├── 📁 brand/
 │   ├── meucao-brand-identity.md
-│   ├── yorkshire-terrier-guide.md
-│   └── brand-guide.md (Psicopedagogia)
+│   └── yorkshire-terrier-guide.md
 │
 ├── 📁 strategy/
-│   ├── meucao-instagram-strategy.md
-│   └── estrategia-principal.md
-│
-├── 📁 content/
-│   └── instagram/
-│       └── meucao-post-templates.md
-│
-├── 📁 prompts/
-│   └── nano-banana-meucao-prompts.md
+│   ├── estrategia-principal.md
+│   └── *.pdf (5 PDFs referência)
 │
 ├── 📁 media/
-│   ├── images/ (posts gerados)
-│   ├── videos/ (reels)
-│   └── audios/ (se aplicável)
+│   ├── 📁 images/ (9 PNGs)
+│   ├── 📁 videos/ (3 MP4s)
+│   └── 📁 audios/
+│       ├── thamires-2026-01-21.ogg
+│       └── transcricao.txt
 │
 └── 📁 assets/
-    └── (imagens originais, logos, etc)
 ```
 
 ---
 
-## 🚀 Quick Start - Criando Conteúdo MeuCão
+## 🚀 COMO USAR ESTE WORKSPACE
 
-### Passo 1: Escolher Template
-Abra [`content/instagram/meucao-post-templates.md`](content/instagram/meucao-post-templates.md) e escolha:
-- Template 1: Produto Educativo
-- Template 2: Antes/Depois
-- Template 3: Reels - Hora da Comida
-- Template 4: Carrossel Educativo
-- Template 5: Depoimento
-- Template 6: Curiosidade
+### Passo 1: Análise Inicial
+1. ✅ Ler `STRATEGY_B2B.md`
+2. [ ] Enviar `QUESTIONARIO_B2B.md` para o cliente
+3. [ ] Confirmar preços e condições
 
-### Passo 2: Gerar Imagem
-Abra [`prompts/nano-banana-meucao-prompts.md`](prompts/nano-banana-meucao-prompts.md) e copie o prompt correspondente ao template escolhido.
+### Passo 2: Criar Materiais
+1. Usar `PROMPTS_B2B_NANOBANANA.md` para criar:
+   - Catálogos comerciais
+   - Slides de apresentação
+   - Materiais PDV
+   - Posts para LinkedIn
 
-**Acesse:** https://www.bananadev.com/
+2. Usar `PROMPTS_B2B_NOTEBOOKLM.md` para criar:
+   - Treinamentos para revendedores
+   - Podcasts educativos
+   - Áudios de vendas
 
-**Cole o prompt** e gere a imagem.
-
-### Passo 3: Customizar Caption
-Volte ao template e copie a **caption** sugerida.
-
-**Personalize:**
-- Nome do pet
-- Localização (Feira de Santana, etc)
-- WhatsApp de contato
-- Detalhes específicos
-
-### Passo 4: Postar
-- Baixe a imagem gerada
-- Cole a caption customizada
-- Adicione hashtags do template
-- Poste no Instagram!
+### Passo 3: Executar
+1. Acompanhar `TAREFAS_B2B_PENDENTES.md`
+2. Prospectar clientes
+3. Fechar vendas
 
 ---
 
-## 📅 Calendário Semanal (Referência Rápida)
+## 🎨 QUICK REFERENCE - PROMPTS
 
-### Segunda-feira
-**Formato:** Post Estático  
-**Tema:** Produto Educativo ou Carrossel  
-**Objetivo:** Conversão
+### Nano Banana Pro (Imagens)
+| # | Prompt | Objetivo |
+|---|--------|----------|
+| A1 | Capa de Catálogo | Capa profissional |
+| A2 | Página de Produtos | Grid de produtos |
+| A3 | Página de Preços | Tabela B2B |
+| A4 | Página de Diferenciais | 6 diferenciais |
+| B1-B4 | Slides | Apresentações |
+| C1-C3 | PDV | Cartazes, flyers |
+| D1-D2 | LinkedIn | Posts B2B |
+| E1-E2 | Educativos | Infográficos |
 
-### Quarta-feira
-**Formato:** Reels  
-**Tema:** Hora da Comida, Bastidores, Transformação  
-**Objetivo:** Engajamento + Viralização
-
-### Sexta-feira
-**Formato:** Post Estático  
-**Tema:** Curiosidade, Depoimento, Educativo  
-**Objetivo:** Autoridade + Comunidade
-
----
-
-## 🎨 Assets Importantes
-
-### Cores da Marca
-```
-Azul MeuCão:    #0099FF ███████
-Verde Garantia: #00CC66 ███████
-Branco Clean:   #FFFFFF ███████
-Dourado York:   #D4A560 ███████
-Cinza Texto:    #333333 ███████
-```
-
-### Fontes Recomendadas
-- **Títulos:** Montserrat Bold, Poppins Bold
-- **Corpo:** Montserrat Regular, Open Sans
-
-### Hashtags Principais
-```
-#MeuCão #Meucão #RaçasPequenas 
-#YorkshireTerrier #AlimentoSuperPremium
-#FeiradeSantana #PetSaudável
-```
+### NotebookLM (Áudio)
+| # | Prompt | Objetivo |
+|---|--------|----------|
+| A1-A4 | Treinamento | Onboarding, vendas, objeções |
+| B1-B4 | Educativo | Mercado, produto, nutrição |
+| C1-C2 | Suporte | Podcast rede, treinamento |
+| D1-D2 | Marketing | Depoimento, LinkedIn |
 
 ---
 
-## 📊 Métricas de Sucesso
-
-### KPIs Semanais
-- ✅ 3 posts publicados (mínimo)
-- ✅ 5-10 stories/dia
-- ✅ Taxa de engajamento 5%+
-- ✅ 10+ mensagens DM qualificadas
-
-### KPIs Mensais
-- ✅ +500 seguidores
-- ✅ 1000+ impressões por post
-- ✅ 5+ depoimentos coletados
-- ✅ Conversões em vendas
-
----
-
-## 🔧 Ferramentas Utilizadas
-
-### Geração de Conteúdo
-- **Nano Banana Pro** - Imagens com texto (Gemini 2.5 Flash Image)
-- **NotebookLM** - Áudios/podcasts (se aplicável)
-- **Canva** - Edições adicionais (opcional)
-
-### Planejamento
-- **Instagram Insights** - Métricas nativas
-- **Google Sheets** - Calendário editorial
-- **Notion/Trello** - Organização de tarefas (opcional)
-
-### Comunicação
-- **WhatsApp Business** - Atendimento clientes
-- **Instagram DM** - Engajamento direto
-
----
-
-## 📖 Guias Complementares
-
-### Para Entender a Marca
-1. Leia [`brand/meucao-brand-identity.md`](brand/meucao-brand-identity.md)
-2. Estude [`brand/yorkshire-terrier-guide.md`](brand/yorkshire-terrier-guide.md)
-
-### Para Criar Conteúdo
-1. Consulte [`content/instagram/meucao-post-templates.md`](content/instagram/meucao-post-templates.md)
-2. Use [`prompts/nano-banana-meucao-prompts.md`](prompts/nano-banana-meucao-prompts.md)
-
-### Para Planejar Estratégia
-1. Revise [`strategy/meucao-instagram-strategy.md`](strategy/meucao-instagram-strategy.md)
-2. Acompanhe métricas semanalmente
-
----
-
-## 🎯 Próximos Passos
-
-### Imediato (Esta Semana)
-- [ ] Gerar 3 imagens (Templates 1, 3, 6)
-- [ ] Publicar primeiro post
-- [ ] Configurar destaques no Instagram
-- [ ] Criar Stories de apresentação
-
-### Curto Prazo (Próximas 2 Semanas)
-- [ ] Coletar primeiro depoimento
-- [ ] Fazer primeiro Reels
-- [ ] Alcançar 100 seguidores
-- [ ] Primeira venda via Instagram
-
-### Médio Prazo (Próximo Mês)
-- [ ] Completar 12 posts
-- [ ] 20+ Reels publicados
-- [ ] 500+ seguidores
-- [ ] 5+ depoimentos coletados
-
----
-
-## 💡 Dicas Rápidas
-
-### Para Posts de Alta Performance
-✅ Use Yorkshire Terrier nas imagens (raça icônica)  
-✅ Mostre embalagem MeuCão Prime sempre  
-✅ Destaque benefícios técnicos (MOS, FOS, DHA, Ômega)  
-✅ Inclua CTA claro (WhatsApp, DM, localização)  
-✅ Responda TODOS os comentários
-
-### Para Reels Virais
-✅ Primeiros 3 segundos CRUCIAIS (gancho forte)  
-✅ Use áudios em trending  
-✅ Mostre pet feliz comendo  
-✅ Edição dinâmica (cortes rápidos)  
-✅ Texto na tela (muitos assistem sem som)
-
-### Para Crescer Rápido
-✅ Poste consistentemente (mínimo 3x/semana)  
-✅ Stories DIARIAMENTE (5-10/dia)  
-✅ Interaja com seguidores (curta, comente, responda)  
-✅ Use hashtags estrategicamente  
-✅ Reposte conteúdo de clientes (UGC)
-
----
-
-## 📞 Contato e Suporte
+## 📞 CONTATO
 
 **Cliente:** Thamires (CETENS)  
-**DevSan AGI:** Fábrica de Conteúdo  
-**Última Atualização:** 2026-01-21
+**Modelo:** B2B - Revendas para Pet Shops  
+**Áudio Recebido:** 2026-01-21 17:56 (transcrito)
 
 ---
 
-## 🔄 Histórico de Atualizações
+## 🔄 HISTÓRICO
 
-### v1.0 - 2026-01-21
-- ✅ Criação completa da documentação MeuCão
-- ✅ 6 templates de posts Instagram
-- ✅ 7 prompts otimizados Nano Banana Pro
-- ✅ Estratégia completa de conteúdo
-- ✅ Guia técnico Yorkshire Terrier
-- ✅ Identidade de marca MeuCão
+### v2.1 - 2026-01-21 (NOVO!)
+- ✅ QUESTIONARIO_B2B.md criado
+- ✅ PROMPTS_B2B_NANOBANANA.md criado (15 prompts)
+- ✅ PROMPTS_B2B_NOTEBOOKLM.md criado (12 prompts)
+- ✅ Estrutura B2B consolidada e completa
+
+### v2.0 - 2026-01-21 (CONSOLIDAÇÃO)
+- ✅ **Material B2C EXCLUÍDO**
+- ✅ Estratégia única consolidada
 
 ---
 
-**🚀 Pronto para começar! Escolha um template e crie seu primeiro post agora!**
+> **Aviso:** Este workspace foi consolidado para B2B apenas. Todo o material B2C foi removido.
