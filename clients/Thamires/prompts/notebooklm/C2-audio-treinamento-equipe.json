@@ -1,0 +1,102 @@
+{
+  "promptId": "NL-C2",
+  "versao": "2.0",
+  "categoria": "suporte",
+  "estagioFunil": "mof",
+  "titulo": "Áudio para Treinamento de Equipe",
+  "descricao": "Treinamento para equipe de vendas do revendedor",
+
+  "objetivo": {
+    "primario": "Capacitar equipe de vendas do pet shop",
+    "secundario": "Aumentar conversão no balcão",
+    "publicoAlvo": ["equipe-vendas-pet-shop"]
+  },
+
+  "parametros": {
+    "ferramenta": "NotebookLM Audio Overview",
+    "formato": "audio",
+    "duracao": "12-18 minutos",
+    "vozes": 2,
+    "estilo": "training-audio"
+  },
+
+  "estruturaAudio": {
+    "secao1": {
+      "titulo": "Introdução ao Treinamento",
+      "duracao": "45 segundos",
+      "conteudo": [
+        "Por que este treinamento é importante",
+        "O que você vai aprender",
+        "Como aplicar no dia a dia"
+      ]
+    },
+    "secao2": {
+      "titulo": "Conhecer o Produto",
+      "duracao": "120 segundos",
+      "conteudo": [
+        "O que é ração super premium",
+        "Diferenças para ração comum",
+        "Benefícios para o pet que interessam ao tutor",
+        "Composição e qualidade"
+      ]
+    },
+    "secao3": {
+      "titulo": "Técnicas de Atendimento",
+      "duracao": "300 segundos",
+      "conteudo": [
+        "ABORDAGEM INICIAL com cumprimentar com energia, identificar a necessidade e fazer perguntas certas",
+        "APRESENTAÇÃO DO PRODUTO com destacar benefícios e não apenas features, usar linguagem simples e contar histórias e transformações",
+        "LIDANDO COM RESISTÊNCIAS com está caro, meu pet não come e já uso outra marca",
+        "FECHAMENTO com sinais de compra, como sugerir a compra e add-on selling"
+      ]
+    },
+    "secao4": {
+      "titulo": "Produtos Complementares",
+      "duracao": "90 segundos",
+      "conteudo": [
+        "Petiscos premium",
+        "Supplements",
+        "Acessórios"
+      ]
+    },
+    "secao5": {
+      "titulo": "Pós-Venda",
+      "duracao": "90 segundos",
+      "conteudo": [
+        "Follow-up adequado",
+        "Como pedir feedback",
+        "Conversão em cliente fiel"
+      ]
+    },
+    "secao6": {
+      "titulo": "Resumo e Aplicação",
+      "duracao": "45 segundos",
+      "conteudo": [
+        "Checklist de boas práticas",
+        "Compromisso com a excelência"
+      ]
+    }
+  },
+
+  "tom": "Prático, motivador, educacional",
+  "publico": "Equipe de vendas do pet shop",
+  "formato": "Training audio com 2 vozes",
+
+  "promptCompleto": "Crie um script de áudio para TREINAMENTO DE EQUIPE sobre como vender ração premium no balcão do pet shop. O áudio deve ter aproximadamente 12-18 minutos e incluir: 1) INTRODUÇÃO AO TREINAMENTO sobre por que este treinamento é importante, o que você vai aprender e como aplicar no dia a dia. 2) CONHECER O PRODUTO abordando o que é ração super premium, diferenças para ração comum, benefícios para o pet que interessam ao tutor e composição e qualidade. 3) TÉCNICAS DE ATENDIMENTO com ABORDAGEM INICIAL incluindo cumprimentar com energia, identificar a necessidade e fazer perguntas certas; APRESENTAÇÃO DO PRODUTO destacando benefícios e não apenas features, usando linguagem simples e contando histórias e transformações; LIDANDO COM RESISTÊNCIAS com está caro, meu pet não come e já uso outra marca; FECHAMENTO com sinais de compra, como sugerir a compra e add-on selling. 4) PRODUTOS COMPLEMENTARES sobre petiscos premium, supplements e acessórios. 5) PÓS-VENDA com follow-up adequado, como pedir feedback e conversão em cliente fiel. 6) RESUMO E APLICAÇÃO com checklist de boas práticas e compromisso com a excelência. TOM: Prático, motivador e educacional. PÚBLICO: Equipe de vendas do pet shop. FORMATO: Training audio com 2 vozes. DURAÇÃO: 12-18 minutos. ESTILO: Audio overview com tom practical.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "audioCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

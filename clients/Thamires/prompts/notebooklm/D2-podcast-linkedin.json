@@ -1,0 +1,101 @@
+{
+  "promptId": "NL-D2",
+  "versao": "2.0",
+  "categoria": "marketing-conteudo",
+  "estagioFunil": "tof",
+  "titulo": "Podcast para LinkedIn",
+  "descricao": "Conteúdo profissional para perfil LinkedIn",
+
+  "objetivo": {
+    "primario": "Posicionar como autoridade no setor",
+    "secundario": "Gerar leads para revenda",
+    "publicoAlvo": ["empresarios", "gestores", "potenciais-parceiros"]
+  },
+
+  "parametros": {
+    "ferramenta": "NotebookLM Audio Overview",
+    "formato": "audio",
+    "duracao": "8-12 minutos",
+    "vozes": 2,
+    "estilo": "b2b-podcast"
+  },
+
+  "estruturaAudio": {
+    "secao1": {
+      "titulo": "Abertura",
+      "duracao": "30 segundos",
+      "conteudo": [
+        "Saudação profissional",
+        "Apresentação do tema",
+        "Objetivo do episódio"
+      ]
+    },
+    "secao2": {
+      "titulo": "O Mercado Pet Brasileiro",
+      "duracao": "120 segundos",
+      "conteudo": [
+        "Números impressionantes",
+        "Crescimento consistente",
+        "Brasil no contexto mundial"
+      ]
+    },
+    "secao3": {
+      "titulo": "Oportunidades no Varejo",
+      "duracao": "90 segundos",
+      "conteudo": [
+        "Pet shops como canal principal",
+        "Nichos rentáveis",
+        "Diferenciação como chave"
+      ]
+    },
+    "secao4": {
+      "titulo": "A Oportunidade Meu Cão",
+      "duracao": "120 segundos",
+      "conteudo": [
+        "Modelo de parceria",
+        "Benefícios para revendedores",
+        "Resultados comprovados"
+      ]
+    },
+    "secao5": {
+      "titulo": "Convite à Ação",
+      "duracao": "45 segundos",
+      "conteudo": [
+        "Como se tornar revendedor",
+        "Contato direto",
+        "Próximos passos"
+      ]
+    },
+    "secao6": {
+      "titulo": "Encerramento",
+      "duracao": "30 segundos",
+      "conteudo": [
+        "Resumo do conteúdo",
+        "Convite para seguir e acompanhar",
+        "Despedida profissional"
+      ]
+    }
+  },
+
+  "tom": "Profissional, estratégico, empresarial",
+  "publico": "Empresários, gestores e potenciais parceiros",
+  "formato": "B2B podcast com 2 vozes",
+
+  "promptCompleto": "Crie um script de podcast para LinkedIn sobre O MERCADO PET E OPORTUNIDADES DE NEGÓCIO. O áudio deve ter aproximadamente 8-12 minutos e incluir: 1) ABERTURA com saudação profissional, apresentação do tema e objetivo do episódio. 2) O MERCADO PET BRASILEIRO com números impressionantes, crescimento consistente e Brasil no contexto mundial. 3) OPORTUNIDADES NO VAREJO abordando pet shops como canal principal, nichos rentáveis e diferenciação como chave. 4) A OPORTUNIDADE MEU CÃO detalhando modelo de parceria, benefícios para revendedores e resultados comprovados. 5) CONVITE À AÇÃO explicando como se tornar revendedor, contato direto e próximos passos. 6) ENCERRAMENTO com resumo do conteúdo, convite para seguir e acompanhar e despedida profissional. TOM: Profissional, estratégico e empresarial. PÚBLICO: Empresários, gestores e potenciais parceiros. FORMATO: B2B podcast com 2 vozes. DURAÇÃO: 8-12 minutos. ESTILO: Audio overview com tom professional.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "audioCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

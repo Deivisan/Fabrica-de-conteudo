@@ -1,0 +1,89 @@
+{
+  "promptId": "NB-E2",
+  "versao": "2.0",
+  "categoria": "educativo",
+  "estagioFunil": "bof",
+  "titulo": "Comparativo de Produtos",
+  "descricao": "Tabela comparativa com concorrentes",
+
+  "objetivo": {
+    "primario": "Demonstrar superioridade do produto",
+    "secundario": "Facilitar decisão de compra do lojista",
+    "publicoAlvo": ["pet-shops", "clinicas-veterinarias", "distribuidores"]
+  },
+
+  "parametros": {
+    "ferramenta": "Nano Banana Pro (Gemini 2.5 Flash Image)",
+    "formato": "imagem",
+    "dimensoes": "1080x1350",
+    "orientacao": "vertical",
+    "ratio": "4:5"
+  },
+
+  "especificacaoVisual": {
+    "layout": "tabela-comparativa",
+    "fundo": {
+      "tipo": "solido",
+      "cor": "#FFFFFF"
+    },
+    "elementos": [
+      {
+        "tipo": "titulo",
+        "texto": "COMPARATIVO DE QUALIDADE",
+        "posicao": "superior-centro",
+        "fonte": "Montserrat Bold",
+        "tamanho": "42px",
+        "cor": "#0099FF"
+      },
+      {
+        "tipo": "tabela",
+        "colunas": ["CARACTERÍSTICA", "MEU CÃO", "CONC. A", "CONC. B"],
+        "linhas": [
+          {"caracteristica": "Carnes Nobres", "meu_cao": "✅ Sim", "conc_a": "⚠️ Parcial", "conc_b": "❌ Não"},
+          {"caracteristica": "Ômega 6/3", "meu_cao": "✅ Sim", "conc_a": "✅ Sim", "conc_b": "⚠️ Parcial"},
+          {"caracteristica": "DHA", "meu_cao": "✅ Sim", "conc_a": "❌ Não", "conc_b": "✅ Sim"},
+          {"caracteristica": "MOS/FOS", "meu_cao": "✅ Sim", "conc_a": "⚠️ Parcial", "conc_b": "❌ Não"},
+          {"caracteristica": "Sem corantes", "meu_cao": "✅ Sim", "conc_a": "❌ Não", "conc_b": "⚠️ Parcial"},
+          {"caracteristica": "Fábrica própria", "meu_cao": "✅ Sim", "conc_a": "❌ Não", "conc_b": "✅ Sim"},
+          {"caracteristica": "Garantia", "meu_cao": "✅ 100%", "conc_a": "⚠️ Parcial", "conc_b": "⚠️ Parcial"},
+          {"caracteristica": "Preço/kg", "meu_cao": "💰💰💰", "conc_a": "💰💰💰💰", "conc_b": "💰💰💰💰💰"}
+        ]
+      },
+      {
+        "tipo": "legenda",
+        "texto": "✅ Sim = Incluído | ⚠️ Parcial = Incluído parcialmente | ❌ Não = Não incluído | 💰 = Preço por kg",
+        "posicao": "inferior"
+      },
+      {
+        "tipo": "rodape",
+        "texto": "Comparação baseada em rótulos oficiais. Dados 2025."
+      }
+    ]
+  },
+
+  "restricoes": [
+    "sem watermarks",
+    "sem logotipos de ferramentas",
+    "sem texto em inglês",
+    "tabela clara e comparativa",
+    "destaque para Meu Cão"
+  ],
+
+  "promptCompleto": "Tabela comparativa entre Meu Cão e concorrentes no formato vertical 1080x1350 pixels. Título COMPARATIVO DE QUALIDADE centralizado no topo, fonte Montserrat Bold, tamanho 42px, cor azul #0099FF. Tabela com 4 colunas: CARACTERÍSTICA, MEU CÃO, CONC. A, CONC. B. Linha de header com fundo azul #0099FF e texto branco. Linhas de dados alternadas em branco e cinza claro #F8F9FA. Células da coluna MEU CÃO com fundo verde claro #E8F5E9 para destacar. Linha 1: Carnes Nobres com ✅ Sim em verde, ⚠️ Parcial em amarelo, ❌ Não em vermelho. Linha 2: Ômega 6/3 com ✅ Sim, ✅ Sim, ⚠️ Parcial. Linha 3: DHA com ✅ Sim, ❌ Não, ✅ Sim. Linha 4: MOS/FOS com ✅ Sim, ⚠️ Parcial, ❌ Não. Linha 5: Sem corantes com ✅ Sim, ❌ Não, ⚠️ Parcial. Linha 6: Fábrica própria com ✅ Sim, ❌ Não, ✅ Sim. Linha 7: Garantia com ✅ 100%, ⚠️ Parcial, ⚠️ Parcial. Linha 8: Preço/kg com 💰💰💰, 💰💰💰💰, 💰💰💰💰💰. Legenda na base: ✅ Sim = Incluído, ⚠️ Parcial = Incluído parcialmente, ❌ Não = Não incluído, 💰 = Preço por kg. Rodapé: Comparação baseada em rótulos oficiais. Dados 2025. Estilo comparative, data-driven e clean.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "imagemCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "promptId": "NB-B3",
+  "versao": "2.0",
+  "categoria": "apresentacao",
+  "estagioFunil": "bof",
+  "titulo": "Slide de Margens",
+  "descricao": "Demonstração de margens atrativas para revendedores",
+
+  "objetivo": {
+    "primario": "Demonstrar vantagens financeiras da revenda",
+    "secundario": "Comparar com concorrentes do mercado",
+    "publicoAlvo": ["pet-shops", "clinicas-veterinarias", "distribuidores"]
+  },
+
+  "parametros": {
+    "ferramenta": "Nano Banana Pro (Gemini 2.5 Flash Image)",
+    "formato": "imagem",
+    "dimensoes": "1920x1080",
+    "orientacao": "horizontal",
+    "ratio": "16:9"
+  },
+
+  "especificacaoVisual": {
+    "layout": "grafico-comparativo",
+    "fundo": {
+      "tipo": "solido",
+      "cor": "#FFFFFF"
+    },
+    "elementos": [
+      {
+        "tipo": "titulo",
+        "texto": "OPORTUNIDADE DE NEGÓCIO",
+        "posicao": "superior-centro",
+        "fonte": "Montserrat Bold",
+        "tamanho": "48px",
+        "cor": "#0099FF"
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Margens atrativas para seu negócio crescer",
+        "posicao": "abaixo-titulo",
+        "fonte": "Montserrat Regular",
+        "tamanho": "24px",
+        "cor": "#666666"
+      },
+      {
+        "tipo": "grafico-barras",
+        "posicao": "centro",
+        "dados": [
+          {"label": "Meu Cão Prime", "valor": 30, "cor": "#00CC66"},
+          {"label": "Concorrente A", "valor": 22, "cor": "#0099FF"},
+          {"label": "Concorrente B", "valor": 18, "cor": "#666666"},
+          {"label": "Ração Standard", "valor": 12, "cor": "#999999"}
+        ],
+        "estilo": "barras-horizontais-clean"
+      },
+      {
+        "tipo": "destaque",
+        "texto": "+40% de margem em relação às rações standard",
+        "posicao": "inferior-central",
+        "fonte": "Montserrat Bold",
+        "tamanho": "28px",
+        "cor": "#00CC66"
+      },
+      {
+        "tipo": "texto-explicativo",
+        "texto": "Com Meu Cão, você oferece qualidade superior e ainda tem a melhor margem do mercado",
+        "posicao": "abaixo-destaque",
+        "fonte": "Montserrat Regular",
+        "tamanho": "20px",
+        "cor": "#666666"
+      }
+    ]
+  },
+
+  "restricoes": [
+    "sem watermarks",
+    "sem logotipos de ferramentas",
+    "sem texto em inglês",
+    "gráfico clean e legível",
+    "cores devem facilitar comparação"
+  ],
+
+  "promptCompleto": "Slide corporativo apresentando margens de lucro para potenciais revendedores no formato horizontal 16:9. Fundo branco #FFFFFF. Título OPPORTUNIDADE DE NEGÓCIO centralizado no topo, fonte Montserrat Bold, tamanho 48px, cor azul #0099FF. Subtítulo Margens atrativas para seu negócio crescer abaixo, fonte Montserrat Regular, tamanho 24px, cor cinza #666666. Gráfico de barras horizontais clean mostrando margem líquida do lojista. Barra 1 (superior): Meu Cão Prime com 30% de margem em verde #00CC66, ocupando largura proporcional maior. Barra 2: Concorrente A com 22% em azul #0099FF. Barra 3: Concorrente B com 18% em cinza #666666. Barra 4 (inferior): Ração Standard com 12% em cinza claro #999999. Cada barra com label do produto à esquerda e percentage à direita. Na base central, destaque em verde #00CC66 com texto +40% de margem em relação às rações standard, fonte Montserrat Bold, tamanho 28px. Abaixo, texto explicativo Com Meu Cão, você oferece qualidade superior e ainda tem a melhor margem do mercado, fonte Montserrat Regular, tamanho 20px, cor #666666. Estilo corporate, data-driven e clean. Dimensões 1920x1080 pixels.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "imagemCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

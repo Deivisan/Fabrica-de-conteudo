@@ -1,0 +1,122 @@
+{
+  "promptId": "NL-B1",
+  "versao": "2.0",
+  "categoria": "educativo",
+  "estagioFunil": "tof",
+  "titulo": "Mercado Pet Brasileiro",
+  "descricao": "Áudio educacional sobre o mercado para potenciais revendedores",
+
+  "objetivo": {
+    "primario": "Educar sobre o mercado pet",
+    "secundario": "Demonstrar oportunidade de negócio",
+    "publicoAlvo": ["potenciais-revendedores", "empresarios-setor"]
+  },
+
+  "parametros": {
+    "ferramenta": "NotebookLM Audio Overview",
+    "formato": "audio",
+    "duracao": "10-15 minutos",
+    "vozes": 2,
+    "estilo": "documentary-podcast"
+  },
+
+  "estruturaAudio": {
+    "secao1": {
+      "titulo": "Introdução",
+      "duracao": "60 segundos",
+      "conteudo": [
+        "O tamanho impressionante do mercado pet no Brasil",
+        "Por que este mercado é tão relevante",
+        "Oportunidade para revendedores"
+      ]
+    },
+    "secao2": {
+      "titulo": "Números do Mercado",
+      "duracao": "120 segundos",
+      "conteudo": [
+        "R$ 77 bilhões em 2024-2025",
+        "Crescimento de 14% ao ano",
+        "Brasil como 3º maior mercado do mundo",
+        "Dados específicos sobre alimentação com 53% do mercado"
+      ]
+    },
+    "secao3": {
+      "titulo": "Segmentação do Mercado",
+      "duracao": "120 segundos",
+      "conteudo": [
+        "Pet shops com 48,1% do varejo",
+        "Clínicas veterinárias com 17,5%",
+        "E-commerce crescendo 27% ao ano",
+        "Mega stores versus petit shops"
+      ]
+    },
+    "secao4": {
+      "titulo": "Tendências",
+      "duracao": "120 segundos",
+      "conteudo": [
+        "Humanização dos pets",
+        "Produtos premium e super premium",
+        "Saúde preventiva",
+        "Sustentabilidade"
+      ]
+    },
+    "secao5": {
+      "titulo": "Oportunidades para Revendedores",
+      "duracao": "120 segundos",
+      "conteudo": [
+        "Por que ração premium é bom negócio",
+        "Margens atrativas de 18-30%",
+        "Clientes fieis com compra recorrente",
+        "Baixa rotatividade"
+      ]
+    },
+    "secao6": {
+      "titulo": "Desafios",
+      "duracao": "60 segundos",
+      "conteudo": [
+        "Concorrência acirrada",
+        "Preços no retail",
+        "Logística"
+      ]
+    },
+    "secao7": {
+      "titulo": "Como Aproveitar a Oportunidade",
+      "duracao": "60 segundos",
+      "conteudo": [
+        "Escolher parceiros certos",
+        "Oferecer valor e não só preço",
+        "Construir relacionamento"
+      ]
+    },
+    "secao8": {
+      "titulo": "Encerramento",
+      "duracao": "30 segundos",
+      "conteudo": [
+        "Resumo da oportunidade",
+        "Convite para ser revendedor"
+      ]
+    }
+  },
+
+  "tom": "Informativo, inspirador, factual",
+  "publico": "Potenciais revendedores e empresários do setor",
+  "formato": "Documentary-style podcast com 2 vozes",
+
+  "promptCompleto": "Crie um script de podcast EDUCATIVO sobre o MERCADO PET BRASILEIRO para ser compartilhado com potenciais revendedores. O áudio deve ter aproximadamente 10-15 minutos e incluir: 1) INTRODUÇÃO sobre o tamanho impressionante do mercado pet no Brasil, por que este mercado é tão relevante e oportunidade para revendedores. 2) NÚMEROS DO MERCADO detalhando R$ 77 bilhões em 2024-2025, crescimento de 14% ao ano, Brasil como 3º maior mercado do mundo e dados específicos sobre alimentação representando 53% do mercado. 3) SEGMENTAÇÃO DO MERCADO com pet shops com 48,1% do varejo, clínicas veterinárias com 17,5%, e-commerce crescendo 27% ao ano e diferença entre mega stores e petit shops. 4) TENDÊNCIAS abordando humanização dos pets, produtos premium e super premium, saúde preventiva e sustentabilidade. 5) OPORTUNIDADES PARA REVENDEORES sobre por que ração premium é bom negócio, margens atrativas de 18-30%, clientes fieis com compra recorrente e baixa rotatividade. 6) DESAFIOS incluindo concorrência acirrada, preços no retail e logística. 7) COMO APROVEITAR A OPORTUNIDADE com escolher parceiros certos, oferecer valor e não só preço e construir relacionamento. 8) ENCERRAMENTO com resumo da oportunidade e convite para ser revendedor. TOM: Informativo, inspirador e factual. PÚBLICO: Potenciais revendedores e empresários do setor. FORMATO: Documentary-style podcast com 2 vozes. DURAÇÃO: 10-15 minutos. ESTILO: Audio overview com tom professional.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "audioCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

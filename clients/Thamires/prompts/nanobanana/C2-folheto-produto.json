@@ -1,0 +1,78 @@
+{
+  "promptId": "NB-C2",
+  "versao": "2.0",
+  "categoria": "pdv",
+  "estagioFunil": "mof",
+  "titulo": "Folheto do Produto",
+  "descricao": "Folheto explicativo para cliente final do pet shop",
+
+  "objetivo": {
+    "primario": "Informar benefícios do produto ao tutor",
+    "secundario": "Educar sobre nutrição premium",
+    "publicoAlvo": ["consumidores-final", "tutores-de-pets"]
+  },
+
+  "parametros": {
+    "ferramenta": "Nano Banana Pro (Gemini 2.5 Flash Image)",
+    "formato": "imagem",
+    "dimensoes": "1748x2480",
+    "orientacao": "vertical",
+    "ratio": "A5-aberto"
+  },
+
+  "especificacaoVisual": {
+    "layout": "folheto-frente-verso",
+    "fundo": {
+      "tipo": "solido",
+      "cor": "#FFFFFF"
+    },
+    "elementos": [
+      {
+        "tipo": "frente",
+        "titulo": "MEU CÃO PRIME",
+        "subtitulo": "Super Premium para Raças Pequenas",
+        "imagem": "embalagem-3d",
+        "beneficios": ["Pelagem brilhante e sedosa", "Digestão saudável", "Energia e vitalidade", "Saúde cognitiva"],
+        "ingredientes": "Frango, arroz, vegetais, prebióticos MOS/FOS, DHA, ômega 6/3"
+      },
+      {
+        "tipo": "verso",
+        "titulo": "POR QUE ESCOLHER MEU CÃO?",
+        "itens": [
+          {"icone": "fabrica", "titulo": "FÁBRICA PRÓPRIA", "desc": "Controle total de qualidade"},
+          {"icone": "formula", "titulo": "FÓRMULA CIENTÍFICA", "desc": "Desenvolvida por especialistas"},
+          {"icone": "garantia", "titulo": "100% SATISFAÇÃO GARANTIDA", "desc": "Seu dinheiro de volta se não aprovar"},
+          {"icone": "custo", "titulo": "MELHOR CUSTO-BENEFÍCIO", "desc": "Mais ração por menos"}
+        ],
+        "disponivel": "Disponível em: 10,1kg | 15kg | 20kg",
+        "cta": "PERGUNTE AO SEU VETERINÁRIO!"
+      }
+    ]
+  },
+
+  "restricoes": [
+    "sem watermarks",
+    "sem logotipos de ferramentas",
+    "sem texto em inglês",
+    "informativo e acessível",
+    "pronto para impressão A5"
+  ],
+
+  "promptCompleto": "Folheto double-sided para distribuição no pet shop no formato A5 aberto 1748x2480 pixels. FRENTE: Título MEU CÃO PRIME grande em azul #0099FF, subtítulo Super Premium para Raças Pequenas abaixo. Imagem da embalagem renderizada em 3D no centro. Lista de benefícios para o pet: Pelagem brilhante e sedosa, Digestão saudável, Energia e vitalidade, Saúde cognitiva. Ingredientes na base: Frango, arroz, vegetais, prebióticos MOS/FOS, DHA, ômega 6/3. VERSO: Título POR QUE ESCOLHER MEU CÃO em azul #0099FF. Quatro boxes com ícones: FÁBRICA PRÓPRIA com Controle total de qualidade, FÓRMULA CIENTÍFICA com Desenvolvida por especialistas, 100% SATISFAÇÃO GARANTIDA com Seu dinheiro de volta se não aprovar, MELHOR CUSTO-BENEFÍCIO com Mais ração por menos. Na base, texto Disponível em: 10,1kg | 15kg | 20kg e CTA grande PERGUNTE AO SEU VETERINÁRIO! em verde #00CC66. Estilo consumer-facing, clean e informativo. Fundo branco.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "imagemCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

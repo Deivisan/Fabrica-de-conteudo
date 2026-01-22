@@ -1,0 +1,95 @@
+{
+  "promptId": "NB-A3",
+  "versao": "2.0",
+  "categoria": "catalogo",
+  "estagioFunil": "bof",
+  "titulo": "Página de Preços",
+  "descricao": "Tabela de preços por volume para revendedores",
+
+  "objetivo": {
+    "primario": " Apresentar tabela de preços progressiva por volume",
+    "secundario": "Demonstrar vantagens de comprar em maior quantidade",
+    "publicoAlvo": ["pet-shops", "clinicas-veterinarias", "distribuidores"]
+  },
+
+  "parametros": {
+    "ferramenta": "Nano Banana Pro (Gemini 2.5 Flash Image)",
+    "formato": "imagem",
+    "dimensoes": "1080x1350",
+    "orientacao": "vertical",
+    "ratio": "4:5"
+  },
+
+  "especificacaoVisual": {
+    "layout": "tabela-precos",
+    "fundo": {
+      "tipo": "solido",
+      "cor": "#FFFFFF"
+    },
+    "elementos": [
+      {
+        "tipo": "titulo",
+        "texto": "TABELA DE PREÇOS - REVENDA 2026",
+        "posicao": "superior-centro",
+        "fonte": "Montserrat Bold",
+        "tamanho": "42px",
+        "cor": "#0099FF"
+      },
+      {
+        "tipo": "tabela",
+        "colunas": ["PRODUTO", "1-10", "11-50", "50+"],
+        "linhas": [
+          {"produto": "Prime Raças Pequenas 10,1kg", "col1": "R$ 180", "col2": "R$ 162 (-10%)", "col3": "R$ 153 (-15%)"},
+          {"produto": "Prime Raças Pequenas 15kg", "col1": "R$ 230", "col2": "R$ 207 (-10%)", "col3": "R$ 195 (-15%)"},
+          {"produto": "Prime Raças Pequenas 20kg", "col1": "R$ 280", "col2": "R$ 252 (-10%)", "col3": "R$ 238 (-15%)"},
+          {"produto": "Light 15kg", "col1": "R$ 210", "col2": "R$ 189 (-10%)", "col3": "R$ 178 (-15%)"}
+        ],
+        "estilo": "clean-typography",
+        "cores": {
+          "header": "#0099FF",
+          "alternada": "#F8F9FA",
+          "destaque": "#00CC66"
+        }
+      },
+      {
+        "tipo": "notas-rodape",
+        "texto": [
+          "Pedido mínimo: 10 sacks",
+          "Entrega: Grátis acima de 50 sacks",
+          "Pagamento: 30/60/90 dias",
+          "Preços sujeitos a alteração"
+        ],
+        "posicao": "inferior",
+        "fonte": "Montserrat Regular",
+        "tamanho": "16px",
+        "cor": "#666666"
+      }
+    ]
+  },
+
+  "restricoes": [
+    "sem watermarks",
+    "sem logotipos de ferramentas",
+    "sem texto em inglês",
+    "números alinhados e legíveis",
+    "cores da marca consistentes"
+  ],
+
+  "promptCompleto": "Tabela de preços profissional para revendedores de ração premium para pets no formato vertical. Título TABELA DE PREÇOS - REVENDA 2026 no topo central, fonte Montserrat Bold, tamanho 42px, cor azul #0099FF. Tabela clean com formato grid apresentando colunas: PRODUTO, 1-10 UN, 11-50 UN, 50+ UN. Linha de header com fundo azul #0099FF e texto branco. Linhas de dados com fundo branco e alternada cinza muito claro #F8F9FA. Preços formatados claramente com valores em reais. Descontos em verde #00CC66 entre parênteses. Produtos listados: Prime Raças Pequenas 10,1kg por R$ 180, R$ 162 (-10%), R$ 153 (-15%); Prime Raças Pequenas 15kg por R$ 230, R$ 207 (-10%), R$ 195 (-15%); Prime Raças Pequenas 20kg por R$ 280, R$ 252 (-10%), R$ 238 (-15%); Light 15kg por R$ 210, R$ 189 (-10%), R$ 178 (-15%). Na base, notas de rodapé em cinza #666666, fonte Montserrat Regular, tamanho 16px: Pedido mínimo 10 sacks, Entreta Grátis acima de 50 sacks, Pagamento 30/60/90 dias, Preços sujeitos a alteração. Estilo clean, corporativo, focado em números. Dimensões 1080x1350 pixels.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "imagemCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "promptId": "NB-C1",
+  "versao": "2.0",
+  "categoria": "pdv",
+  "estagioFunil": "tof",
+  "titulo": "Cartaz Revendedor",
+  "descricao": "Cartaz A3 para ponto de venda em pet shop",
+
+  "objetivo": {
+    "primario": "Identificar revendedor autorizado",
+    "secundario": "Informar benefícios do produto ao consumidor",
+    "publicoAlvo": ["consumidores-final", "tutores-de-pets"]
+  },
+
+  "parametros": {
+    "ferramenta": "Nano Banana Pro (Gemini 2.5 Flash Image)",
+    "formato": "imagem",
+    "dimensoes": "1240x1754",
+    "orientacao": "vertical",
+    "ratio": "A3"
+  },
+
+  "especificacaoVisual": {
+    "layout": "cartaz-pdv",
+    "fundo": {
+      "tipo": "solido",
+      "cor": "#FFFFFF"
+    },
+    "elementos": [
+      {
+        "tipo": "cabecalho",
+        "logo": "MEU CÃO",
+        "badge": "REVENDEDOR AUTORIZADO",
+        "badge-cor": "#0099FF"
+      },
+      {
+        "tipo": "imagem-produto",
+        "produto": "Meu Cão Prime 10,1kg",
+        "posicao": "centro-superior"
+      },
+      {
+        "tipo": "titulo-produto",
+        "texto": "Ração Super Premium para Raças Pequenas",
+        "posicao": "abaixo-imagem"
+      },
+      {
+        "tipo": "beneficios",
+        "itens": ["Carnes Nobres", "Ômega 6/3", "DHA para cognição", "MOS/FOS para intestino"]
+      },
+      {
+        "tipo": "rodape",
+        "texto": "Pergunte ao seu veterinário",
+        "contato": "www.meucao.com.br"
+      }
+    ]
+  },
+
+  "restricoes": [
+    "sem watermarks",
+    "sem logotipos de ferramentas",
+    "sem texto em inglês",
+    "formato A3 otimizado para impressão",
+    "cores visíveis à distância"
+  ],
+
+  "promptCompleto": "Cartaz A3 para ponto de venda de pet shop revendedor no formato vertical. Cabeçalho com logotipo MEU CÃO grande centralizado em azul #0099FF. Abaixo, texto REVENDEDOR AUTORIZADO em fonte bold da mesma cor. Badge verde #00CC66 com texto 100% PROTEGIDO visível no canto. Na parte central, imagem da embalagem Meu Cão Prime 10,1kg renderizada. Título Ração Super Premium para Raças Pequenas abaixo da imagem em cinza #333333. Lista de benefícios com ícones e texto: Carnes Nobres, Ômega 6/3, DHA para cognição, MOS/FOS para intestino. Rodapé com texto Pergunte ao seu veterinário e telefone do revendedor ou site www.meucao.com.br. Estilo PDV-ready, clean e profissional. Cores azul #0099FF, verde #00CC66 e branco. Dimensões A3 1240x1754 pixels. Alta qualidade para impressão.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "imagemCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "promptId": "NL-B4",
+  "versao": "2.0",
+  "categoria": "educativo",
+  "estagioFunil": "tof",
+  "titulo": "Tendências do Setor Pet",
+  "descricao": "Análise de tendências para posicionamento estratégico",
+
+  "objetivo": {
+    "primario": "Apresentar tendências do setor",
+    "secundario": "Posicionar como oportunidade",
+    "publicoAlvo": ["revendedores", "lojistas", "empresarios-setor"]
+  },
+
+  "parametros": {
+    "ferramenta": "NotebookLM Audio Overview",
+    "formato": "audio",
+    "duracao": "12-18 minutos",
+    "vozes": 2,
+    "estilo": "trend-analysis-podcast"
+  },
+
+  "estruturaAudio": {
+    "secao1": {
+      "titulo": "Introdução",
+      "duracao": "45 segundos",
+      "conteudo": [
+        "Por que acompanhar tendências é essencial",
+        "O setor pet em constante evolução"
+      ]
+    },
+    "secao2": {
+      "titulo": "Tendências de Consumo",
+      "duracao": "180 segundos",
+      "conteudo": [
+        "HUMANIZAÇÃO com pets como membros da família, disposição a pagar mais por qualidade e produtos human-grade",
+        "SAÚDE PREVENTIVA com veterinários como consultores, suplementação preventiva e check-ups regulares",
+        "SUSTENTABILIDADE com embalagens recicláveis, ingredientes sustentáveis e empresas com propósito"
+      ]
+    },
+    "secao3": {
+      "titulo": "Tendências de Mercado",
+      "duracao": "180 segundos",
+      "conteudo": [
+        "PREMIUMIZAÇÃO com crescimento do super premium, preço versus valor e nichos específicos como raça, idade e condição",
+        "PERSONALIZAÇÃO com rações para raças específicas, dietas customizadas e suplementação individualizada",
+        "OMNICHANNEL com lojas físicas mais e-commerce, click and collect e assinaturas"
+      ]
+    },
+    "secao4": {
+      "titulo": "Tendências Tecnológicas",
+      "duracao": "120 segundos",
+      "conteudo": [
+        "TELEMEDICINA com consultas online, monitoramento remoto e apps de saúde pet",
+        "E-COMMERCE com marketplaces especializados, social commerce e live selling"
+      ]
+    },
+    "secao5": {
+      "titulo": "Oportunidades para Revendedores",
+      "duracao": "150 segundos",
+      "conteudo": [
+        "O QUE APROVEITAR com foco em premium e super premium, oferecer expertise, programa de fidelidade e conteúdo educativo",
+        "O QUE EVITAR como competir apenas por preço, ignorar e-commerce e Descuidar da experiência"
+      ]
+    },
+    "secao6": {
+      "titulo": "O Futuro do Setor",
+      "duracao": "60 segundos",
+      "conteudo": [
+        "Previsões para 2030",
+        "Tecnologias emergentes",
+        "Novos modelos de negócio"
+      ]
+    },
+    "secao7": {
+      "titulo": "Encerramento",
+      "duracao": "30 segundos",
+      "conteudo": [
+        "Resumo das tendências",
+        "Como se preparar",
+        "Oportunidade de crescimento"
+      ]
+    }
+  },
+
+  "tom": "Analítico, estratégico, inspirador",
+  "publico": "Revendedores, lojistas e empresários do setor",
+  "formato": "Trend analysis podcast com 2 vozes",
+
+  "promptCompleto": "Crie um script de podcast sobre TENDÊNCIAS DO SETOR PET 2025-2026 para revendedores e lojistas. O áudio deve ter aproximadamente 12-18 minutos e incluir: 1) INTRODUÇÃO sobre por que acompanhar tendências é essencial e o setor pet em constante evolução. 2) TENDÊNCIAS DE CONSUMO abordando HUMANIZAÇÃO com pets como membros da família, disposição a pagar mais por qualidade e produtos human-grade; SAÚDE PREVENTIVA com veterinários como consultores, suplementação preventiva e check-ups regulares; SUSTENTABILIDADE com embalagens recicláveis, ingredientes sustentáveis e empresas com propósito. 3) TENDÊNCIAS DE MERCADO detalhando PREMIUMIZAÇÃO com crescimento do super premium, preço versus valor e nichos específicos como raça, idade e condição; PERSONALIZAÇÃO com rações para raças específicas, dietas customizadas e suplementação individualizada; OMNICHANNEL com lojas físicas mais e-commerce, click and collect e assinaturas. 4) TENDÊNCIAS TECNOLÓGICAS sobre TELEMEDICINA com consultas online, monitoramento remoto e apps de saúde pet e E-COMMERCE com marketplaces especializados, social commerce e live selling. 5) OPORTUNIDADES PARA REVENDEORES abordando O QUE APROVEITAR com foco em premium e super premium, oferecer expertise, programa de fidelidade e conteúdo educativo e O QUE EVITAR como competir apenas por preço, ignorar e-commerce e descuidar da experiência. 6) O FUTURO DO SETOR com previsões para 2030, tecnologias emergentes e novos modelos de negócio. 7) ENCERRAMENTO com resumo das tendências, como se preparar e oportunidade de crescimento. TOM: Analítico, estratégico e inspirador. PÚBLICO: Revendedores, lojistas e empresários do setor. FORMATO: Trend analysis podcast com 2 vozes. DURAÇÃO: 12-18 minutos. ESTILO: Audio overview com tom forward-thinking.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "audioCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

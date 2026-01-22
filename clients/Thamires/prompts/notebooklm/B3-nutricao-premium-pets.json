@@ -1,0 +1,136 @@
+{
+  "promptId": "NL-B3",
+  "versao": "2.0",
+  "categoria": "educativo",
+  "estagioFunil": "mof",
+  "titulo": "Nutrição Premium para Pets",
+  "descricao": "Conteúdo educativo sobre nutrição para tutores",
+
+  "objetivo": {
+    "primario": "Educar tutores sobre nutrição premium",
+    "secundario": "Positionar Meu Cão como escolha premium",
+    "publicoAlvo": ["tutores-pets", "clientes-revendedores"]
+  },
+
+  "parametros": {
+    "ferramenta": "NotebookLM Audio Overview",
+    "formato": "audio",
+    "duracao": "10-15 minutos",
+    "vozes": 2,
+    "estilo": "lifestyle-podcast"
+  },
+
+  "estruturaAudio": {
+    "secao1": {
+      "titulo": "Introdução",
+      "duracao": "45 segundos",
+      "conteudo": [
+        "A importância da alimentação na saúde do pet",
+        "Por que ração de qualidade faz diferença"
+      ]
+    },
+    "secao2": {
+      "titulo": "Tipos de Alimentação",
+      "duracao": "90 segundos",
+      "conteudo": [
+        "Ração standard",
+        "Ração premium",
+        "Ração super premium",
+        "Food natural e freeze-dried",
+        "Raw feeding"
+      ]
+    },
+    "secao3": {
+      "titulo": "O Que Define Qualidade",
+      "duracao": "90 segundos",
+      "conteudo": [
+        "Ingredientes no topo da lista",
+        "Fontes de proteína",
+        "Ausência de preenchedores",
+        "Aditivos necessários versus desnecessários"
+      ]
+    },
+    "secao4": {
+      "titulo": "Rótulos e Composição",
+      "duracao": "90 segundos",
+      "conteudo": [
+        "Como ler um rótulo de ração",
+        "Ordem dos ingredientes",
+        "Porcentagens de proteína e gordura",
+        "Guaranteed analysis"
+      ]
+    },
+    "secao5": {
+      "titulo": "Nutrientes Essenciais",
+      "duracao": "90 segundos",
+      "conteudo": [
+        "Proteínas como aminoácidos",
+        "Gorduras como ácidos graxos",
+        "Carboidratos como fibras e energia",
+        "Vitaminas e minerais",
+        "Água"
+      ]
+    },
+    "secao6": {
+      "titulo": "Necessidades por Fase",
+      "duracao": "90 segundos",
+      "conteudo": [
+        "Filhote com crescimento",
+        "Adulto com manutenção",
+        "Idoso com longevidade",
+        "Condições especiais"
+      ]
+    },
+    "secao7": {
+      "titulo": "Sinais de Boa Nutrição",
+      "duracao": "45 segundos",
+      "conteudo": [
+        "Pelagem brilhante",
+        "Energia adequada",
+        "Fezes consistentes",
+        "Peso saudável",
+        "Longevidade"
+      ]
+    },
+    "secao8": {
+      "titulo": "Quando Procurar o Veterinário",
+      "duracao": "45 segundos",
+      "conteudo": [
+        "Sinais de alerta",
+        "Alergias alimentares",
+        "Intolerâncias"
+      ]
+    },
+    "secao9": {
+      "titulo": "Encerramento",
+      "duracao": "30 segundos",
+      "conteudo": [
+        "Resumo da importância da nutrição",
+        "Recomendação de escolher qualidade",
+        "Consulta com veterinário"
+      ]
+    }
+  },
+
+  "tom": "Acolhedor, educativo, acessível",
+  "publico": "Tutores de pets (clientes dos revendedores)",
+  "formato": "Lifestyle podcast com 2 vozes",
+
+  "promptCompleto": "Crie um script de podcast EDUCATIVO sobre NUTRIÇÃO PREMIUM PARA PETS para ser compartilhado com tutores nos pet shops. O áudio deve ter aproximadamente 10-15 minutos e incluir: 1) INTRODUÇÃO sobre a importância da alimentação na saúde do pet e por que ração de qualidade faz diferença. 2) TIPOS DE ALIMENTAÇÃO abordando ração standard, ração premium, ração super premium, food natural e freeze-dried, e raw feeding. 3) O QUE DEFINE QUALIDADE incluindo ingredientes no topo da lista, fontes de proteína, ausência de preenchedores e aditivos necessários versus desnecessários. 4) RÓTULOS E COMPOSIÇÃO explicando como ler um rótulo de ração, ordem dos ingredientes, porcentagens de proteína e gordura e guaranteed analysis. 5) NUTRIENTES ESSENCIAIS sobre proteínas como aminoácidos, gorduras como ácidos graxos, carboidratos como fibras e energia, vitaminas e minerais e água. 6) NECESSIDADES POR FASE com filhote para crescimento, adulto para manutenção, idoso para longevidade e condições especiais. 7) SINAIS DE BOA NUTRIÇÃO como pelagem brilhante, energia adequada, fezes consistentes, peso saudável e longevidade. 8) QUANDO PROCURAR O VETERINÁRIO com sinais de alerta, alergias alimentares e intolerâncias. 9) ENCERRAMENTO com resumo da importância da nutrição, recomendação de escolher qualidade e consulta com veterinário. TOM: Acolhedor, educativo e acessível. PÚBLICO: Tutores de pets (clientes dos revendedores). FORMATO: Lifestyle podcast com 2 vozes. DURAÇÃO: 10-15 minutos. ESTILO: Audio overview com tom warm.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "audioCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

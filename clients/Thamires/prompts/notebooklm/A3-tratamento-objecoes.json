@@ -1,0 +1,92 @@
+{
+  "promptId": "NL-A3",
+  "versao": "2.0",
+  "categoria": "treinamento",
+  "estagioFunil": "bof",
+  "titulo": "Tratamento de Objeções",
+  "descricao": "Treinamento sobre como lidar com objeções comuns",
+
+  "objetivo": {
+    "primario": "Capacitar para superar objeções",
+    "secundario": "Aumentar taxa de conversão",
+    "publicoAlvo": ["revendedores", "vendedores"]
+  },
+
+  "parametros": {
+    "ferramenta": "NotebookLM Audio Overview",
+    "formato": "audio",
+    "duracao": "6-10 minutos",
+    "vozes": 2,
+    "estilo": "workshop-podcast"
+  },
+
+  "estruturaAudio": {
+    "secao1": {
+      "titulo": "Introdução",
+      "duracao": "45 segundos",
+      "conteudo": [
+        "Por que objeções são oportunidades, não rejeições",
+        "A mentalidade correta ao ouvir não"
+      ]
+    },
+    "secao2": {
+      "titulo": "Objeções Mais Comuns e Respostas",
+      "duracao": "240 segundos",
+      "conteudo": [
+        "OBJEÇÃO 1: 'Já tenho fornecedor' - Por que o cliente diz isso, como responder oferecendo comparação ou amostra",
+        "OBJEÇÃO 2: 'Preço alto' - Por que surge quando compara com ração standard, focar em valor e margem",
+        "OBJEÇÃO 3: 'Não conheço a marca' - Medo do desconhecido, oferecer amostra grátis e apresentar credenciais",
+        "OBJEÇÃO 4: 'Meus clientes não vão aceitar' - Medo dearangir estoque, recomendar pedido teste e garantia de troca",
+        "OBJEÇÃO 5: 'Condições de pagamento' - Cash flow do lojista, explicar condições flexíveis 30/60/90 dias"
+      ]
+    },
+    "secao3": {
+      "titulo": "Técnica Empática",
+      "duracao": "60 segundos",
+      "conteudo": [
+        "Ouvir completamente",
+        "Validar a preocupação",
+        "Rephrasar para confirmar entendimento",
+        "Apresentar solução"
+      ]
+    },
+    "secao4": {
+      "titulo": "Quando Recuar",
+      "duracao": "45 segundos",
+      "conteudo": [
+        "Nem toda venda vale a pena",
+        "Sinais de que o cliente não é ideal"
+      ]
+    },
+    "secao5": {
+      "titulo": "Encerramento",
+      "duracao": "30 segundos",
+      "conteudo": [
+        "Resumo das técnicas",
+        "Motivação para praticar"
+      ]
+    }
+  },
+
+  "tom": "Empático, prático, encorajador",
+  "publico": "Revendedores e vendedores",
+  "formato": "Workshop/podcast com 2 vozes",
+
+  "promptCompleto": "Crie um script de podcast sobre TRATAMENTO DE OBJEÇÕES para revendedores de ração premium para pets. O áudio deve ter aproximadamente 6-10 minutos e incluir: 1) INTRODUÇÃO explicando por que objeções são oportunidades e não rejeições e a mentalidade correta ao ouvir não. 2) OBJEÇÕES MAIS COMUNS E RESPOSTAS abordando: OBJEÇÃO 1 'Já tenho fornecedor' com por que o cliente diz isso e como responder oferecendo comparação ou amostra; OBJEÇÃO 2 'Preço alto' com por que surge quando compara com ração standard e como focar em valor e margem; OBJEÇÃO 3 'Não conheço a marca' com medo do desconhecido e como oferecer amostra grátis e apresentar credenciais; OBJEÇÃO 4 'Meus clientes não vão aceitar' com medo dearangir estoque e como recomendar pedido teste e oferecer garantia de troca; OBJEÇÃO 5 'Condições de pagamento' com cash flow do lojista e como explicar condições flexíveis de 30/60/90 dias. 3) TÉCNICA EMPÁTICA sobre ouvir completamente, validar a preocupação, rephrasar para confirmar entendimento e apresentar solução. 4) QUANDO RECUAR explicando que nem toda venda vale a pena e sinais de que o cliente não é ideal. 5) ENCERRAMENTO com resumo das técnicas e motivação para praticar. TOM: Empático, prático e encorajador. PÚBLICO: Revendedores e vendedores. FORMATO: Workshop/podcast com 2 vozes. DURAÇÃO: 6-10 minutos. ESTILO: Audio overview com tom supportive.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "audioCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

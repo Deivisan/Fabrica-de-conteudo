@@ -1,0 +1,101 @@
+{
+  "promptId": "NL-A4",
+  "versao": "2.0",
+  "categoria": "treinamento",
+  "estagioFunil": "bof",
+  "titulo": "Fechamento de Vendas",
+  "descricao": "Técnicas de fechamento para B2B",
+
+  "objetivo": {
+    "primario": "Ensinar técnicas de fechamento",
+    "secundario": "Aumentar conversão de vendas",
+    "publicoAlvo": ["revendedores", "vendedores-iniciantes"]
+  },
+
+  "parametros": {
+    "ferramenta": "NotebookLM Audio Overview",
+    "formato": "audio",
+    "duracao": "7-12 minutos",
+    "vozes": 2,
+    "estilo": "masterclass-podcast"
+  },
+
+  "estruturaAudio": {
+    "secao1": {
+      "titulo": "Introdução",
+      "duracao": "45 segundos",
+      "conteudo": [
+        "Por que fechamento é uma habilidade, não um dom",
+        "O momento certo de fechar"
+      ]
+    },
+    "secao2": {
+      "titulo": "Sinais de Pronto para Fechar",
+      "duracao": "60 segundos",
+      "conteudo": [
+        "Sinais verbais como quanto tempo",
+        "Sinais não-verbais como linguagem corporal",
+        "Sinais de interesse ativo"
+      ]
+    },
+    "secao3": {
+      "titulo": "Técnicas de Fechamento",
+      "duracao": "240 segundos",
+      "conteudo": [
+        "TÉCNICA 1: Fechamento Direto - quando usar e exemplo de script",
+        "TÉCNICA 2: Fechamento por Alternativa - quando usar e exemplo",
+        "TÉCNICA 3: Fechamento por Urgência - quando usar e exemplo",
+        "TÉCNICA 4: Fechamento por Experiência - quando usar e exemplo",
+        "TÉCNICA 5: Fechamento por Compromisso - quando usar e exemplo"
+      ]
+    },
+    "secao4": {
+      "titulo": "Obstáculos ao Fechamento",
+      "duracao": "60 segundos",
+      "conteudo": [
+        "Medo de parecer pushy",
+        "Não pedir a venda",
+        "Fechamento prematuro"
+      ]
+    },
+    "secao5": {
+      "titulo": "After the Close",
+      "duracao": "45 segundos",
+      "conteudo": [
+        "Confirmar detalhes",
+        "Enviar confirmação por escrito",
+        "Agendar follow-up"
+      ]
+    },
+    "secao6": {
+      "titulo": "Encerramento",
+      "duracao": "30 segundos",
+      "conteudo": [
+        "Resumo das técnicas",
+        "Encorajamento para praticar"
+      ]
+    }
+  },
+
+  "tom": "Motivacional, prático, empowering",
+  "publico": "Revendedores e vendedores iniciantes",
+  "formato": "Masterclass/podcast com 2 vozes",
+
+  "promptCompleto": "Crie um script de podcast sobre TÉCNICAS DE FECHAMENTO DE VENDAS B2B para revendedores de ração premium para pets. O áudio deve ter aproximadamente 7-12 minutos e incluir: 1) INTRODUÇÃO explicando por que fechamento é uma habilidade e não um dom e o momento certo de fechar. 2) SINAIS DE PRONTO PARA FECHAR abordando sinais verbais como quando o cliente pergunta quanto tempo, sinais não-verbais como linguagem corporal e sinais de interesse ativo. 3) TÉCNICAS DE FECHAMENTO com TÉCNICA 1 Fechamento Direto explicando quando usar e dando exemplo de script, TÉCNICA 2 Fechamento por Alternativa quando usar e exemplo como prefere começar com 10 ou 20 sacks, TÉCNICA 3 Fechamento por Urgência quando usar e exemplo de promoção válida até sexta, TÉCNICA 4 Fechamento por Experiência quando usar e exemplo de pedido teste de 10 sacks, TÉCNICA 5 Fechamento por Compromisso quando usar e exemplo de combinar que o cliente vai apresentar para os sócios. 4) OBSTÁCULOS AO FECHAMENTO sobre medo de parecer pushy, não pedir a venda e fechamento prematuro. 5) AFTER THE CLOSE com confirmar detalhes, enviar confirmação por escrito e agendar follow-up. 6) ENCERRAMENTO com resumo das técnicas e encorajamento para praticar. TOM: Motivacional, prático e empowering. PÚBLICO: Revendedores e vendedores iniciantes. FORMATO: Masterclass/podcast com 2 vozes. DURAÇÃO: 7-12 minutos. ESTILO: Audio overview com tom inspiring.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "audioCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

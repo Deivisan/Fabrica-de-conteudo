@@ -1,0 +1,113 @@
+{
+  "promptId": "NB-A4",
+  "versao": "2.0",
+  "categoria": "catalogo",
+  "estagioFunil": "tof",
+  "titulo": "Página de Diferenciais",
+  "descricao": "Apresentação dos diferenciais competitivos da marca",
+
+  "objetivo": {
+    "primario": "Destacar pontos fortes da Meu Cão",
+    "secundario": "Convencer revendedores sobre qualidade e suporte",
+    "publicoAlvo": ["pet-shops", "clinicas-veterinarias", "distribuidores"]
+  },
+
+  "parametros": {
+    "ferramenta": "Nano Banana Pro (Gemini 2.5 Flash Image)",
+    "formato": "imagem",
+    "dimensoes": "1080x1350",
+    "orientacao": "vertical",
+    "ratio": "4:5"
+  },
+
+  "especificacaoVisual": {
+    "layout": "grid-2x3",
+    "fundo": {
+      "tipo": "solido",
+      "cor": "#FFFFFF"
+    },
+    "elementos": [
+      {
+        "tipo": "titulo",
+        "texto": "POR QUE ESCOLHER A MEU CÃO?",
+        "posicao": "superior-centro",
+        "fonte": "Montserrat Bold",
+        "tamanho": "42px",
+        "cor": "#0099FF"
+      },
+      {
+        "tipo": "grid-item",
+        "posicao": "linha1-coluna1",
+        "icone": "selo-garantia",
+        "titulo": "100% PROTEGIDO",
+        "descricao": "Compromisso com a qualidade ou seu dinheiro de volta"
+      },
+      {
+        "tipo": "grid-item",
+        "posicao": "linha1-coluna2",
+        "icone": "ciencia-nutricional",
+        "titulo": "CIÊNCIA NUTRICIONAL",
+        "descricao": "Fórmula desenvolvida por especialistas com MOS/FOS, DHA e Ômega 6/3"
+      },
+      {
+        "tipo": "grid-item",
+        "posicao": "linha1-coluna3",
+        "icone": "carnes-nobres",
+        "titulo": "CARNES NOBRES",
+        "descricao": "Ingredientes premium selecionados para alta palatabilidade"
+      },
+      {
+        "tipo": "grid-item",
+        "posicao": "linha2-coluna1",
+        "icone": "margem-atraente",
+        "titulo": "MARGEM ATRAENTE",
+        "descricao": "Lucro de 18-30% para o lojista com preço competitivo"
+      },
+      {
+        "tipo": "grid-item",
+        "posicao": "linha2-coluna2",
+        "icone": "entrega-pontual",
+        "titulo": "ENTREGA PONTUAL",
+        "descricao": "Logística confiável para manter seu estoque abastecido"
+      },
+      {
+        "tipo": "grid-item",
+        "posicao": "linha2-coluna3",
+        "icone": "suporte-completo",
+        "titulo": "SUPORTE COMPLETO",
+        "descricao": "Materiais de marketing, cartazes, flyers e treinamento"
+      }
+    ],
+    "estiloGrid": {
+      "icones": "vetoriais-corporativos",
+      "coresDestaque": ["#00CC66", "#0099FF"],
+      "fundoCards": "#F8F9FA"
+    }
+  },
+
+  "restricoes": [
+    "sem watermarks",
+    "sem logotipos de ferramentas",
+    "sem texto em inglês",
+    "ícones profissionais e limpos",
+    "texto conciso e impactante"
+  ],
+
+  "promptCompleto": "Página de catálogo destacando diferenciais competitivos da marca de ração premium. Título POR QUE ESCOLHER A MEU CÃO centralizado no topo, fonte Montserrat Bold, tamanho 42px, cor azul #0099FF. Layout em grade 2x3 com cards informativos. Cada card possui ícone vetorial no topo, título em negrito e descrição em duas linhas. Card 1: ícone de selo verde com check, título 100% PROTEGIDO em verde #00CC66, descrição Compromisso com a qualidade ou seu dinheiro de volta. Card 2: ícone de microscópio ou frasco, título CIÊNCIA NUTRICIONAL, descrição Fórmula desenvolvida por especialistas com MOS/FOS, DHA e Ômega 6/3. Card 3: ícone de carne ou proteína, título CARNES NOBRES, descrição Ingredientes premium selecionados para alta palatabilidade. Card 4: ícone de gráfico ascendente, título MARGEM ATRAENTE em verde #00CC66, descrição Lucro de 18-30% para o lojista com preço competitivo. Card 5: ícone de caminhão, título ENTREGA PONTUAL, descrição Logística confiável para manter seu estoque abastecido. Card 6: ícone de pasta ou materiais, título SUPORTE COMPLETO, descrição Materiais de marketing, cartazes, flyers e treinamento. Cards com fundo cinza muito claro #F8F9FA e cantos arredondados. Fundo branco #FFFFFF. Dimensões 1080x1350 pixels. Estilo corporativo, clean e profissional.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "imagemCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "promptId": "NB-B2",
+  "versao": "2.0",
+  "categoria": "apresentacao",
+  "estagioFunil": "mof",
+  "titulo": "Slide de Produtos",
+  "descricao": "Apresentação do portfólio de produtos",
+
+  "objetivo": {
+    "primario": "Exibir linhas de produtos disponíveis",
+    "secundario": "Destacar características principais de cada linha",
+    "publicoAlvo": ["pet-shops", "clinicas-veterinarias", "distribuidores"]
+  },
+
+  "parametros": {
+    "ferramenta": "Nano Banana Pro (Gemini 2.5 Flash Image)",
+    "formato": "imagem",
+    "dimensoes": "1920x1080",
+    "orientacao": "horizontal",
+    "ratio": "16:9"
+  },
+
+  "especificacaoVisual": {
+    "layout": "showcase-horizontal",
+    "fundo": {
+      "tipo": "solido",
+      "cor": "#FFFFFF"
+    },
+    "elementos": [
+      {
+        "tipo": "titulo",
+        "texto": "NOSSO PORTFÓLIO",
+        "posicao": "superior-esquerda",
+        "fonte": "Montserrat Bold",
+        "tamanho": "48px",
+        "cor": "#0099FF"
+      },
+      {
+        "tipo": "produto",
+        "posicao": "produto-1",
+        "nome": "MEU CÃO PRIME",
+        "peso": "10,1kg",
+        "badge": "MAIS VENDIDO",
+        "tags": ["Raças Pequenas", "Super Premium"]
+      },
+      {
+        "tipo": "produto",
+        "posicao": "produto-2",
+        "nome": "MEU CÃO LIGHT",
+        "peso": "15kg",
+        "badge": null,
+        "tags": ["Controle Peso", "Saúde"]
+      },
+      {
+        "tipo": "produto",
+        "posicao": "produto-3",
+        "nome": "MEU CÃO TODAS AS RAÇAS",
+        "peso": "20kg",
+        "badge": null,
+        "tags": ["Família", "Completo"]
+      }
+    ]
+  },
+
+  "restricoes": [
+    "sem watermarks",
+    "sem logotipos de ferramentas",
+    "sem texto em inglês",
+    "embalagens renderizadas em 3D profissional",
+    "iluminação softbox consistente"
+  ],
+
+  "promptCompleto": "Slide de apresentação de portfólio de produtos para reunião comercial B2B no formato horizontal 16:9. Fundo branco #FFFFFF limpo. Título NOSSO PORTFÓLIO no canto superior esquerdo, fonte Montserrat Bold, tamanho 48px, cor azul #0099FF. Layout em showcase horizontal com três produtos lado a lado. Produto 1: Embalagem Meu Cão Prime 10,1kg renderizada em 3D com iluminação softbox profissional, badge MAIS VENDIDO em destaque verde #00CC66 acima da embalagem, tags Raças Pequenas e Super Premium abaixo. Produto 2: Embalagem Meu Cão Light 15kg renderizada em 3D, tags Controle Peso e Saúde abaixo. Produto 3: Embalagem Meu Cão Todas as Raças 20kg renderizada em 3D, tags Família e Completo abaixo. Sombras suaves sob cada embalagem. Estilo clean product photography com cores da marca azul #0099FF e verde #00CC66 para badges. Dimensões 1920x1080 pixels. Alta qualidade profissional.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "imagemCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

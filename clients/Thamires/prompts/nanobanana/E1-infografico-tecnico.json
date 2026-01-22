@@ -1,0 +1,86 @@
+{
+  "promptId": "NB-E1",
+  "versao": "2.0",
+  "categoria": "educativo",
+  "estagioFunil": "mof",
+  "titulo": "Infográfico Técnico",
+  "descricao": "Infográfico explicando composição da ração",
+
+  "objetivo": {
+    "primario": "Educar sobre diferenciais técnicos",
+    "secundario": "Demonstrar ciência por trás do produto",
+    "publicoAlvo": ["pet-shops", "veterinarios", "tutores-informados"]
+  },
+
+  "parametros": {
+    "ferramenta": "Nano Banana Pro (Gemini 2.5 Flash Image)",
+    "formato": "imagem",
+    "dimensoes": "1080x1920",
+    "orientacao": "vertical",
+    "ratio": "9:16"
+  },
+
+  "especificacaoVisual": {
+    "layout": "infografico-vertical",
+    "fundo": {
+      "tipo": "solido",
+      "cor": "#FFFFFF"
+    },
+    "elementos": [
+      {
+        "tipo": "titulo",
+        "texto": "A CIÊNCIA POR TRÁS DA NUTRIÇÃO",
+        "posicao": "superior-centro",
+        "fonte": "Montserrat Bold",
+        "tamanho": "42px",
+        "cor": "#0099FF"
+      },
+      {
+        "tipo": "grafico-pizza",
+        "titulo": "COMPOSIÇÃO",
+        "segmentos": [
+          {"label": "Proteína", "percentual": 45, "cor": "#0099FF"},
+          {"label": "Carboidratos", "percentual": 25, "cor": "#66CCFF"},
+          {"label": "Gorduras", "percentual": 15, "cor": "#00CC66"},
+          {"label": "Fibras", "percentual": 8, "cor": "#99FFCC"},
+          {"label": "Vitaminas", "percentual": 7, "cor": "#CCCCCC"}
+        ]
+      },
+      {
+        "tipo": "detalhes",
+        "itens": [
+          {"categoria": "PROTEÍNAS (45%)", "detalhes": ["Frango desfiado (25%)", "Salmão (15%)", "Ovos (5%)"]},
+          {"categoria": "ÔMEGA 6/3", "detalhes": ["Ômega 6: 35mg", "Ômega 3: 5mg", "Proporção 7:1"]},
+          {"categoria": "DHA (30mg)", "detalhes": ["Cognição e visão"]},
+          {"categoria": "MOS/FOS (2%)", "detalhes": ["Microbiota intestinal"]}
+        ]
+      }
+    ]
+  },
+
+  "restricoes": [
+    "sem watermarks",
+    "sem logotipos de ferramentas",
+    "sem texto em inglês",
+    "visual clean e informativo",
+    "cores da marca consistentes"
+  ],
+
+  "promptCompleto": "Infográfico técnico sobre composição da ração premium no formato stories vertical 9:16. Título A CIÊNCIA POR TRÁS DA NUTRIÇÃO centralizado no topo, fonte Montserrat Bold, tamanho 42px, cor azul #0099FF. Diagrama de pizza no centro mostrando composição: 45% Proteína em azul #0099FF, 25% Carboidratos em azul claro #66CCFF, 15% Gorduras em verde #00CC66, 8% Fibras em verde claro #99FFCC, 7% Vitaminas e Minerais em cinza #CCCCCC. Na parte inferior, detalhes em barras laterais. Barra 1: PROTEÍNAS (45%) com Frango desfiado (25%), Salmão (15%), Ovos (5%). Barra 2: ÔMEGA 6/3 com Ômega 6 35mg, Ômega 3 5mg, Proporção 7:1. Barra 3: DHA (30mg) com Cognição e visão. Barra 4: MOS/FOS (2%) com Microbiota intestinal. Estilo infographic, scientific e clean. Cores azul #0099FF e verde #00CC66 predominantes. Dimensões 1080x1920 pixels.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "imagemCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "promptId": "NL-C1",
+  "versao": "2.0",
+  "categoria": "suporte",
+  "estagioFunil": "tof",
+  "titulo": "Podcast Interno da Rede",
+  "descricao": "Podcast recorrente para engajar revendedores",
+
+  "objetivo": {
+    "primario": "Manter revendedores engajados",
+    "secundario": "Divulgar novidades e melhores práticas",
+    "publicoAlvo": ["revendedores-existentes"]
+  },
+
+  "parametros": {
+    "ferramenta": "NotebookLM Audio Overview",
+    "formato": "audio",
+    "duracao": "15-20 minutos",
+    "vozes": 2,
+    "estilo": "community-podcast"
+  },
+
+  "estruturaAudio": {
+    "secao1": {
+      "titulo": "Abertura",
+      "duracao": "45 segundos",
+      "conteudo": [
+        "Música de entrada de 30 segundos",
+        "Apresentação do podcast",
+        "Objetivos da série",
+        "Periodicidade"
+      ]
+    },
+    "secao2": {
+      "titulo": "Boas-Vindas",
+      "duracao": "60 segundos",
+      "conteudo": [
+        "Apresentação do host como representante da marca",
+        "Agradecimento aos revendedores",
+        "Visão da marca sobre a parceria"
+      ]
+    },
+    "secao3": {
+      "titulo": "Tema Principal",
+      "duracao": "300 segundos",
+      "conteudo": [
+        "Como vender mais em 2026",
+        "Estratégias práticas",
+        "Cases de sucesso",
+        "Dicas táticas"
+      ]
+    },
+    "secao4": {
+      "titulo": "Depoimento",
+      "duracao": "120 segundos",
+      "conteudo": [
+        "História de sucesso de um revendedor",
+        "Resultados alcançados",
+        "Lições aprendidas"
+      ]
+    },
+    "secao5": {
+      "titulo": "Novidades da Marca",
+      "duracao": "90 segundos",
+      "conteudo": [
+        "Novos produtos",
+        "Promoções do mês",
+        "Atualizações de materiais"
+      ]
+    },
+    "secao6": {
+      "titulo": "Dica da Semana",
+      "duracao": "45 segundos",
+      "conteudo": [
+        "Uma actionable tip",
+        "Como aplicar imediatamente"
+      ]
+    },
+    "secao7": {
+      "titulo": "Encerramento",
+      "duracao": "45 segundos",
+      "conteudo": [
+        "Resumo do episódio",
+        "Próximos passos",
+        "Convite para feedback",
+        "Música de encerramento"
+      ]
+    }
+  },
+
+  "tom": "Comunidade, apoio, motivação",
+  "publico": "Revendedores existentes",
+  "formato": "Podcast de comunidade com 2 vozes",
+
+  "promptCompleto": "Crie um script de podcast para o PRIMEIRO EPISÓDIO de uma série interna para a rede de revendedores Meu Cão. O áudio deve ter aproximadamente 15-20 minutos e incluir: 1) ABERTURA com música de entrada de 30 segundos, apresentação do podcast, objetivos da série e periodicidade. 2) BOAS-VINDAS com apresentação do host como representante da marca, agradecimento aos revendedores e visão da marca sobre a parceria. 3) TEMA PRINCIPAL sobre como vender mais em 2026 incluindo estratégias práticas, cases de sucesso e dicas táticas. 4) DEPOIMENTO com história de sucesso de um revendedor, resultados alcançados e lições aprendidas. 5) NOVIDADES DA MARCA sobre novos produtos, promoções do mês e atualizações de materiais. 6) DICA DA SEMANA com uma actionable tip e como aplicar imediatamente. 7) ENCERRAMENTO com resumo do episódio, próximos passos, convite para feedback e música de encerramento. TOM: Comunidade, apoio e motivação. PÚBLICO: Revendedores existentes. FORMATO: Podcast de comunidade com 2 vozes. DURAÇÃO: 15-20 minutos. ESTILO: Audio overview com tom engaging.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "audioCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "promptId": "NB-D2",
+  "versao": "2.0",
+  "categoria": "redes-sociais",
+  "estagioFunil": "bof",
+  "titulo": "Post LinkedIn - Oportunidade",
+  "descricao": "Post convidando para ser revendedor",
+
+  "objetivo": {
+    "primario": "Converter engajamento em leads",
+    "secundario": "Convocar ação de se tornar revendedor",
+    "publicoAlvo": ["empresarios", "pet-shop-owners", "distribuidores"]
+  },
+
+  "parametros": {
+    "ferramenta": "Nano Banana Pro (Gemini 2.5 Flash Image)",
+    "formato": "imagem",
+    "dimensoes": "1080x1350",
+    "orientacao": "vertical",
+    "ratio": "4:5"
+  },
+
+  "especificacaoVisual": {
+    "layout": "post-oportunidade",
+    "fundo": {
+      "tipo": "solido",
+      "cor": "#FFFFFF"
+    },
+    "elementos": [
+      {
+        "tipo": "titulo",
+        "texto": "SEJA UM REVENDEDOR",
+        "posicao": "superior-centro",
+        "fonte": "Montserrat Bold",
+        "tamanho": "52px",
+        "cor": "#0099FF"
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Junte-se à rede de revendedores Meu Cão",
+        "posicao": "abaixo-titulo",
+        "fonte": "Montserrat Regular",
+        "tamanho": "28px",
+        "cor": "#333333"
+      },
+      {
+        "tipo": "lista-beneficios",
+        "itens": [
+          "Margem de 18-30%",
+          "Suporte de marketing completo",
+          "Condições de pagamento flexíveis",
+          "Entrega pontual",
+          "Produto de qualidade comprovada"
+        ]
+      },
+      {
+        "tipo": "cta-button",
+        "texto": "QUERO SER REVENDEDOR",
+        "fundo": "#00CC66",
+        "cor": "#FFFFFF",
+        "formato": "retangular-arredondado"
+      },
+      {
+        "tipo": "localizacao",
+        "texto": "Feira de Santana e região",
+        "contato": "Entre em contato: (75) 99999-9999"
+      }
+    ]
+  },
+
+  "restricoes": [
+    "sem watermarks",
+    "sem logotipos de ferramentas",
+    "sem texto em inglês",
+    "CTA proeminente e clicável",
+    "informações de contato claras"
+  ],
+
+  "promptCompleto": "Post para LinkedIn sobre oportunidade de revenda no formato vertical 1080x1350 pixels. Fundo branco clean. Título SEJA UM REVENDEDOR centralizado no topo, fonte Montserrat Bold, tamanho 52px, cor azul #0099FF. Subtítulo Junte-se à rede de revendedores Meu Cão abaixo, fonte Montserrat Regular, tamanho 28px, cor cinza #333333. Box central com bordas arredondadas e fundo cinza muito claro contendo lista de benefícios: Margem de 18-30%, Suporte de marketing completo, Condições de pagamento flexíveis, Entrega pontual, Produto de qualidade comprovada. Cada benefício com checkmark verde #00CC66. Botão CTA QUERO SER REVENDEDOR com fundo verde #00CC66, texto branco, cantos arredondados grandes, posicionado visível. Na base, texto Feira de Santana e região e contato Entre em contato: (75) 99999-9999 em cinza #666666. Estilo LinkedIn B2B, opportunity-focused e clean.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "imagemCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

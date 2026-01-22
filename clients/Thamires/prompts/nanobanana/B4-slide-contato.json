@@ -1,0 +1,96 @@
+{
+  "promptId": "NB-B4",
+  "versao": "2.0",
+  "categoria": "apresentacao",
+  "estagioFunil": "bof",
+  "titulo": "Slide de Contato",
+  "descrição": "Slide final com chamada para ação",
+
+  "objetivo": {
+    "primario": "Facilitar contato e conversão",
+    "secundario": "Incentivar ação imediata do prospect",
+    "publicoAlvo": ["pet-shops", "clinicas-veterinarias", "distribuidores"]
+  },
+
+  "parametros": {
+    "ferramenta": "Nano Banana Pro (Gemini 2.5 Flash Image)",
+    "formato": "imagem",
+    "dimensoes": "1920x1080",
+    "orientacao": "horizontal",
+    "ratio": "16:9"
+  },
+
+  "especificacaoVisual": {
+    "layout": "cta-final",
+    "fundo": {
+      "tipo": "gradiente-suave",
+      "cores": ["#0099FF", "#0077CC"],
+      "direcao": "topo-para-baixo"
+    },
+    "elementos": [
+      {
+        "tipo": "titulo",
+        "texto": "VAMOS CRESCER JUNTOS?",
+        "posicao": "superior-centro",
+        "fonte": "Montserrat Bold",
+        "tamanho": "52px",
+        "cor": "#FFFFFF"
+      },
+      {
+        "tipo": "whatsapp",
+        "posicao": "centro-esquerda",
+        "icone": "whatsapp",
+        "texto": "Fale diretamente com nosso representante",
+        "contato": "(75) 99999-9999"
+      },
+      {
+        "tipo": "localizacao",
+        "posicao": "centro-direita",
+        "icone": "localizacao",
+        "texto": "Atendemos toda a região",
+        "cidade": "Feira de Santana - BA"
+      },
+      {
+        "tipo": "cta-button",
+        "posicao": "inferior-centro",
+        "texto": "SEJA UM REVENDEDOR",
+        "fundo": "#00CC66",
+        "cor": "#FFFFFF"
+      },
+      {
+        "tipo": "oferta",
+        "texto": "Primeiro pedido com 10% de desconto",
+        "posicao": "abaixo-cta",
+        "fonte": "Montserrat Regular",
+        "tamanho": "20px",
+        "cor": "#FFFFFF"
+      }
+    ]
+  },
+
+  "restricoes": [
+    "sem watermarks",
+    "sem logotipos de ferramentas",
+    "sem texto em inglês",
+    "CTA visível e clicável",
+    "cores de alto contraste"
+  ],
+
+  "promptCompleto": "Slide de contato com chamada para ação clara para reunião comercial B2B no formato horizontal 16:9. Fundo com gradiente azul profissional #0099FF para #0077CC. Título VAMOS CRESCER JUNTOS centralizado no topo, fonte Montserrat Bold, tamanho 52px, texto branco. Na esquerda do centro, ícone do WhatsApp em verde #25D366 com texto Fale diretamente com nosso representante abaixo e número (75) 99999-9999 em destaque branco. Na direita do centro, ícone de localização com texto Atendemos toda a região e cidade Feira de Santana - BA em branco. Na parte inferior central, botão grande SEJA UM REVENDEDOR com fundo verde #00CC66, texto branco, cantos arredondados. Abaixo do botão, texto Primeiro pedido com 10% de desconto em branco com fonte Montserrat Regular tamanho 20px. Estilo clean, alta conversão, pronto para mobile. Dimensões 1920x1080 pixels.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "imagemCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

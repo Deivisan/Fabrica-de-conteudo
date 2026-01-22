@@ -1,0 +1,103 @@
+{
+  "promptId": "NL-D1",
+  "versao": "2.0",
+  "categoria": "marketing-conteudo",
+  "estagioFunil": "bof",
+  "titulo": "Depoimento Fictício (UGC)",
+  "descricao": "Áudio de depoimento realista para marketing",
+
+  "objetivo": {
+    "primario": "Criar prova social convincente",
+    "secundario": "Motivar outros a se tornarem revendedores",
+    "publicoAlvo": ["potenciais-revendedores"]
+  },
+
+  "parametros": {
+    "ferramenta": "NotebookLM Audio Overview",
+    "formato": "audio",
+    "duracao": "2-3 minutos",
+    "vozes": 2,
+    "estilo": "ugc-testimonial"
+  },
+
+  "estruturaAudio": {
+    "secao1": {
+      "titulo": "Apresentação",
+      "duracao": "20 segundos",
+      "conteudo": [
+        "Nome fictício Roberto, dono do Pet Shop Cantinho dos Pets",
+        "Localização em Feira de Santana, Bahia",
+        "Tempo de revenda de 8 meses"
+      ]
+    },
+    "secao2": {
+      "titulo": "Situação Antes",
+      "duracao": "25 segundos",
+      "conteudo": [
+        "Antes vendia várias marcas",
+        "Tinha problema com devolução",
+        "Margem era muito apertada"
+      ]
+    },
+    "secao3": {
+      "titulo": "Descoberta da Meu Cão",
+      "duracao": "25 segundos",
+      "conteudo": [
+        "Um representante me visitou",
+        "Inicialmente fui cético",
+        "Decidi fazer um pedido teste"
+      ]
+    },
+    "secao4": {
+      "titulo": "Resultados",
+      "duracao": "40 segundos",
+      "conteudo": [
+        "Vendas aumentaram 40%",
+        "Clientes perguntam pelo produto",
+        "Margem melhorou muito",
+        "Quase não tenho devolução"
+      ]
+    },
+    "secao5": {
+      "titulo": "Diferenciais",
+      "duracao": "30 segundos",
+      "conteudo": [
+        "O produto é excelente",
+        "Suporte é muito bom",
+        "Entrega sempre no prazo",
+        "Materiais de marketing ajudam"
+      ]
+    },
+    "secao6": {
+      "titulo": "Conclusão",
+      "duracao": "20 segundos",
+      "conteudo": [
+        "Recomendo para todos os colegas",
+        "É uma parceria de verdade",
+        "Meu negócio cresceu graças a isso"
+      ]
+    }
+  },
+
+  "tom": "Autêntico, pessoal, sincero",
+  "publico": "Potenciais revendedores",
+  "formato": "UGC-style testimonial com 2 vozes",
+
+  "promptCompleto": "Crie um script de áudio representando um DEPOIMENTO de um dono de pet shop sobre a experiência de ser revendedor Meu Cão. O áudio deve ter aproximadamente 2-3 minutos e incluir: 1) APRESENTAÇÃO com Roberto, dono do Pet Shop Cantinho dos Pets, localizado em Feira de Santana, Bahia, há 8 meses como revendedor. 2) SITUAÇÃO ANTES explicando que antes vendia várias marcas, tinha problema com devolução e margem era muito apertada. 3) DESCOBERTA DA MEU CÃO quando um representante me visitou, inicialmente fui cético e decidi fazer um pedido teste. 4) RESULTADOS com vendas aumentaram 40%, clientes perguntam pelo produto, margem melhorou muito e quase não tenho devolução. 5) DIFERENCIAIS o produto é excelente, suporte é muito bom, entrega sempre no prazo e materiais de marketing ajudam. 6) CONCLUSÃO com recomendo para todos os colegas, é uma parceria de verdade e meu negócio cresceu graças a isso. TOM: Autêntico, pessoal e sincero. PÚBLICO: Potenciais revendedores. FORMATO: UGC-style testimonial com 2 vozes. DURAÇÃO: 2-3 minutos. ESTILO: Audio overview com tom authentic.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "audioCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

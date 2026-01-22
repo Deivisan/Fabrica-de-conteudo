@@ -1,0 +1,103 @@
+{
+  "promptId": "NL-B2",
+  "versao": "2.0",
+  "categoria": "educativo",
+  "estagioFunil": "mof",
+  "titulo": "Diferenciais Técnicos do Produto",
+  "descricao": "Áudio explicando composição e diferenciais técnicos",
+
+  "objetivo": {
+    "primario": "Educar sobre os diferenciais técnicos",
+    "secundario": "Capacitar argumentos de venda",
+    "publicoAlvo": ["revendedores", "balconistas-pet-shop"]
+  },
+
+  "parametros": {
+    "ferramenta": "NotebookLM Audio Overview",
+    "formato": "audio",
+    "duracao": "12-18 minutos",
+    "vozes": 2,
+    "estilo": "educational-podcast"
+  },
+
+  "estruturaAudio": {
+    "secao1": {
+      "titulo": "Introdução",
+      "duracao": "45 segundos",
+      "conteudo": [
+        "Por que entender a ciência vende mais",
+        "O que torna uma ração premium"
+      ]
+    },
+    "secao2": {
+      "titulo": "Composição do Produto",
+      "duracao": "300 segundos",
+      "conteudo": [
+        "PROTEÍNAS com 45%: Frango desfiado como fonte principal, Salmão para ômega 3, Ovos para aminoácidos completos e por que proteína de qualidade importa",
+        "ÔMEGA 6 E ÔMEGA 3 com proporção ideal 7:1, benefícios para pelagem, benefícios para pele e anti-inflamatório natural",
+        "DHA com o que é, benefícios cognitivos, desenvolvimento cerebral em filhotes e saúde ocular",
+        "PREBIÓTICOS MOS E FOS com o que são prebióticos, MOS, FOS, benefícios para microbiota intestinal e digestão saudável",
+        "OUTROS INGREDIENTES incluindo arroz integral para energia, vegetais para vitaminas, vitaminas do complexo B e minerais quelatados"
+      ]
+    },
+    "secao3": {
+      "titulo": "Diferenciais da Marca",
+      "duracao": "90 segundos",
+      "conteudo": [
+        "Fábrica própria com controle de qualidade",
+        "Sem corantes artificiais",
+        "Sem conservantes sintéticos",
+        "100% satisfação garantida"
+      ]
+    },
+    "secao4": {
+      "titulo": "Comparativo com Concorrentes",
+      "duracao": "60 segundos",
+      "conteudo": [
+        "Por que Meu Cão é superior",
+        "Dados técnicos comparativos",
+        "Estudos e eficácia"
+      ]
+    },
+    "secao5": {
+      "titulo": "Argumentos para o Lojista",
+      "duracao": "60 segundos",
+      "conteudo": [
+        "Produto que vende sozinho",
+        "Pouca devolução",
+        "Clientes fieis",
+        "Margem atrativa"
+      ]
+    },
+    "secao6": {
+      "titulo": "Encerramento",
+      "duracao": "30 segundos",
+      "conteudo": [
+        "Resumo dos diferenciais",
+        "Por que confiar na ciência"
+      ]
+    }
+  },
+
+  "tom": "Técnico mas acessível, educativo",
+  "publico": "Revendedores e balconistas de pet shop",
+  "formato": "Educational podcast com 2 vozes",
+
+  "promptCompleto": "Crie um script de podcast EDUCATIVO sobre os DIFERENCIAIS TÉCNICOS da ração Meu Cão para ser usado em treinamento de revendedores. O áudio deve ter aproximadamente 12-18 minutos e incluir: 1) INTRODUÇÃO sobre por que entender a ciência vende mais e o que torna uma ração premium. 2) COMPOSIÇÃO DO PRODUTO detalhando PROTEÍNAS com 45% incluindo Frango desfiado como fonte principal, Salmão para ômega 3, Ovos para aminoácidos completos e por que proteína de qualidade importa; ÔMEGA 6 E ÔMEGA 3 com proporção ideal 7:1, benefícios para pelagem, benefícios para pele e anti-inflamatório natural; DHA com o que é, benefícios cognitivos, desenvolvimento cerebral em filhotes e saúde ocular; PREBIÓTICOS MOS E FOS com o que são prebióticos, MOS, FOS, benefícios para microbiota intestinal e digestão saudável; OUTROS INGREDIENTES como arroz integral para energia, vegetais para vitaminas, vitaminas do complexo B e minerais quelatados. 3) DIFERENCIAIS DA MARCA abordando fábrica própria com controle de qualidade, sem corantes artificiais, sem conservantes sintéticos e 100% satisfação garantida. 4) COMPARATIVO COM CONCORRENTES sobre por que Meu Cão é superior, dados técnicos comparativos e estudos e eficácia. 5) ARGUMENTOS PARA O LOJISTA com produto que vende sozinho, pouca devolução, clientes fieis e margem atrativa. 6) ENCERRAMENTO com resumo dos diferenciais e por que confiar na ciência. TOM: Técnico mas acessível e educativo. PÚBLICO: Revendedores e balconistas de pet shop. FORMATO: Educational podcast com 2 vozes. DURAÇÃO: 12-18 minutos. ESTILO: Audio overview com tom instructive.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "audioCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

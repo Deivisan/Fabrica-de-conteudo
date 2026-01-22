@@ -1,0 +1,100 @@
+{
+  "promptId": "NL-A2",
+  "versao": "2.0",
+  "categoria": "treinamento",
+  "estagioFunil": "mof",
+  "titulo": "Técnicas de Vendas B2B",
+  "descricao": "Treinamento sobre técnicas de venda para pet shops",
+
+  "objetivo": {
+    "primario": "Capacitar revendedores com técnicas de vendas",
+    "secundario": "Aumentar taxa de conversão",
+    "publicoAlvo": ["revendedores", "representantes-comerciais"]
+  },
+
+  "parametros": {
+    "ferramenta": "NotebookLM Audio Overview",
+    "formato": "audio",
+    "duracao": "8-12 minutos",
+    "vozes": 2,
+    "estilo": "educativo-podcast"
+  },
+
+  "estruturaAudio": {
+    "secao1": {
+      "titulo": "Introdução",
+      "duracao": "60 segundos",
+      "conteudo": [
+        "Por que vender para pet shops é diferente de vender para consumidor final",
+        "O que importa para o lojista: margem, giro, confiabilidade"
+      ]
+    },
+    "secao2": {
+      "titulo": "Técnicas de Abordagem",
+      "duracao": "120 segundos",
+      "conteudo": [
+        "Como iniciar a conversa com potenciais revendedores",
+        "O que dizer nos primeiros 30 segundos",
+        "Como apresentar a oportunidade"
+      ]
+    },
+    "secao3": {
+      "titulo": "Estrutura de Argumentação",
+      "duracao": "120 segundos",
+      "conteudo": [
+        "Apresentar o produto: benefícios para o lojista, não para o pet",
+        "Foco em margem de lucro, não em preço",
+        "Produto que vende sozinho pela qualidade",
+        "Suporte de marketing incluído"
+      ]
+    },
+    "secao4": {
+      "titulo": "Conhecendo o Cliente",
+      "duracao": "90 segundos",
+      "conteudo": [
+        "Perguntas estratégicas para entender necessidades",
+        "Identificar dor principal: estoque, margem ou qualidade",
+        "Personalizar a abordagem"
+      ]
+    },
+    "secao5": {
+      "titulo": "Construindo Relacionamento",
+      "duracao": "90 segundos",
+      "conteudo": [
+        "Importância do follow-up",
+        "Como se tornar consultor, não apenas fornecedor",
+        "Periodicidade de contato"
+      ]
+    },
+    "secao6": {
+      "titulo": "Resumo e CTA",
+      "duracao": "60 segundos",
+      "conteudo": [
+        "Principais aprendizados",
+        "Convite para aplicar as técnicas"
+      ]
+    }
+  },
+
+  "tom": "Educativo, prático, inspirador",
+  "publico": "Revendedores e representantes comerciais",
+  "formato": "Aula/podcast com 2 vozes",
+
+  "promptCompleto": "Crie um script de podcast EDUCATIVO sobre TÉCNICAS DE VENDAS B2B para revendedores de ração premium para pets. O áudio deve ter aproximadamente 8-12 minutos e incluir: 1) INTRODUÇÃO explicando por que vender para pet shops é diferente de vender para consumidor final e o que importa para o lojista como margem, giro e confiabilidade. 2) TÉCNICAS DE ABORDAGEM detalhando como iniciar a conversa com potenciais revendedores, o que dizer nos primeiros 30 segundos e como apresentar a oportunidade. 3) ESTRUTURA DE ARGUMENTAÇÃO sobre apresentar o produto com benefícios para o lojista e não para o pet, foco em margem de lucro e não preço, produto que vende sozinho pela qualidade e suporte de marketing incluído. 4) CONHECENDO O CLIENTE com perguntas estratégicas para entender necessidades, identificar dor principal como estoque, margem ou qualidade e personalizar a abordagem. 5) CONSTRUINDO RELACIONAMENTO sobre importância do follow-up, como se tornar consultor e não apenas fornecedor e periodicidade de contato. 6) RESUMO E CTA com principais aprendizados e convite para aplicar as técnicas. TOM: Educativo, prático e inspirador. PÚBLICO: Revendedores e representantes comerciais. FORMATO: Aula/podcast com 2 vozes. DURAÇÃO: 8-12 minutos. ESTILO: Audio overview com tom instructive.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "audioCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

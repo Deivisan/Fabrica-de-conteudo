@@ -1,0 +1,99 @@
+{
+  "promptId": "NB-B1",
+  "versao": "2.0",
+  "categoria": "apresentacao",
+  "estagioFunil": "tof",
+  "titulo": "Slide Institucional",
+  "descricao": "Slide corporativo para apresentações B2B",
+
+  "objetivo": {
+    "primario": "Apresentar a marca e sua trajetória",
+    "secundario": "Transmitir credibilidade e experiência",
+    "publicoAlvo": ["pet-shops", "clinicas-veterinarias", "distribuidores"]
+  },
+
+  "parametros": {
+    "ferramenta": "Nano Banana Pro (Gemini 2.5 Flash Image)",
+    "formato": "imagem",
+    "dimensoes": "1920x1080",
+    "orientacao": "horizontal",
+    "ratio": "16:9"
+  },
+
+  "especificacaoVisual": {
+    "layout": "slide-corporativo",
+    "fundo": {
+      "tipo": "gradiente-suave",
+      "cores": ["#FFFFFF", "#F0F8FF"],
+      "direcao": "esquerda-para-direita"
+    },
+    "elementos": [
+      {
+        "tipo": "titulo-principal",
+        "texto": "SOMOS REFERÊNCIA EM NUTRIÇÃO PET",
+        "posicao": "superior-centro",
+        "fonte": "Montserrat Bold",
+        "tamanho": "56px",
+        "cor": "#0099FF"
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Há mais de 10 anos oferecendo alimentação premium para pets brasileiros",
+        "posicao": "abaixo-titulo",
+        "fonte": "Montserrat Regular",
+        "tamanho": "28px",
+        "cor": "#666666"
+      },
+      {
+        "tipo": "linha-tempo",
+        "posicao": "centro-inferior",
+        "itens": [
+          {"ano": "2014", "evento": "Fundação"},
+          {"ano": "2018", "evento": "Linha Prime"},
+          {"ano": "2022", "evento": "Fábrica Uroquima"},
+          {"ano": "2025", "evento": "Líder regional"}
+        ],
+        "estilo": "horizontal-clean"
+      },
+      {
+        "tipo": "ilustracao-fabrica",
+        "posicao": "centro",
+        "descricao": "Fábrica estilo illustration clean e moderna"
+      },
+      {
+        "tipo": "rodape",
+        "texto": "Qualidade comprovada | 100% satisfação garantida",
+        "posicao": "inferior",
+        "fonte": "Montserrat Regular",
+        "tamanho": "18px",
+        "cor": "#999999"
+      }
+    ]
+  },
+
+  "restricoes": [
+    "sem watermarks",
+    "sem logotipos de ferramentas",
+    "sem texto em inglês",
+    "estilo minimalista corporativo",
+    "cores consistentes com marca"
+  ],
+
+  "promptCompleto": "Slide corporativo institucional para apresentação comercial B2B no formato horizontal 16:9. Fundo branco com gradiente suave da esquerda azul claro #F0F8FF para branco #FFFFFF. Título principal SOMOS REFERÊNCIA EM NUTRIÇÃO PET centralizado no topo, fonte Montserrat Bold, tamanho 56px, cor azul #0099FF. Subtítulo abaixo Há mais de 10 anos oferecendo alimentação premium para pets brasileiros, fonte Montserrat Regular, tamanho 28px, cor cinza #666666. No centro, ilustração clean de fábrica em estilo illustration minimalista. Na parte inferior, linha do tempo horizontal com 4 marcos: 2014 com Fundação, 2018 com Linha Prime, 2022 com Fábrica Uroquima, 2025 com Líder regional. Marcos conectados por linha horizontal sutil azul. Rodapé com texto Qualidade comprovada | 100% satisfação garantida, fonte Montserrat Regular, tamanho 18px, cor cinza claro #999999. Estilo clean corporate, minimalista e profissional. Dimensões 1920x1080 pixels.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "imagemCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

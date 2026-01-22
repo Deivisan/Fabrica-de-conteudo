@@ -1,0 +1,93 @@
+{
+  "promptId": "NL-A1",
+  "versao": "2.0",
+  "categoria": "treinamento",
+  "estagioFunil": "tof",
+  "titulo": "Onboarding de Revendedor",
+  "descricao": "Áudio de boas-vindas para novos revendedores",
+
+  "objetivo": {
+    "primario": "Integrar novos revendedores à rede Meu Cão",
+    "secundario": "Transmitir entusiasmo e alinhamento com a marca",
+    "publicoAlvo": ["novos-revendedores", "dono-pet-shop", "gerentes"]
+  },
+
+  "parametros": {
+    "ferramenta": "NotebookLM Audio Overview",
+    "formato": "audio",
+    "duracao": "3-5 minutos",
+    "vozes": 2,
+    "estilo": "conversational-podcast"
+  },
+
+  "estruturaAudio": {
+    "secao1": {
+      "titulo": "Saudação Inicial",
+      "duracao": "30 segundos",
+      "conteudo": [
+        "Agradecimento por escolher ser revendedor",
+        "Breve apresentação da marca (fábrica Uroquima, 10+ anos)",
+        "Por que a Meu Cão é uma oportunidade única"
+      ]
+    },
+    "secao2": {
+      "titulo": "O Que o Revendedor Vai Aprender",
+      "duracao": "60 segundos",
+      "conteudo": [
+        "Como vender mais com nossos produtos",
+        "Argumentos para apresentar aos clientes",
+        "Condições comerciais e margens",
+        "Suporte disponível"
+      ]
+    },
+    "secao3": {
+      "titulo": "Diferenciais da Marca",
+      "duracao": "60 segundos",
+      "conteudo": [
+        "100% satisfação garantida",
+        "Margem atrativa (18-30%)",
+        "Produto que vende sozinho",
+        "Suporte de marketing completo"
+      ]
+    },
+    "secao4": {
+      "titulo": "Próximos Passos",
+      "duracao": "45 segundos",
+      "conteudo": [
+        "Como fazer o primeiro pedido",
+        "Materiais disponíveis (catálogos, cartazes)",
+        "Contato do representante"
+      ]
+    },
+    "secao5": {
+      "titulo": "Encerramento",
+      "duracao": "30 segundos",
+      "conteudo": [
+        "Motivação final",
+        "Convite para participar da rede"
+      ]
+    }
+  },
+
+  "tom": "Profissional, acolhedor, motivador",
+  "publico": "Donos de pet shops, gerentes de loja, vendedores",
+  "formato": "Podcast conversational, 2 vozes (host + especialista)",
+
+  "promptCompleto": "Crie um script de podcast para DAR AS BOAS-VINDAS a novos revendedores da marca Meu Cão, no segmento de ração premium para pets. O áudio deve ter aproximadamente 3-5 minutos e incluir: 1) SAUDAÇÃO INICIAL com agradecimento por escolher ser revendedor, breve apresentação da marca (fábrica Uroquima, 10+ anos de experiência), e por que a Meu Cão é uma oportunidade única. 2) O QUE O REVENDEDOR VAI APRENDER sobre como vender mais com nossos produtos, argumentos para apresentar aos clientes, condições comerciais e margens atrativas de 18-30%, e suporte disponível. 3) DIFERENCIAIS DA MARCA incluindo 100% satisfação garantida, produto que vende sozinho por sua qualidade, e suporte de marketing completo. 4) PRÓXIMOS PASSOS explicando como fazer o primeiro pedido, materiais disponíveis como catálogos e cartazes, e contato do representante. 5) ENCERRAMENTO com motivação final e convite para participar da rede de revendedores. TOM: Profissional, acolhedor e motivador. PÚBLICO: Donos de pet shops, gerentes de loja e vendedores. FORMATO: Podcast conversational com 2 vozes (host + especialista). DURAÇÃO: 3-5 minutos. ESTILO: Audio overview do NotebookLM com tom conversational.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "audioCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

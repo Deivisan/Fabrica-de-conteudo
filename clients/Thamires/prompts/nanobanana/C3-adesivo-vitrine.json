@@ -1,0 +1,95 @@
+{
+  "promptId": "NB-C3",
+  "versao": "2.0",
+  "categoria": "pdv",
+  "estagioFunil": "tof",
+  "titulo": "Adesivo Vitrine",
+  "descricao": "Adesivo circular para vitrine do pet shop",
+
+  "objetivo": {
+    "primario": "Identificar produto na vitrine",
+    "secundario": "Atrair atenção do consumidor",
+    "publicoAlvo": ["consumidores-final", "tutores-de-pets"]
+  },
+
+  "parametros": {
+    "ferramenta": "Nano Banana Pro (Gemini 2.5 Flash Image)",
+    "formato": "imagem",
+    "dimensoes": "1200x1200",
+    "orientacao": "quadrado",
+    "ratio": "1:1"
+  },
+
+  "especificacaoVisual": {
+    "layout": "adesivo-circular",
+    "fundo": {
+      "tipo": "gradiente-circular",
+      "cores": ["#0099FF", "#0077CC"],
+      "centro": "#33BBFF"
+    },
+    "elementos": [
+      {
+        "tipo": "circulo-principal",
+        "diametro": "30cm-efetivo",
+        "fundo": "gradiente-azul"
+      },
+      {
+        "tipo": "texto-principal",
+        "texto": "MEU CÃO",
+        "posicao": "centro-superior",
+        "fonte": "Montserrat Bold",
+        "tamanho": "64px",
+        "cor": "#FFFFFF"
+      },
+      {
+        "tipo": "texto-secundario",
+        "texto": "REVENDA",
+        "posicao": "abaixo-texto-principal",
+        "fonte": "Montserrat Regular",
+        "tamanho": "32px",
+        "cor": "#FFFFFF"
+      },
+      {
+        "tipo": "selo",
+        "texto": "100% PROTEGIDO",
+        "posicao": "inferior",
+        "fundo": "#00CC66",
+        "cor": "#FFFFFF"
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Super Premium",
+        "posicao": "abaixo-selo",
+        "fonte": "Montserrat Light",
+        "tamanho": "20px",
+        "cor": "#FFFFFF"
+      }
+    ]
+  },
+
+  "restricoes": [
+    "sem watermarks",
+    "sem logotipos de ferramentas",
+    "sem texto emb inglês",
+    "orda arredondada estilo sticker",
+    "cores vibrantes e alto impacto"
+  ],
+
+  "promptCompleto": "Adesivo circular para vitrine de pet shop no formato quadrado 1200x1200 pixels. Círculo principal com gradiente azul #0099FF para #0077CC com centro mais claro #33BBFF. Texto MEU CÃO centralizado na parte superior do círculo, fonte Montserrat Bold, tamanho 64px, texto branco. Abaixo, texto REVENDA em fonte Montserrat Regular, tamanho 32px, texto branco. Na base inferior, selo verde #00CC66 com texto 100% PROTEGIDO em letras brancas, formato retangular arredondado. Abaixo do selo, texto Super Premium em fonte Montserrat Light, tamanho 20px, texto branco. Bordas arredondadas estilo sticker. Material vinil transparente com fundo branco. Estilo high-impact, simples e visível à distância. Cores azul #0099FF, verde #00CC66 e branco.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "imagemCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

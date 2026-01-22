@@ -1,0 +1,98 @@
+{
+  "promptId": "NB-D1",
+  "versao": "2.0",
+  "categoria": "redes-sociais",
+  "estagioFunil": "tof",
+  "titulo": "Post LinkedIn - Dados",
+  "descricao": "Post com dados do mercado pet brasileiro",
+
+  "objetivo": {
+    "primario": "Gerar engajamento com dados impressionantes",
+    "secundario": "Posicionar como autoridade no setor",
+    "publicoAlvo": ["empresarios", "pet-shop-owners", "distribuidores"]
+  },
+
+  "parametros": {
+    "ferramenta": "Nano Banana Pro (Gemini 2.5 Flash Image)",
+    "formato": "imagem",
+    "dimensoes": "1080x1350",
+    "orientacao": "vertical",
+    "ratio": "4:5"
+  },
+
+  "especificacaoVisual": {
+    "layout": "post-dados",
+    "fundo": {
+      "tipo": "gradiente-diagonal",
+      "cores": ["#0099FF", "#FFFFFF"],
+      "angulo": "135"
+    },
+    "elementos": [
+      {
+        "tipo": "dado-principal",
+        "texto": "R$ 77 BILHÕES",
+        "posicao": "superior-centro",
+        "fonte": "Montserrat Bold",
+        "tamanho": "72px",
+        "cor": "#FFFFFF"
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Esse é o tamanho do mercado pet brasileiro",
+        "posicao": "abaixo-dado",
+        "fonte": "Montserrat Regular",
+        "tamanho": "32px",
+        "cor": "#FFFFFF"
+      },
+      {
+        "tipo": "pergunta",
+        "texto": "E você está aproveitando essa oportunidade?",
+        "posicao": "abaixo-subtitulo",
+        "fonte": "Montserrat Regular",
+        "tamanho": "28px",
+        "cor": "#FFFFFF"
+      },
+      {
+        "tipo": "fatos",
+        "itens": [
+          {"emoji": "📊", "texto": "Pet shops = 48% do varejo"},
+          {"emoji": "📈", "texto": "Crescimento de 14% ao ano"},
+          {"emoji": "💰", "texto": "Margem de 18-30% em premium"}
+        ],
+        "estilo": "blocos-divisorios"
+      },
+      {
+        "tipo": "cta",
+        "texto": "Quer saber mais sobre revenda?",
+        "posicao": "inferior",
+        "acao": "Comenta aqui que eu te passo!"
+      }
+    ]
+  },
+
+  "restricoes": [
+    "sem watermarks",
+    "sem logotipos de ferramentas",
+    "sem texto em inglês",
+    "optimizado para LinkedIn",
+    "dados verificados e atuais"
+  ],
+
+  "promptCompleto": "Post para LinkedIn sobre dados do mercado pet brasileiro no formato vertical 1080x1350 pixels. Fundo com gradiente diagonal azul #0099FF para branco. Texto grande R$ 77 BILHÕES centralizado no topo, fonte Montserrat Bold, tamanho 72px, texto branco. Subtítulo Esse é o tamanho do mercado pet brasileiro abaixo, fonte Montserrat Regular, tamanho 32px, texto branco. Pergunta E você está aproveitando essa oportunidade? em texto branco, tamanho 28px. Três blocos com divisórias: Bloco 1 com emoji 📊 e texto Pet shops = 48% do varejo. Bloco 2 com emoji 📈 e texto Crescimento de 14% ao ano. Bloco 3 com emoji 💰 e texto Margem de 18-30% em premium. Cada bloco com divisorias brancas. Na base, texto CTA Quer saber mais sobre revenda? com ação Comenta aqui que eu te passo! em texto branco. Estilo LinkedIn-ready, data-driven e profissional. Alta qualidade para feed.",
+
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "imagemCorresponde": null,
+      "observacoes": []
+    }
+  },
+
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}
