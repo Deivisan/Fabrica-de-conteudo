@@ -2,15 +2,25 @@
 
 > **Para:** Próximo agente DevSan  
 > **De:** Deivison Santana  
-> **Data:** 21 Janeiro 2026, Final da Sessão  
-> **Objetivo:** Workspace B2B COMPLETAMENTE REFATORADO com 27 prompts estruturados em JSON
+> **Data:** 22 Janeiro 2026  
+> **Objetivo:** Workspace B2B COMPLETAMENTE REFATORADO com 27 prompts + Protocolo de Testes e Geração de Conteúdo
 
 ---
 
+## 🎯 RESUMO EXECUTIVO
 
-## 🎯 RESUMO DA SESSÃO
+### O Que Foi Feito (Sessões Anteriores)
 
-### O Que Foi Feito Nesta Sessão (REFATORAÇÃO COMPLETA!)
+| Ação | Resultado | Status |
+|------|-----------|--------|
+| Áudio de Thamires transcrito | 31 segundos com Whisper | ✅ |
+| Transição B2C → B2B | Identificada via áudio | ✅ |
+| Estratégia consolidada | `STRATEGY_B2B.md` único | ✅ |
+| Questionário criado | `QUESTIONARIO_B2B.md` | ✅ |
+| Metadata centralizada | `metadata.json` | ✅ |
+| Fact-checking system | `verificacoes/fact-checking.md` | ✅ |
+
+### O Que Foi Feito Nesta Sessão (REFATORAÇÃO COMPLETA)
 
 | Ação | Resultado | Status |
 |------|-----------|--------|
@@ -18,102 +28,151 @@
 | Metodologia documentada | `padrao-metodologico.md` criado | ✅ COMPLETO |
 | MASTER_INDEX atualizado | Nova estrutura com todos os 27 prompts | ✅ COMPLETO |
 | Arquivos antigos removidos | 2 arquivos .md substituídos | ✅ COMPLETO |
-| GitHub atualizado | Commit bc9f963 pushado | ✅ COMPLETO |
-
-### O Que Foi Feito Nas Sessões Anteriores
-
-| Ação | Resultado | Status |
-|------|-----------|--------|
-| Áudio de Thamires transcrito | 31 segundos com Whisper | ✅ |
-| Transição B2C → B2B | Completa via áudio | ✅ |
-| Material B2C excluído | 7 arquivos removidos | ✅ |
-| Estratégia consolidada | `STRATEGY_B2B.md` único | ✅ |
-| Questionário criado | `QUESTIONARIO_B2B.md` | ✅ |
-| Metadata centralizada | `metadata.json` | ✅ |
-| Fact-checking system | `verificacoes/fact-checking.md` | ✅ |
+| Protocolo de testes | Adicionado seção de validação | ✅ COMPLETO |
 
 ---
 
+## 🧪 PROTOCOLO DE TESTES - O QUE FAZER AGORA
 
-## 🔄 SESSÃO ATUAL: REFATORAÇÃO COMPLETA
+### ⚡ TESTE OBRIGATÓRIO: Geração de Imagem Usando Prompt JSON
 
-### O Problema Identificado
+**Objetivo:** Validar que o sistema funciona do início ao fim
 
-❌ Prompts em Markdown continham mistura inglês/português  
-❌ Prompts genéricos, sem especificidade  
-❌ Sem metodologia estruturada  
-❌ Sem sistema de verificação de fatos  
-❌ Não escalável para múltiplos clientes  
+#### Passo 1: Escolher o Prompt de Teste
+```bash
+# Prompt recomendado para teste inicial:
+# NB-A1-capa-catalogo.json (o mais simples e visual)
+```
 
-### A Solução Implementada
+#### Passo 2: Extrair o Prompt Completo
+```bash
+# Ler o arquivo JSON e extrair promptCompleto
+cat clients/Thamires/prompts/nanobanana/A1-capa-catalogo.json | jq -r '.promptCompleto'
+```
 
-✅ **27 prompts estruturados em JSON** com metadados completos  
-✅ **Metodologia documentada** com 4 princípios fundamentais  
-✅ **Sistema de fact-checking** implementado  
-✅ **cores padronizadas** (#0099FF azul, #00CC66 verde)  
-✅ **Estágios do funil** (TOF/MOF/BOF) em cada prompt  
+**O que deve ser extraído:**
+```
+"Capa de catálogo profissional para apresentação comercial no setor de ração para pets. Fundo branco limpo com gradiente azul claro do topo para a parte inferior. Logotipo MEU CÃO em letras grandes na parte superior central, cor azul #0099FF, fonte Montserrat Bold. Título CATÁLOGO DE REVENDA 2026 centralizado abaixo..."
+```
 
+#### Passo 3: Executar no Nano Banana Pro
 
-### Arquivos JSON Criados (27 Total)
+**Opção A: Via CLI (se disponível)**
+```bash
+# Pseudocódigo - verificar como executar no seu ambiente
+nanobanana generate \
+  --prompt "Capa de catálogo profissional..." \
+  --output outputs/imagens/A1-capa-catalogo.png \
+  --dimensions 1080x1350
+```
 
-#### 📁 Prompts Nano Banana Pro (15 - Imagens)
+**Opção B: Via Interface**
+1. Acessar Nano Banana Pro (Gemini 2.5 Flash Image)
+2. Colar o `promptCompleto` extraído
+3. Configurar dimensões: 1080x1350
+4. Gerar imagem
+5. Baixar resultado
 
-**Localização:** `clients/Thamires/prompts/nanobanana/`
+#### Passo 4: Salvar Resultado
+```bash
+# Mover para pasta de outputs
+mv ~/Downloads/*.png clients/Thamires/outputs/imagens/A1-capa-catalogo.png
+```
 
-| ID | Arquivo | Categoria | Estágio Funil | Descrição |
-|----|---------|-----------|---------------|-----------|
-| NB-A1 | `A1-capa-catalogo.json` | Catálogo | MOF | Capa profissional para catálogo |
-| NB-A2 | `A-produtos.json2-pagina` | Catálogo | MOF | Grid de produtos |
-| NB-A3 | `A3-pagina-precos.json` | Catálogo | BOF | Tabela de preços B2B |
-| NB-A4 | `A4-pagina-diferenciais.json` | Catálogo | TOF | 6 diferenciais competitivos |
-| NB-B1 | `B1-slide-institucional.json` | Apresentação | TOF | Slide institucional |
-| NB-B2 | `B2-slide-produtos.json` | Apresentação | MOF | Slide de produtos |
-| NB-B3 | `B3-slide-margens.json` | Apresentação | BOF | Slide de margens |
-| NB-B4 | `B4-slide-contato.json` | Apresentação | BOF | Slide de contato CTA |
-| NB-C1 | `C1-cartaz-revendedor.json` | PDV | TOF | Cartaz para pet shop |
-| NB-C2 | `C2-folheto-produto.json` | PDV | MOF | Folheto explicativo |
-| NB-C3 | `C3-adesivo-vitrine.json` | PDV | TOF | Adesivo circular |
-| NB-D1 | `D1-post-linkedin-dados.json` | LinkedIn | TOF | Post com dados mercado |
-| NB-D2 | `D2-post-linkedin-oportunidade.json` | LinkedIn | BOF | Post oportunidade revenda |
-| NB-E1 | `E1-infografico-tecnico.json` | Educativo | MOF | Infográfico composição |
-| NB-E2 | `E2-comparativo-produtos.json` | Educativo | BOF | Tabela comparativa |
-
-#### 📁 Prompts NotebookLM (12 - Áudio/Podcast)
-
-**Localização:** `clients/Thamires/prompts/notebooklm/`
-
-| ID | Arquivo | Categoria | Estágio Funil | Descrição |
-|----|---------|-----------|---------------|-----------|
-| NL-A1 | `A1-onboarding-revendedor.json` | Treinamento | TOF | Boas-vindas para novos revendedores |
-| NL-A2 | `A2-tecnicas-vendas-b2b.json` | Treinamento | MOF | Técnicas de vendas B2B |
-| NL-A3 | `A3-tratamento-objecoes.json` | Treinamento | BOF | Como lidar com objeções |
-| NL-A4 | `A4-fechamento-vendas.json` | Treinamento | BOF | Técnicas de fechamento |
-| NL-B1 | `B1-mercado-pet-brasileiro.json` | Educativo | TOF | Dados do mercado pet |
-| NL-B2 | `B2-diferenciais-tecnicos.json` | Educativo | MOF | Composição técnica |
-| NL-B3 | `B3-nutricao-premium-pets.json` | Educativo | MOF | Nutrição premium |
-| NL-B4 | `B4-tendencias-setor-pet.json` | Educativo | TOF | Tendências 2025-2026 |
-| NL-C1 | `C1-podcast-interno-rede.json` | Suporte | TOF | Podcast para revendedores |
-| NL-C2 | `C2-audio-treinamento-equipe.json` | Suporte | MOF | Treinamento equipe vendas |
-| NL-D1 | `D1-depoimento-ficticio.json` | Marketing | BOF | Depoimento UGC |
-| NL-D2 | `D2-podcast-linkedin.json` | Marketing | TOF | Podcast LinkedIn |
+#### Passo 5: Atualizar Metadados do Prompt
+```bash
+# Editar o JSON para marcar como usado
+# Campo: metadadosGerados.promptUsado = true
+# Campo: metadadosGerados.dataGeracao = "2026-01-22"
+# Campo: metadadosGerados.arquivoResultado = "outputs/imagens/A1-capa-catalogo.png"
+```
 
 ---
 
+## 📋 CHECKLIST DE VALIDAÇÃO DO SISTEMA
 
-## 📄 ESTRUTURA ATUAL DO PROJETO
+### Antes de Prosseguir (Teste de Sanidade)
+
+- [ ] **Repo identificado:** `Fabrica-de-conteudo`
+- [ ] **Estrutura verificada:** 27 arquivos JSON existem
+- [ ] **Prompt lido:** `A1-capa-catalogo.json` conferido
+- [ ] **Ferramenta acessível:** Nano Banana Pro funciona
+- [ ] **Pasta de saída criada:** `outputs/imagens/` existe
+
+### Durante a Geração
+
+- [ ] **Prompt copiado:** `promptCompleto` extraído corretamente
+- [ ] **Dimensões configuradas:** 1080x1350 (4:5)
+- [ ] **Geração iniciada:** Aguardando conclusão
+- [ ] **Download realizado:** Imagem salva localmente
+
+### Após a Geração
+
+- [ ] **Imagem movida:** Para `outputs/imagens/`
+- [ ] **JSON atualizado:** Metadados marcados como usado
+- [ ] **Verificação visual:** Imagem corresponde ao esperado?
+- [ ] **Commit realizado:** Changes pushados para GitHub
+
+---
+
+## 🔄 FLUXO DE TRABALHO COMPLETO
+
+### **FASE 1: PREPARAÇÃO**
+```
+1. Ler CONTINUATION_PROMPT.md ← (você está aqui)
+2. Verificar estrutura do projeto
+3. Criar pasta outputs/ se necessário
+4. Escolher prompt para testar
+```
+
+### **FASE 2: EXTRAÇÃO**
+```
+5. Ler arquivo JSON escolhido
+6. Extrair campo 'promptCompleto' usando jq:
+   cat arquivo.json | jq -r '.promptCompleto'
+7. Verificar dimensões em 'parametros.dimensoes'
+```
+
+### **FASE 3: GERAÇÃO**
+```
+8. Acessar ferramenta (Nano Banana Pro / NotebookLM)
+9. Colar prompt extraído
+10. Configurar parâmetros (dimensões, duração)
+11. Executar geração
+12. Aguardar conclusão
+```
+
+### **FASE 4: VALIDAÇÃO**
+```
+13. Baixar resultado
+14. Mover para pasta outputs/
+15. Verificar qualidade/precisão
+16. Atualizar metadados no JSON
+```
+
+### **FASE 5: DOCUMENTAÇÃO**
+```
+17. Commit com imagem gerada
+18. Push para GitHub
+19. Atualizar MASTER_INDEX se necessário
+20. Documentar aprendizados
+```
+
+---
+
+## 📁 ESTRUTURA DO PROJETO
 
 ```
 clients/Thamires/
-├── 📄 STRATEGY_B2B.md              ← PRINCIPAL (LEIA!)
+├── 📄 STRATEGY_B2B.md              ← LEIA PRIMEIRO!
+├── 📄 metadata.json                ← Metadados centrais
 ├── 📄 MASTER_INDEX.md              ← Índice completo
-├── 📄 metadata.json                ← Metadados centralizados
-├── 📄 TAREFAS_B2B_PENDENTES.md     ← Checklist operacional
-├── 📄 ANALISE_CRITICA_2026-01-21.md
-├── 📄 QUESTIONARIO_B2B.md          ← Questionário B2B
+├── 📄 QUESTIONARIO_B2B.md          ← Questionário cliente
+├── 📄 TAREFAS_B2B_PENDENTES.md     ← Checklist
 │
 ├── 📁 prompts/
-│   ├── 📁 nanobanana/              ← 15 prompts JSON (imagens)
-│   │   ├── A1-capa-catalogo.json
+│   ├── 📁 nanobanana/              ← 15 PROMPTS JSON (IMAGENS)
+│   │   ├── A1-capa-catalogo.json   ← 🔬 TESTAR PRIMEIRO
 │   │   ├── A2-pagina-produtos.json
 │   │   ├── A3-pagina-precos.json
 │   │   ├── A4-pagina-diferenciais.json
@@ -125,11 +184,11 @@ clients/Thamires/
 │   │   ├── C2-folheto-produto.json
 │   │   ├── C3-adesivo-vitrine.json
 │   │   ├── D1-post-linkedin-dados.json
-│   │-post-linkedin-op   ├── D2ortunidade.json
+│   │   ├── D2-post-linkedin-oportunidade.json
 │   │   ├── E1-infografico-tecnico.json
 │   │   └── E2-comparativo-produtos.json
 │   │
-│   ├── 📁 notebooklm/              ← 12 prompts JSON (áudio)
+│   ├── 📁 notebooklm/              ← 12 PROMPTS JSON (ÁUDIO)
 │   │   ├── A1-onboarding-revendedor.json
 │   │   ├── A2-tecnicas-vendas-b2b.json
 │   │   ├── A3-tratamento-objecoes.json
@@ -143,257 +202,227 @@ clients/Thamires/
 │   │   ├── D1-depoimento-ficticio.json
 │   │   └── D2-podcast-linkedin.json
 │   │
-│   └── 📄 padrao-metodologico.md   ← Metodologia de prompts
+│   └── 📄 padrao-metodologico.md   ← METODOLOGIA
 │
 ├── 📁 verificacoes/
-│   └── 📄 fact-checking.md         ← Verificação de dados
+│   └── 📄 fact-checking.md         ← VERIFICAÇÃO DE DADOS
 │
-├── 📁 outputs/
-│   ├── 📁 pdf/
-│   ├── 📁 imagens/
-│   └── 📁 audios/
+├── 📁 outputs/                     ← SAÍDA DOS TESTES
+│   ├── 📁 imagens/                 ← IMAGENS GERADAS
+│   ├── 📁 audios/                  ← ÁUDIOS GERADOS
+│   └── 📁 pdf/                     ← PDFs FINAIS
 │
 └── 📁 media/
-    ├── 📁 images/
-    ├── 📁 videos/
     └── 📁 audios/
-        ├── thamires-2026-01-21.ogg
-        └── transcricao.txt
-```
-
-### Arquivos Removidos Nesta Sessão
-
-```
-🗑️ REMOVIDOS:
-├── PROMPTS_B2B_NANOBANANA.md    ← Substituído por 15 arquivos JSON
-└── PROMPTS_B2B_NOTEBOOKLM.md    ← Substituído por 12 arquivos JSON
+        └── thamires-2026-01-21.ogg
 ```
 
 ---
 
+## 🎯 LISTA DE PROMPTS PARA TESTE SEQUENCIAL
 
-## 🎯 COMO USAR OS PROMPTS ESTRUTURADOS
+### **IMAGENS (Nano Banana Pro)**
 
-### Para Imagens (Nano Banana Pro)
+| Prioridade | ID | Título | Dimensões | Objetivo do Teste |
+|------------|-----|--------|-----------|-------------------|
+| 1️⃣ | NB-A1 | Capa de Catálogo | 1080x1350 | Validar layout clean, cores da marca |
+| 2️⃣ | NB-A3 | Página de Preços | 1080x1350 | Validar tabela e tipografia |
+| 3️⃣ | NB-D1 | Post LinkedIn - Dados | 1080x1350 | Validar dados e texto grande |
+| 4️⃣ | NB-B4 | Slide de Contato | 1920x1080 | Validar CTA e cores |
+| 5️⃣ | NB-E1 | Infográfico Técnico | 1080x1920 | Validar diagrama complexo |
 
-1. Acessar pasta `clients/Thamires/prompts/nanobanana/`
-2. Escolher o arquivo JSON adequado (ex: `A1-capa-catalogo.json`)
-3. Copiar o campo `promptCompleto`
-4. Usar no Nano Banana Pro (Gemini 2.5 Flash Image)
-5. Salvar resultado em `outputs/imagens/`
-6. Atualizar `metadadosGerados` no JSON
+### **ÁUDIOS (NotebookLM)**
 
-### Para Áudio (NotebookLM)
-
-1. Acessar pasta `clients/Thamires/prompts/notebooklm/`
-2. Escolher o arquivo JSON adequado (ex: `A1-onboarding-revendedor.json`)
-3. Copiar o campo `promptCompleto`
-4. Usar no NotebookLM Audio Overview
-5. Salvar resultado em `outputs/audios/`
-6. Atualizar `metadadosGerados` no JSON
-
-
-### Estrutura do JSON
-
-```json
-{
-  "promptId": "NB-A1",
-  "versao": "2.0",
-  "categoria": "catalogo",
-  "estagioFunil": "mof",
-  "titulo": "Capa de Catálogo",
-  "descricao": "Capa profissional para catálogo de apresentação",
-  "objetivo": { ... },
-  "parametros": {
-    "ferramenta": "Nano Banana Pro (Gemini 2.5 Flash Image)",
-    "dimensoes": "1080x1350"
-  },
-  "promptCompleto": "COPIE ESTE TEXTO PARA A FERRAMENTA",
-  "metadadosGerados": {
-    "promptUsado": false,
-    "dataGeracao": null,
-    "arquivoResultado": null,
-    "verificacao": { "status": "pendente" }
-  }
-}
-```
+| Prioridade | ID | Título | Duração | Objetivo do Teste |
+|------------|-----|--------|---------|-------------------|
+| 1️⃣ | NL-A1 | Onboarding Revendedor | 3-5 min | Validar tom acolhedor |
+| 2️⃣ | NL-B1 | Mercado Pet Brasileiro | 10-15 min | Validar dados e tom profissional |
+| 3️⃣ | NL-D1 | Depoimento Fictício | 2-3 min | Validar tom autêntico UGC |
 
 ---
 
+## 🔧 COMANDOS ÚTEIS
 
-## 📊 PRÓXIMAS AÇÕES
-
-### ALTA PRIORIDADE
-
-#### 1. Gerar Primeiro Conteúdo Usando Prompts Estruturados
-- [ ] Usar `NB-A1-capa-catalogo.json` para gerar imagem
-- [ ] Usar `NL-A1-onboarding-revendedor.json` para gerar áudio
-- [ ] Salvar resultados em `outputs/`
-- [ ] Atualizar `metadadosGerados` para "concluido"
-
-#### 2. Verificar Dados de Mercado
-- [ ] Confirmar tamanho do mercado (R$ 77B vs R$ 68.7B)
-- [ ] Confirmar taxa de crescimento (3.36% vs 14%)
-- [ ] Atualizar `verificacoes/fact-checking.md`
-
-#### 3. Enviar Questionário para Thamires
-- [ ] Enviar `clients/Thamires/QUESTIONARIO_B2B.md` para cliente
-- [ ] Coletar respostas
-- [ ] Atualizar `metadata.json` com dados do cliente
-
-### MÉDIA PRIORIDADE
-
-#### 4. Gerar Mais Conteúdo
-- [ ] Gerar prompts Nano Banana restantes (A2-E2)
-- [ ] Gerar prompts NotebookLM restantes (A2-D2)
-- [ ] Criar biblioteca de conteúdo
-
-#### 5. Criar Estrutura de Saída PDF
-- [ ] Criar template PDF para entregas ao cliente
-- [ ] Criar script para consolidar prompts + outputs
-- **Localização:** `clients/Thamires/outputs/pdf/`
-
-#### 6. Expandir para Arquitetura Multi-Cliente
-- [ ] Criar `clients/TEMPLATE/` para novos clientes
-- [ ] Documentar processo de clonagem
-- [ ] Criar script de automação
-
----
-
-
-## 🎨 ESPECIFICAÇÕES TÉCNICAS
-
-### Cores da Marca
-- **Primária:** `#0099FF` (Azul)
-- **Destaque:** `#00CC66` (Verde)
-- **Fundo:** `#FFFFFF` (Branco)
-- **Texto Principal:** `#333333`
-- **Texto Secundário:** `#666666`
-
-### Dimensões Padrão
-- **Instagram/Posts:** 1080x1350 (4:5)
-- **Slides PPT:** 1920x1080 (16:9)
-- **Stories/Infográficos:** 1080x1920 (9:16)
-- **Cartaz A3:** 1240x1754
-- **Folheto A5:** 1748x2480
-
-### Estágios do Funil
-- **TOF (Top of Funnel):** Conscientização
-- **MOF (Middle of Funnel):** Consideração
-- **BOF (Bottom of Funnel):** Decisão
-
----
-
-
-## 🔗 COMANDOS ÚTEIS
-
+### Verificar Estrutura
 ```bash
-# Ver estrutura do projeto
-ls -la clients/Thamires/prompts/
-
 # Listar prompts Nano Banana
 ls clients/Thamires/prompts/nanobanana/
 
 # Listar prompts NotebookLM
 ls clients/Thamires/prompts/notebooklm/
 
-# Ler prompt específico
-cat clients/Thamires/prompts/nanobanana/A1-capa-catalogo.json
+# Verificar outputs
+ls -la clients/Thamires/outputs/
+```
 
-# Ver metadados centralizados
-cat clients/Thamires/metadata.json
+### Extrair Prompt (usando jq)
+```bash
+# Extrair promptCompleto
+cat clients/Thamires/prompts/nanobanana/A1-capa-catalogo.json | jq -r '.promptCompleto'
 
-# Ver questionário
-cat clients/Thamires/QUESTIONARIO_B2B.md
+# Extrair dimensões
+cat clients/Thamires/prompts/nanobanana/A1-capa-catalogo.json | jq -r '.parametros.dimensoes'
 
-# Ver fact-checking
-cat clients/Thamires/verificacoes/fact-checking.md
+# Verificar status do prompt
+cat clients/Thamires/prompts/nanobanana/A1-capa-catalogo.json | jq -r '.metadadosGerados.promptUsado'
+```
 
-# Ver metodologia
-cat clients/Thamires/prompts/padrao-metodologico.md
+### Atualizar Metadados (exemplo)
+```bash
+# Editar JSON manualmente ou via script
+# Campos a atualizar:
+# - metadadosGerados.promptUsado = true
+# - metadadosGerados.dataGeracao = "2026-01-22"
+# - metadadosGerados.arquivoResultado = "outputs/imagens/A1-capa-catalogo.png"
+# - metadadosGerados.verificacao.status = "pendente"
+```
 
-# Git status
+### Git Workflow
+```bash
+# Verificar status
 git status
 
-# Commit e push
-git add -A
-git commit -m "mensagem"
+# Adicionar imagem gerada
+git add clients/Thamires/outputs/imagens/*.png
+
+# Commit
+git commit -m "test: gera capa de catálogo usando prompt JSON estruturado"
+
+# Push
 git push origin main
 ```
 
 ---
 
+## 📊 MÉTRICAS DE SUCESSO DO TESTE
 
-## 🔄 HISTÓRICO DAS SESSÕES
+### Critérios de Aprovação
 
-### v3.0 - 2026-01-21 (REFATORAÇÃO COMPLETA!) ✅
-- ✅ **27 prompts estruturados em JSON** (15 Nano Banana + 12 NotebookLM)
-- ✅ Metodologia documentada em `prompts/padrao-metodologico.md`
-- ✅ Sistema de fact-checking implementado
-- ✅ Arquivos `.md` antigos removidos
-- ✅ Estrutura escalável para múltiplos clientes
-- ✅ Commit: bc9f963
+| Critério | Descrição | Status |
+|----------|-----------|--------|
+| **Prompt extraído** | `jq` retornou texto corretamente | ⏳ |
+| **Dimensões corretas** | Gerado em 1080x1350 | ⏳ |
+| **Cores aplicadas** | Azul #0099FF e Verde #00CC66 visíveis | ⏳ |
+| **Texto legível** | Tipografia Montserrat aplicada | ⏳ |
+| **JSON atualizado** | Metadados marcam como usado | ⏳ |
+| **Git commit** | Resultado versionado | ⏳ |
 
-### v2.1 - 2026-01-21 (CONSOLIDAÇÃO)
-- ✅ Questionário B2B criado
-- ✅ Prompts Nano Banana Pro criados (15)
-- ✅ Prompts NotebookLM criados (12)
-- ✅ Estrutura B2B consolidada
+### O Que Validar na Imagem Gerada
 
-### v2.0 - 2026-01-21 (TRANSIÇÃO)
-- ✅ Identificado modelo B2B via áudio
-- ✅ Material B2C excluído
-- ✅ Estratégia consolidada
-
-### v1.x - 2026-01-21 (B2C OBSOLETO)
-- ⛔ Material antigo foi excluído
+- [ ] Logo MEU CÃO visível em #0099FF
+- [ ] Cores da marca presentes (#0099FF, #00CC66)
+- [ ] Tipografia clean e profissional
+- [ ] Sem watermarks ou artefatos
+- [ ] Proporções corretas (4:5 para posts)
 
 ---
 
+## 🎓 METODOLOGIA DOS PROMPTS
 
-## ✅ CHECKLIST PARA O PRÓXIMO AGENTE
+### Os 4 Princípios Fundamentais
 
-- [x] Leu este prompt de continuação
-- [x] Entendeu a refatoração completa
-- [x] Identificou os 27 prompts JSON disponíveis
-- [x] Leu a metodologia em `padrao-metodologico.md`
-- [ ] **Gerou primeiro conteúdo usando prompts estruturados**
-- [ ] Enviou QUESTIONARIO_B2B.md para Thamires
-- [ ] Verificou dados de mercado
-- [ ] Atualizou o progresso
+1. **Identidade Linguística** - 100% PT-BR
+2. **Estrutura JSON + Markdown** - Leitura máquina + humano
+3. **Estágios do Funil** - TOF/MOF/BOF
+4. **Tom Corporativo** - Voz consistente
 
----
+### Cores Padrão da Marca
 
+```json
+{
+  "primaria": "#0099FF",  // Azul
+  "destaque": "#00CC66",  // Verde
+  "fundo": "#FFFFFF",     // Branco
+  "texto": "#333333",     // Cinza escuro
+  "secundario": "#666666" // Cinza médio
+}
+```
 
-## 💡 NOTAS FINAIS
+### Estágios do Funil
 
-Este projeto foi **COMPLETAMENTE REFATORADO** de um experimento simples de geração de conteúdo em uma **fábrica de conteúdo estruturada e metodologia-driven**.
-
-### O Que Mudou
-
-**Antes:**
-- 1.459 linhas de Markdown não estruturado
-- Mistura inglês/português
-- Sem metadados ou rastreamento
-- Não escalável
-
-**Depois:**
-- 2.640 linhas de JSON estruturado
-- 100% português
-- Metadados completos com rastreamento de uso
-- Totalmente escalável para múltiplos clientes
-
-### Próximos Passos Lógicos
-
-1. **Gerar conteúdo real** usando os prompts estruturados
-2. **Testar os prompts** e iterar se necessário
-3. **Entregar valor** para o cliente (Thamires)
-4. **Escalar** para múltiplos clientes
+| Estágio | Sigla | Significado | Tipo de Conteúdo |
+|---------|-------|-------------|------------------|
+| Top of Funnel | TOF | Conscientização | Educativo, dados |
+| Middle of Funnel | MOF | Consideração | Comparativos, diferenciais |
+| Bottom of Funnel | BOF | Decisão | Preços, CTA, contato |
 
 ---
 
-**🚀 O workspace está COMPLETO e PRONTO para gerar conteúdo!**
+## 🔄 PRÓXIMOS PASSOS APÓS TESTES
 
-**Último Commit:** bc9f963 - "refactor: 27 prompts estruturados em JSON + metodologia completa"
+### Se o Teste Funcionar ✅
+1. Marcar checklist como completo
+2. Executar próximo prompt da lista (NB-A3)
+3. Continuar até gerar 5 imagens
+4. Commitar todos os resultados
+5. Passar para áudios (NotebookLM)
+
+### Se o Teste Falhar ❌
+1. Documentar erro em `METADADOS.observacoes`
+2. Ajustar prompt se necessário
+3. Tentar novamente
+4. Se persistir, criar issue para debug
+5. Prosseguir com outros prompts
+
+---
+
+## 📋 CHECKLIST FINAL PARA O PRÓXIMO AGENTE
+
+### Leitura Obrigatória
+- [ ] Ler `CONTINUATION_PROMPT.md` (este arquivo)
+- [ ] Ler `clients/Thamires/prompts/padrao-metodologico.md`
+- [ ] Conferir `clients/Thamires/STRATEGY_B2B.md`
+- [ ] Ver `clients/Thamires/metadata.json`
+
+### Teste de Sanidade
+- [ ] Pasta `outputs/imagens/` existe
+- [ ] Arquivo `A1-capa-catalogo.json` existe
+- [ ] Ferramenta Nano Banana Pro acessível
+- [ ] `jq` instalado (para extrair prompts)
+
+### Execução do Teste
+- [ ] Extrair `promptCompleto` do JSON
+- [ ] Gerar imagem no Nano Banana Pro
+- [ ] Salvar em `outputs/imagens/`
+- [ ] Atualizar metadados no JSON
+- [ ] Commitar resultado
+
+### Documentação
+- [ ] Atualizar MASTER_INDEX se necessário
+- [ ] Documentar aprendizados
+- [ ] Push para GitHub
+- [ ] Atualizar este arquivo com resultados
+
+---
+
+## 💡 NOTAS DO DESENVOLVEDOR
+
+### Por Que Esta Estrutura?
+
+1. **JSON para Validação** - Campos obrigatórios previnem erros
+2. **Metadados Rastreáveis** - Cada prompt sabe se foi usado
+3. **Separação de Concerns** - Prompts, Outputs, Verificações
+4. **Automação Possível** - Scripts podem ler/escrever JSON
+5. **Versionamento** - Git tracking de cada prompt
+
+### Possíveis Melhorias Futuras
+
+- Script bash para extrair e gerar automaticamente
+- Integração direta com API do Nano Banana Pro
+- Template Jinja2 para批量 geração
+- Validação automática de cores no resultado
+
+---
+
+**🚀 O próximo agente DEVE executar o teste de geração de imagem para validar que todo o sistema funciona!**
+
+**Último Commit:** `82fd1a0` - docs: atualiza CONTINUATION_PROMPT
 
 **Repositório:** https://github.com/Deivisan/Fabrica-de-conteudo
+
+**Status do Sistema:**
+- ✅ 27 prompts estruturados em JSON
+- ✅ Metodologia documentada
+- ⏳ Teste de geração pendente (FAZER AGORA!)
+- ⏳ Imagens geradas (0/15)
+- ⏳ Áudios gerados (0/12)
