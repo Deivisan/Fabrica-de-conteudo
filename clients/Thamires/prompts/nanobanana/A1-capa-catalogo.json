@@ -1,0 +1,96 @@
+{
+  "promptId": "NB-A1",
+  "versao": "2.0",
+  "categoria": "catalogo",
+  "estagioFunil": "mof",
+  "titulo": "Capa de Catálogo Comercial",
+  "descricao": "Capa profissional para catálogo de apresentação comercial B2B",
+  
+  "objetivo": {
+    "primario": "Criar capa impactante para catálogo de revendedores",
+    "secundario": "Transmitir credibilidade e profissionalismo",
+    "publicoAlvo": ["pet-shops", "clinicas-veterinarias", "distribuidores"]
+  },
+  
+  "parametros": {
+    "ferramenta": "Nano Banana Pro (Gemini 2.5 Flash Image)",
+    "formato": "imagem",
+    "dimensoes": "1080x1350",
+    "orientacao": "vertical",
+    "ratio": "4:5"
+  },
+  
+  "especificacaoVisual": {
+    "layout": "capa-centralizada",
+    "fundo": {
+      "tipo": "gradiente-suave",
+      "cores": ["#FFFFFF", "#F0F8FF"],
+      "direcao": "topo-para-baixo"
+    },
+    "elementos": [
+      {
+        "tipo": "logo",
+        "texto": "MEU CÃO",
+        "posicao": "superior-centro",
+        "fonte": "Montserrat Bold",
+        "tamanho": "48px",
+        "cor": "#0099FF"
+      },
+      {
+        "tipo": "titulo",
+        "texto": "CATÁLOGO DE REVENDA 2026",
+        "posicao": "centro-superior",
+        "fonte": "Montserrat SemiBold",
+        "tamanho": "36px",
+        "cor": "#333333"
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "PARA PET SHOPS E CLÍNICAS VETERINÁRIAS",
+        "posicao": "centro",
+        "fonte": "Montserrat Regular",
+        "tamanho": "24px",
+        "cor": "#666666"
+      },
+      {
+        "tipo": "ilustracao-embalagens",
+        "descricao": "Embalagens Meu Cão Prime renderizadas em 3D com iluminação profissional",
+        "posicao": "centro-inferior",
+        "estilo": "clean-corporate"
+      },
+      {
+        "tipo": "selo",
+        "texto": "100% PROTEGIDO",
+        "posicao": "inferior-central",
+        "fundo": "#00CC66",
+        "cor": "#FFFFFF",
+        "formato": "retangular-arredondado"
+      }
+    ]
+  },
+  
+  "restricoes": [
+    "sem watermarks",
+    "sem logotipos de ferramentas",
+    "sem texto em inglês",
+    "sem elementos desnecessários"
+  ],
+  
+  "promptCompleto": "Capa de catálogo profissional para apresentação comercial no setor de ração para pets. Fundo branco limpo com gradiente azul claro do topo para a parte inferior. Logotipo MEU CÃO em letras grandes na parte superior central, cor azul #0099FF, fonte Montserrat Bold. Título CATÁLOGO DE REVENDA 2026 centralizado abaixo, cor #333333, fonte Montserrat SemiBold, tamanho 36px. Subtítulo PARA PET SHOPS E CLÍNICAS VETERINÁRIAS abaixo do título, cor #666666, fonte Montserrat Regular, tamanho 24px. Na parte inferior central, ilustração elegante de três embalagens Meu Cão Prime renderizadas em 3D com iluminação profissional suave. Na base central, selo verde #00CC66 com texto 100% PROTEGIDO em letras brancas. Estilo clean, corporativo, premium e profissional. Dimensões 1080x1350 pixels, alta qualidade profissional, proporção 4:5.",
+  
+  "metadadosGerados": {
+    "promptUsado": true,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": {
+      "status": "pendente",
+      "imagemCorresponde": null,
+      "observacoes": []
+    }
+  },
+  
+  "historico": {
+    "criacao": "2026-01-21",
+    "atualizacoes": []
+  }
+}

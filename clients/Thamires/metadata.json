@@ -1,0 +1,81 @@
+{
+  "version": "2.0.0",
+  "lastUpdated": "2026-01-21",
+  "cliente": {
+    "nome": "Thamires",
+    "empresa": "CETENS",
+    "localizacao": "Feira de Santana, BA",
+    "modelo": "B2B",
+    "segmento": "Revenda de ração premium para pets"
+  },
+  "fabrica": {
+    "marca": "MeuCão",
+    "foco": "Ração super premium para raças pequenas",
+    "fabricaPropria": "Uroquima"
+  },
+  "pipeline": {
+    "estagios": [
+      {
+        "id": "tof",
+        "nome": "Top of Funnel - Conscientização",
+        "objetivo": "Atrair potenciais revendedores",
+        "conteudos": ["posts-linkedin", "dados-mercado", "artigos"],
+        "kpis": ["alcance", "engajamento", "leads"]
+      },
+      {
+        "id": "mof",
+        "nome": "Middle of Funnel - Consideração",
+        "objetivo": "Educar e nutrir leads",
+        "conteudos": ["catálogos", "slides-apresentacao", "webinars"],
+        "kpis": ["downloads", "tempo-engajamento", "mqls"]
+      },
+      {
+        "id": "bof",
+        "nome": "Bottom of Funnel - Decisão",
+        "objetivo": "Converter em revendedores",
+        "conteudos": ["propostas", "demonstracoes", "contratos"],
+        "kpis": ["conversao", "ticket-medio", "win-rate"]
+      }
+    ]
+  },
+  "tiers": [
+    {
+      "id": "tier1",
+      "nome": "Pet Shops",
+      "prioridade": "alta",
+      "volume": "10-200 sacks/mês",
+      "margem": "18-30%"
+    },
+    {
+      "id": "tier2",
+      "nome": "Clínicas Veterinárias",
+      "prioridade": "media",
+      "volume": "5-50 sacks/mês",
+      "margem": "20-35%"
+    },
+    {
+      "id": "tier3",
+      "nome": "Distribuidores/Atacadistas",
+      "prioridade": "baixa",
+      "volume": "500+ sacks/mês",
+      "margem": "10-15%"
+    }
+  ],
+  "cores": {
+    "primaria": "#0099FF",
+    "secundaria": "#00CC66",
+    "neutro": "#FFFFFF",
+    "texto": "#333333",
+    "textoSecundario": "#666666"
+  },
+  "verificacoes": {
+    "status": "pendente",
+    "ultimaVerificacao": null,
+    "itens": [
+      "dados-mercado-pet-2025",
+      "margens-concorrentes",
+      "composicao-produto",
+      "informacoes-fabrica"
+    ]
+  }
+}

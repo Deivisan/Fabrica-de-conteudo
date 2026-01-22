@@ -1,0 +1,76 @@
+{
+  "promptId": "NB-A2",
+  "versao": "2.0",
+  "categoria": "catalogo",
+  "estagioFunil": "mof",
+  "titulo": "Página de Produtos",
+  "descricao": "Apresentação visual das linhas de produtos",
+  
+  "objetivo": {
+    "primario": "Exibir portfólio de produtos de forma clara",
+    "secundario": "Destacar diferenciais de cada linha",
+    "publicoAlvo": ["revendedores", "lojistas"]
+  },
+  
+  "parametros": {
+    "ferramenta": "Nano Banana Pro (Gemini 2.5 Flash Image)",
+    "formato": "imagem",
+    "dimensoes": "1080x1350",
+    "orientacao": "vertical",
+    "ratio": "4:5"
+  },
+  
+  "especificacaoVisual": {
+    "layout": "grade-3-colunas",
+    "fundo": "#FFFFFF",
+    "elementos": [
+      {
+        "tipo": "titulo",
+        "texto": "NOSSAS LINHAS DE PRODUTO",
+        "posicao": "superior-central",
+        "fonte": "Montserrat Bold",
+        "tamanho": "36px",
+        "cor": "#0099FF"
+      },
+      {
+        "tipo": "coluna-produto",
+        "produto": "MEU CÃO PRIME",
+        "subtitulo": "Super Premium para Raças Pequenas",
+        "imagem": "embalagem 10,1kg stand-up pouch 3D",
+        "icones": ["Carnes Nobres", "Ômega 6/3", "DHA", "MOS/FOS"],
+        "descricao": "A melhor escolha para raças pequenas"
+      },
+      {
+        "tipo": "coluna-produto",
+        "produto": "MEU CÃO LIGHT",
+        "subtitulo": "Controle de Peso",
+        "imagem": "embalagem 15kg 3D",
+        "icones": ["Low Grain", "Fibras Naturais", "Controle de Peso"],
+        "descricao": "Para pets castrados e com tendência à obesidade"
+      },
+      {
+        "tipo": "coluna-produto",
+        "produto": "MEU CÃO TODAS AS RAÇAS",
+        "subtitulo": "Versatilidade Completa",
+        "imagem": "embalagem 20kg 3D",
+        "icones": ["Completo", "Balanceado", "Para Todos os Portes"],
+        "descricao": "Nutrição completa para todo porte"
+      }
+    ]
+  },
+  
+  "cores": {
+    "principal": "#0099FF",
+    "destaque": "#00CC66",
+    "texto": "#333333"
+  },
+  
+  "promptCompleto": "Layout de página de catálogo apresentando três linhas de produtos de ração premium para pets. Título NOSSAS LINHAS DE PRODUTO no topo central, cor azul #0099FF, fonte Montserrat Bold 36px. Três colunas com produtos: Coluna 1 - MEU CÃO PRIME Super Premium para Raças Pequenas, embalagem stand-up pouch 10,1kg renderizada em 3D, ícones de benefícios Carnes Nobres Ômega 6/3 DHA MOS/FOS, texto descritivo abaixo. Coluna 2 - MEU CÃO LIGHT para Controle de Peso, embalagem 15kg renderizada em 3D, ícones Low Grain Fibras Naturais Controle de Peso, texto descritivo abaixo. Coluna 3 - MEU CÃO TODAS AS RAÇAS Versatilidade Completa, embalagem 20kg renderizada em 3D, ícones Completo Balanceado Para Todos os Portes, texto descritivo abaixo. Fundo branco puro, cores da marca azul #0099FF para títulos e verde #00CC66 para destaques, estilo clean e profissional. Dimensões 1080x1350 pixels.",
+  
+  "metadadosGerados": {
+    "promptUsado": false,
+    "dataGeracao": null,
+    "arquivoResultado": null,
+    "verificacao": { "status": "pendente" }
+  }
+}
